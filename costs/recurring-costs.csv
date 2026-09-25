@@ -1,0 +1,20 @@
+Recurring annual costs - the Association's own,,,,,,,,
+"Column F is today's price. Column H applies the nonprofit programs once the Association qualifies.",,,,,,,,
+,,,,,,,,
+Category,Item,Unit price,Quantity,Times per year,Annual - standard,Nonprofit factor,Annual - nonprofit,Note and source
+Infrastructure,"Domain name (Cloudflare, at cost)",11,1,1,11,1,11,Estimate; not checked at the registrar
+Infrastructure,Shared test system - CRM server (4 GB),24,1,12,288,1,288,DigitalOcean published price
+Infrastructure,Shared test system - server backups,4.8,1,12,57.6,1,57.6,20% of the server price (published)
+Infrastructure,Shared test system - application container,12,1,12,144,1,144,Published range $5-$12; check Cleveland's bill
+Infrastructure,Shared test system - application database,7,1,12,84,1,84,$7 development database; a managed database costs more
+Infrastructure,EspoCRM Advanced Pack licence (test CRM),395,1,1,395,0.7468,295,"Standard $395 a year; $295 on the EspoCRM nonprofit price (both stated by Doug). Whether the Association's test system can share Cleveland's licence is not settled"
+Tools,Google Workspace mailboxes,7,2,12,168,0,0,$7 per person per month on the annual plan. Free nonprofit edition once qualified
+Tools,Password vault (Proton Pass Professional),4.49,3,12,161.64,1,161.64,Published third-party summary; Essentials is $1.99
+Tools,Request system (ClickUp Unlimited),7,3,12,252,1,252,Published. The free plan may be enough - set quantity to 0 to test that
+Tools,AI development tool (Claude Max),100,1,12,1200,0.2,240,Published. $200 for the larger plan. Nonprofit discount stated by Doug
+Tools,GitHub organization,0,1,12,0,1,0,Free plan
+Organization,Directors and officers insurance,800,1,1,800,1,800,Published average. May be $0 if another body's policy covers it
+Organization,General liability insurance,500,1,1,500,1,500,Published average. Same note as above
+Organization,Cyber liability insurance,0,1,1,0,1,0,"PRICE NEEDED - volunteers can reach chapters' systems, which hold client and mentor records"
+Organization,Statutory agent (Ohio),125,1,1,125,1,125,Required for an Ohio limited liability company (rulings 23 and 24). $0 if a volunteer with an Ohio address serves
+,Subtotal - recurring costs,,,,4186.24,,2958.24,

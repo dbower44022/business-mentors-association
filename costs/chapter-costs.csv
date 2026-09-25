@@ -1,0 +1,24 @@
+"What a chapter pays itself, per year",,,,,,,,,
+"Association dues are NOT included: they are not decided and are reported separately (ruling 22). Prices assume the chapter qualifies as a nonprofit.",,,,,,,,,
+,,,,,,,,,
+Item,Unit price,Times per year,Small - quantity,Medium - quantity,Large - quantity,Small - annual,Medium - annual,Large - annual,Note
+CRM server (4 GB),24,12,1,1,1,288,288,288,Same size as the trial chapter's. A large chapter may need more memory
+CRM server backups,4.8,12,1,1,1,57.6,57.6,57.6,20 percent of the server price
+Application container,12,12,1,1,1,144,144,144,Published range $5-$12 per month
+Application database,15,12,1,1,1,180,180,180,Managed database for live data; the $7 development database is not suitable for production
+Domain name,11,1,1,1,1,11,11,11,"Most chapters already own one, so this may be $0"
+Domain name records (Cloudflare),0,1,1,1,1,0,0,0,Free plan
+Google Workspace - staff mailboxes,0,12,4,10,20,0,0,0,Free nonprofit edition. At standard prices this is $7 per person per month
+Google Workspace - mentor mailboxes,0,12,10,40,100,0,0,0,Free nonprofit edition. Set the quantity to 0 if mentors use their own email
+Advanced Pack extension licence,295,1,1,1,1,295,295,295,Nonprofit price stated by Doug; $395 standard
+Google Integration extension licence,0,1,1,1,1,0,0,0,PRICE NEEDED - required by the network standard
+Password vault (Proton Pass),4.49,12,3,3,5,161.64,161.64,269.4,Business plans require at least 3 people
+Video meeting account (public webinars only),16,12,0,1,1,0,192,192,Estimate. Only a chapter that runs public webinars needs one
+Chapter's own costs - nonprofit prices,,,,,,1137.24,1329.24,1437,
+,,,,,,,,,
+Same chapter at standard prices (no nonprofit status),,,,,,,,,
+Mailboxes at $7 per person per month,,,,,,1176,4200,10080,
+Advanced Pack at $395 instead of $295,,,,,,100,100,100,
+Chapter's own costs - standard prices,,,,,,2413.24,5629.24,11617,
+,,,,,,,,,
+"Example sizes: small = 4 staff and 10 mentors; medium = 10 staff and 40 mentors; large = 20 staff and 100 mentors.",,,,,,,,,

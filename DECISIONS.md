@@ -1,7 +1,7 @@
 # Decisions — the Association's rulings
 
 **Document:** Every ruling that defines the Business Mentors Association
-**Version:** 2.0
+**Version:** 2.1
 **Status:** Current
 **Owner:** Doug Bower
 **Last Updated:** 09-25-26
@@ -26,9 +26,9 @@ The rulings of 09-19-26 came out of one planning conversation. Several of them r
 
 3. **One application.** Chapters deploy the application as the Association designs it and do not change it. A chapter that wants something new — a field, for example — submits a feature request; the central technical committee considers it, and if accepted it is built and delivered to every chapter. Chapters may differ through optional settings and different processes; the application itself is the same everywhere. *Amends the chapter network's ruling of strictly identical function, which allowed no per-chapter difference at all.*
 
-4. **A release goes forward on a vote of the chapter representatives**, under a process written into the Association's bylaws or operating procedures. The vote is counted as a double majority — see rulings 11 and 12.
+4. **A release goes forward on a vote of the chapter representatives**, under a process written into the Association's operating agreement, bylaws or operating procedures. The vote is counted as a double majority — see rulings 11 and 12.
 
-5. **Legal form: fiscal sponsorship first.** An established nonprofit holds the Association's money and signs for it. Becoming an independent nonprofit is a high priority.
+5. **Legal form: fiscal sponsorship first.** An established nonprofit holds the Association's money and signs for it. Becoming an independent nonprofit is a high priority. **Amended 09-25-26 by ruling 23:** the Association is formed as a separate limited liability company. Whether fiscal sponsorship still has a part to play, and whether the company seeks tax-exempt status, are open.
 
 6. **The chapter applications become open source. Doug Bower continues to own CRM Builder.**
 
@@ -38,7 +38,7 @@ The rulings of 09-19-26 came out of one planning conversation. Several of them r
 
 9. **Membership: independent business mentoring nonprofits only.**
 
-10. **The central technical committee has one technical contact from every member chapter while membership is small.** Once membership passes a number set in the bylaws, it becomes a small committee whose seats are elected by the chapter representatives, with the Association's technical lead alongside them.
+10. **The central technical committee has one technical contact from every member chapter while membership is small.** Once membership passes a number set in the governing documents, it becomes a small committee whose seats are elected by the chapter representatives, with the Association's technical lead alongside them.
 
 11. **Dues and voting are set in size bands.** Larger chapters pay more and have more say.
 
@@ -54,7 +54,7 @@ The rulings of 09-19-26 came out of one planning conversation. Several of them r
 
 17. **No limit on how far behind the current release a chapter may fall.** It is not worth enforcing. The Association neither requires chapters to update by a deadline nor limits support to recent releases.
 
-18. **The Association's accounts are held in its own name, and the domain comes first.** Each account — hosting, code hosting, request system and the rest — is opened under an Association email address, with at least two volunteer owners and the sign-ins kept in an Association-owned password vault, billed to the fiscal sponsor once one exists.
+18. **The Association's accounts are held in its own name, and the domain comes first.** Each account — hosting, code hosting, request system and the rest — is opened under an Association email address, with at least two volunteer owners and the sign-ins kept in an Association-owned password vault, billed to the Association once it can pay its own bills.
 
 19. **The Association's domain is businessmentorsassociation.org.** Availability has not been confirmed at the registrar.
 
@@ -62,11 +62,15 @@ The rulings of 09-19-26 came out of one planning conversation. Several of them r
 
 ### Ruled 09-20-26
 
-21. **Nonprofit pricing is assumed where it exists.** The Advanced Pack extension costs $395 a year at standard price and $295 a year at EspoCRM's nonprofit price. Anthropic offers nonprofits an 80 percent discount. Google Workspace has a free nonprofit edition. Each requires the Association to qualify as a nonprofit.
+21. **Nonprofit pricing is assumed where it exists.** The Advanced Pack extension costs $395 a year at standard price and $295 a year at EspoCRM's nonprofit price. Anthropic offers nonprofits an 80 percent discount. Google Workspace has a free nonprofit edition. Each requires the Association to qualify, which ruling 23 may affect.
 
 ### Ruled 09-22-26
 
 22. **Chapter cost estimates exclude Association dues.** Dues are not decided and are reported separately from what a chapter pays itself.
+
+### Ruled 09-25-26
+
+23. **The Association is set up as a separate limited liability company, to shield the individual chapters from its liabilities.** A claim against the Association reaches the Association's own assets, not the chapters' buildings, endowments or donor funds; each chapter's exposure is limited to its dues and to its own systems. *Amends ruling 5, whose path — fiscal sponsorship first, then an independent nonprofit — assumed a nonprofit rather than a company.* Left open: whether the company seeks tax-exempt status, whether fiscal sponsorship still has a part to play, and whether nonprofit pricing (ruling 21) survives the change.
 
 ---
 
@@ -83,6 +87,7 @@ The rulings of 09-19-26 came out of one planning conversation. Several of them r
 These are not rulings. Each one either follows from a ruling or fills a gap, and each waits on Doug.
 
 - **"The committee" in rulings 13 and 14** is read as the central technical committee of ruling 10 — one technical contact from each member chapter — because it is the only committee defined.
+- **The chapters own the company.** Ruling 23 names the form, not the owners. The proposal summary says the member chapters own it, because that is what makes the dues-only exposure true and matches ruling 1's balance of authority.
 - **Everyday requests** (adding a person, resetting a password) are done by each chapter's own technical personnel, with the Association as backup. This follows from ruling 1 and would replace the chapter network's 09-18-26 ruling that the Association's support team handles them as they arrive.
 - **A second trained volunteer.** Recommended practice: train a second volunteer to build releases and back up support, so the Association does not depend on one person.
 - **Release notice and test data.** Chapters are told in advance when a release waiting for certification is installed on the shared test system, so a trainer knows which version the trainees will meet. Testers are told that the midnight restore returns the data to its starting point, so records they create while testing are gone the next morning; the restore resets the data, not the installed version.
@@ -96,5 +101,6 @@ These are not rulings. Each one either follows from a ruling or fills a gap, and
 
 | Version | Date | Change |
 |---|---|---|
+| 2.1 | 09-25-26 | Ruling 23 added: the Association is a separate limited liability company, shielding the chapters. Ruling 5 marked as amended by it; rulings 4, 10, 18 and 21 reworded where they assumed a nonprofit's documents or pricing. |
 | 2.0 | 09-25-26 | Moved into this repository from the interim Claude project document. Ruling 7 superseded: the records live here. Rulings 21 and 22 added from the cost work of 09-20-26 and 09-22-26. |
-| 1.x | 09-19-26 to 09-22-26 | Kept as an interim document in the Claude project while this repository could not be written to. Twenty rulings from the planning conversation of 09-19-26, then the cost rulings. |
+| 1.x | 09-19-26 to 09-22-26 | Kept as an interim document in the Claude project while this repository could not be written to. |

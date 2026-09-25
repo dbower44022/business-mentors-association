@@ -1,7 +1,7 @@
 # Business Mentors Association — proposal summary
 
 **Document:** Executive summary of the proposal to form a shared technical services association for business mentoring chapters
-**Version:** 1.2
+**Version:** 1.3
 **Status:** Draft for review
 **Owner:** Doug Bower
 **Last Updated:** 09-25-26
@@ -10,7 +10,7 @@
 
 ## The proposal in one paragraph
 
-Independent business mentoring nonprofits would form the Business Mentors Association (a working name) to share one set of client-management and mentoring applications, instead of each chapter building and maintaining its own. The Association is **a separate limited liability company (LLC)**, so its liabilities stay with it and do not reach the chapters. It builds, tests and supports the applications. Each chapter keeps full ownership of its own systems and data, runs the same application as every other chapter, and has a vote on every release. The applications become open source, so a chapter that leaves keeps everything it runs.
+Independent business mentoring nonprofits would form the Business Mentors Association (a working name) to share one set of client-management and mentoring applications, instead of each chapter building and maintaining its own. The Association is **a separate limited liability company owned by its member chapters**, so its liabilities stay with it and do not reach them. It builds, tests and supports the applications. Each chapter keeps full ownership of its own systems and data, runs the same application as every other chapter, and has a vote on every release. The applications become open source, so a chapter that leaves keeps everything it runs.
 
 ## Why a separate company
 
@@ -22,7 +22,7 @@ A separate limited liability company is the thing those claims land on. Set up p
 
 Run instead as an informal joint effort, or as a program inside one chapter, the same claim would reach the chapters themselves, or reach that one chapter. No small nonprofit should take that on for its peers, and no board should be asked to approve it.
 
-The company is expected to be owned by its member chapters. **Two questions go with that and need an attorney:** whether the company also seeks tax-exempt status, which a limited liability company does not get automatically and which the tax authorities allow only under set conditions when every owner is itself exempt; and how this fits the earlier plan to start under fiscal sponsorship, which suits a project rather than a company. Both are recorded in the open questions.
+**The member chapters own the company**, each holding a stake, and their representatives' votes follow from that ownership. **One question goes with it and needs an attorney:** whether the company also seeks tax-exempt status. A limited liability company does not get it automatically, and the tax authorities allow it only under set conditions, one of which is that every owner is itself exempt — which every member chapter is. The earlier plan to start under fiscal sponsorship may simply fall away, since sponsorship suits a project rather than a company. Both points are in the open questions.
 
 ## Why share at all
 
@@ -30,7 +30,7 @@ The applications already exist and have run Cleveland Business Mentors' operatio
 
 ## What a member chapter gets and gives
 
-**It gets:** the applications and their configuration, a new release when one is approved, help for its own technical volunteer, direct help on its system when that volunteer is unavailable, a step-by-step guide for setting up a new chapter's technology, a shared system for training and testing, and the liability shield described above.
+**It gets:** the applications and their configuration, a new release when one is approved, help for its own technical volunteer, direct help on its system when that volunteer is unavailable, a step-by-step guide for setting up a new chapter's technology, a shared system for training and testing, a share in the company, and the liability shield described above.
 
 **It keeps:** ultimate authority over all of its own technology. It owns its own hosting, domain, email and password vault, and it decides when to install each release. There is no deadline to update.
 
@@ -57,7 +57,9 @@ The applications already exist and have run Cleveland Business Mentors' operatio
 
 ## What it costs
 
-**The Association** costs roughly $3,500 to $5,000 a year to run, depending on whether it qualifies for the nonprofit pricing that Anthropic, Google and EspoCRM offer. Dues cover that. See [cost-list.md](cost-list.md). Whether a limited liability company qualifies for that nonprofit pricing is now one of the open questions, and it is worth roughly $1,500 a year to the Association.
+**The Association** costs about $3,600 to $5,100 a year to run, depending on whether it qualifies for the nonprofit pricing that Anthropic, Google and EspoCRM offer. Dues cover that. Forming the company costs about $100 to $740 in filing fees, plus an attorney's fee for the operating agreement, which is not yet quoted. See [cost-list.md](cost-list.md).
+
+Whether a company owned by nonprofits qualifies for that nonprofit pricing is one of the open questions, and it is worth roughly $1,500 a year to the Association.
 
 **Each chapter** pays its own hosting, email, extension licences and password vault: roughly $1,100 to $1,450 a year at nonprofit prices, whatever its size. Dues come on top of that and are not yet decided.
 
@@ -75,11 +77,11 @@ The applications already exist and have run Cleveland Business Mentors' operatio
 
 ## Still to decide
 
-Whether the company seeks tax-exempt status, and how fiscal sponsorship fits. The open-source licence. The size bands, dues and votes per band. The body that governs money and staffing. Admission requirements. The chapter agreement, whose current draft predates these decisions. The second account owner. The full list is in [../OPEN-QUESTIONS.md](../OPEN-QUESTIONS.md).
+Whether the company seeks tax-exempt status. The open-source licence. The size bands, dues and votes per band. The body that governs money and staffing. Admission requirements. The chapter agreement, whose current draft predates these decisions. The second account owner. The full list is in [../OPEN-QUESTIONS.md](../OPEN-QUESTIONS.md).
 
 ## Next steps
 
-1. Have a nonprofit attorney confirm the company structure, its ownership by the chapters, and its tax treatment.
+1. Have an attorney confirm the company structure, its ownership by the chapters, its operating agreement and its tax treatment.
 2. Register the domain and open the Association's accounts, each with two owners — [setup-runbook.md](setup-runbook.md).
 3. Bring the chapter agreement into line with this proposal.
 4. Hold the committee's first meeting, to settle the governing body and the dues.
@@ -90,6 +92,7 @@ Whether the company seeks tax-exempt status, and how fiscal sponsorship fits. Th
 
 | Version | Date | Change |
 |---|---|---|
-| 1.2 | 09-25-26 | The Association is a separate limited liability company, formed to shield the chapters (ruling 23). New section on why a separate company; the structure, costs, risks and next steps updated to match. |
+| 1.3 | 09-25-26 | Ownership by the member chapters is now ruled rather than assumed (ruling 24). Costs restated for a company: about $3,600 to $5,100 a year, and $100 to $740 to form. |
+| 1.2 | 09-25-26 | The Association is a separate limited liability company, formed to shield the chapters (ruling 23). New section on why a separate company. |
 | 1.1 | 09-25-26 | Moved into this repository. Cost figures added from the cost list; the open questions now point to the repository's own list. |
 | 1.0 | 09-19-26 | First version, summarising the rulings of 09-19-26. |

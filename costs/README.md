@@ -1,18 +1,26 @@
 # The cost workbook
 
-**Document:** What is in this folder, and how the snapshot stays in step with the workbook
-**Version:** 1.0
+**Document:** What is in this folder, and which of the three artifacts is the source
+**Version:** 1.1
 **Status:** Current
 **Owner:** Doug Bower
 **Last Updated:** 09-25-26
 
 ---
 
-## What is here
+## Three artifacts, one source
 
-`association-costs.xlsx` is the working copy: it holds the formulas, so changing an input recalculates every total and every dues figure. **The workbook is a binary file and cannot be written to this repository by Claude**, whose tool writes text files only. It is delivered in the conversation and has to be committed here by hand.
+**`build_workbook.py` is the source.** It builds the whole workbook — every sheet, every formula — from the prices written at the top of the file. Run it:
 
-What is committed here instead is a **readable snapshot of every sheet**, one comma-separated file each, holding the calculated values as they stood on 09-25-26. A snapshot is readable in a pull request, searchable, and diffable; the workbook is none of those.
+```
+python3 build_workbook.py association-costs.xlsx
+```
+
+It needs `openpyxl`. Change a price in the lists at the top of the script, rebuild, and everything downstream recalculates.
+
+**The workbook itself is not committed here.** A spreadsheet is a binary file, and Claude's tool writes text files only, so the workbook is delivered in conversation and can be committed by hand. It does not have to be: the script reproduces it exactly.
+
+**The comma-separated files are a readable snapshot** of what the formulas produced on 09-25-26. They exist so the numbers can be read, searched and compared in a pull request, which a spreadsheet cannot be.
 
 | File | The sheet it came from |
 |---|---|
@@ -25,9 +33,9 @@ What is committed here instead is a **readable snapshot of every sheet**, one co
 
 [`../docs/cost-list.md`](../docs/cost-list.md) explains the lines in prose. That document, not this folder, is the one to read first.
 
-## Keeping the two in step
+## Keeping them in step
 
-The workbook is the source: edit it, then re-export these files and commit both together. A snapshot that disagrees with the workbook is worse than no snapshot, because the numbers here look authoritative.
+Edit the script, rebuild the workbook, re-export the snapshot, commit all of it together. A snapshot that disagrees with the script is worse than no snapshot, because the numbers here look authoritative.
 
 **Nothing here is decided.** The bands, the shares and the dues amounts are the committee's to set (ruling 11), and three prices are still missing: cyber liability insurance, the attorney's fee for the operating agreement, and the Google Integration extension licence.
 
@@ -37,4 +45,5 @@ The workbook is the source: edit it, then re-export these files and commit both 
 
 | Version | Date | Change |
 |---|---|---|
-| 1.0 | 09-25-26 | First version. Snapshot of the workbook as it stood after the company formation costs were added. |
+| 1.1 | 09-25-26 | The generator script added and named as the source; the note about the workbook being uncommittable reworded to match. |
+| 1.0 | 09-25-26 | First version. Snapshot of the workbook after the company formation costs were added. |

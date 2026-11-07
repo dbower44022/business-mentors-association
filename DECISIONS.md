@@ -1,10 +1,10 @@
 # Decisions — the Association's rulings
 
 **Document:** Every ruling that defines the Business Mentors Association
-**Version:** 2.24
+**Version:** 2.25
 **Status:** Current
 **Owner:** Doug Bower
-**Last Updated:** 11-07-26 01:59
+**Last Updated:** 11-07-26 11:01
 
 ---
 
@@ -124,7 +124,7 @@ Doug confirmed items 3 to 21 of Claude's drafted list as written, and changed it
 
 46. **If a visitor arrives through a second campaign in the same visit, the later campaign replaces the earlier** (follows ruling 35).
 
-47. **The template's pages.** Drawn from Cleveland's and Boston's sites (ruling 29). Published at launch: Home; About, including mission, history, how mentors are chosen and the leadership team; How It Works, including what a client can expect; Find a Mentor, with the embedded directory and profiles; Request a Mentor; Become a Mentor; Workshops and Events, with embedded listings, registration and recordings; Support Us, with the Donate button, sponsorship and partnership; Contact; Frequently Asked Questions; Privacy Policy; Terms of Use. Shipped as unpublished drafts a chapter may switch on: Blog; Resources and Templates; Partners and Sponsors; Client Stories; In the News; Client Code of Conduct; Mentor Code of Conduct; a campaign landing page like Cleveland's postcard page. On every page: newsletter signup, member sign-in link to the chapter applications, social links, and a footer stating 501(c)(3) status and the employer identification number. Legal pages ship as drafts marked for review by the chapter's own attorney; Boston's site has no privacy policy although its forms collect personal details.
+47. **The template's pages.** Drawn from Cleveland's and Boston's sites (ruling 29). Published at launch: Home; About, including mission, history, how mentors are chosen and the leadership team; How It Works, including what a client can expect; Find a Mentor, with the embedded directory and profiles; Request a Mentor; Become a Mentor; Workshops and Events, with embedded listings, registration and recordings; Support Us, with the Donate button, sponsorship and partnership; Contact; Frequently Asked Questions; Privacy Policy; Terms of Use. Shipped as unpublished drafts a chapter may switch on: Blog; Resources and Templates; Partners and Sponsors; Client Stories; In the News; Client Code of Conduct; Mentor Code of Conduct; a campaign landing page like Cleveland's postcard page. On every page: newsletter signup, member sign-in link to the chapter applications, social links, and a footer stating 501(c)(3) status and the employer identification number. Legal pages ship as drafts marked for review by the chapter's own attorney; Boston's site has no privacy policy although its forms collect personal details. *The single Partners and Sponsors page was replaced 11-07-26 by ruling 64.*
 
 48. **A "How can we help you?" chooser on the home page.** Three tiles: ask a question (the information request form), request a mentor (the client intake form) and meet our mentors (Find a Mentor), as on Cleveland's site.
 
@@ -158,6 +158,14 @@ Doug confirmed items 3 to 21 of Claude's drafted list as written, and changed it
 
 63. **The first prototype is the website side only, with the chapter applications imitated.** It runs locally: WordPress, a starter theme, a first chapter connector, and a stand-in for the chapter applications that serves the Website settings and mentor content. It shows crm-test's real intake form in a frame. It lives in a new local repository, `~/Dropbox/Projects/chapter-website-prototype`, not pushed until the Association's code hosting account exists. Nothing changes in `cbm-client-intake`. It tests the riskiest assumption first — that the chapter connector can own the key pages and their menu entries — and its data shapes become the written requirement for the applications' side. Accepted cost: the applications' side stays imitated until a second prototype builds it. Chosen over an end-to-end prototype and over prototyping shared events first. Work proceeds in PROTOTYPE mode from 11-07-26 01:59.
 
+### Ruled 11-07-26 — after the first prototype
+
+64. **Partners and sponsors have separate pages: Our Partners and Our Sponsors.** Each is a key page served from the customer relationship management system and switched on or off on its own. *Replaces the single Partners and Sponsors page in ruling 47.*
+
+65. **The template supports a header graphic.** Accepted cost: one more image each chapter supplies.
+
+66. **The template replaces the starter theme's header and footer with its own.** The starter theme's footer menus held placeholder links (Blog, Authors, Shop and others) that looked wrong. The template's footer has a Mentoring column listing the key pages, filled by the chapter connector, and an About us column of ordinary pages.
+
 ---
 
 ## Decisions the committee will make
@@ -173,6 +181,7 @@ Doug confirmed items 3 to 21 of Claude's drafted list as written, and changed it
 
 These are not rulings. Each one either follows from a ruling or fills a gap, and each waits on Doug.
 
+- **Where the header graphic is set and shown** (follows ruling 65). It is set in the System Settings Website group, like the colours, and shown under the header: tall on the home page, a narrow strip on every other page.
 - **"The committee" in rulings 13 and 14** is read as the central technical committee of ruling 10 — one technical contact from each member chapter — because it is the only committee defined.
 - **Everyday requests** (adding a person, resetting a password) are done by each chapter's own technical personnel, with the Association as backup. This follows from ruling 1 and would replace the chapter network's 09-18-26 ruling that the Association's support team handles them as they arrive.
 - **A second trained volunteer.** Recommended practice: train a second volunteer to build releases and back up support, so the Association does not depend on one person.
@@ -188,6 +197,7 @@ These are not rulings. Each one either follows from a ruling or fills a gap, and
 
 | Version | Date | Change |
 |---|---|---|
+| 2.25 | 11-07-26 11:01 | Rulings 64 to 66 added after the first prototype: separate partners and sponsors pages, a header graphic, the template's own header and footer. Ruling 47 marked as partly replaced. Drafted item added: where the header graphic is set and shown. |
 | 2.24 | 11-07-26 01:59 | Ruling 63 added: the first prototype is the website side only, with the applications imitated. |
 | 2.23 | 11-07-26 01:46 | Rulings 43 and 53 updated from a reading of the chapter applications' code: no newsletter form exists yet; event topics exist and the recordings library already filters by them. |
 | 2.22 | 11-07-26 01:39 | Rulings 42 to 62 added: the website items Claude drafted, confirmed by Doug and moved out of the drafted section. Item 1 reworded to cover forms and the basic path; item 2 changed so the newsletter signup is a chapter applications form. |

@@ -1,10 +1,10 @@
 # Chapter website template — product requirements
 
 **Document:** Requirements for the template website the Association builds and each chapter copies
-**Version:** 0.6
+**Version:** 0.7
 **Status:** Draft for Doug's review
 **Owner:** Doug Bower
-**Last Updated:** 11-07-26 10:31
+**Last Updated:** 11-07-26 11:01
 
 ---
 
@@ -25,7 +25,7 @@ Every requirement rests on a ruling. Rulings 42 to 62 are items Claude drafted d
 - **Template website.** The website the Association builds once and each chapter copies.
 - **Content management system.** Software that lets volunteers change a website's words, pictures and pages through a web browser, without writing code. The template website is built on one particular content management system (ruling 26).
 - **Chapter connector.** An add-on to that content management system, which the Association builds and maintains. It applies the settings from System Settings to the website, and places information from the customer relationship management system into the website's pages. "Chapter connector" is a working name.
-- **Key pages.** The pages the chapter connector creates and owns: Find a Mentor and each mentor's profile, Workshops and Events, Recorded Webinars, Partners and Sponsors, and Client Stories.
+- **Key pages.** The pages the chapter connector creates and owns: Find a Mentor and each mentor's profile, Workshops and Events, Recorded Webinars, Our Partners, Our Sponsors, and Client Stories.
 - **Framed embed.** A section of a page whose content comes from the chapter applications and appears inside a frame on that page. The section is placed by pasting **embed code**, a short block of text, into the page.
 - **Chapter applications address.** The web address, under the chapter's own domain, at which the chapter's applications run. Cleveland's is apps.clevelandbusinessmentors.org.
 - **Hosted payment page.** A payment page run by a payment service inside the chapter's own account with that service. Card details are entered there and never pass through the chapter's website or applications.
@@ -87,7 +87,8 @@ The Association builds the template website itself, using Cleveland's and Boston
 - **WT-10.** System Settings gains a Website group. In it, the administrator sets (ruling 32):
   - the website's colours,
   - its fonts,
-  - its logo, and
+  - its logo,
+  - its header graphic (ruling 65), and
   - an on/off switch for each key page. System Settings refuses to switch on a key page the chapter applications cannot yet serve, such as Client Stories before it is built (found by the first prototype).
 - **WT-11.** The Website group also holds each chapter-wide value, set once and used everywhere it appears.
   - the chapter's name and abbreviation,
@@ -121,7 +122,7 @@ The Association builds the template website itself, using Cleveland's and Boston
   - the mentor directory, with search, and each mentor's profile,
   - the upcoming events list,
   - recorded webinars, with search,
-  - partners and sponsors, and
+  - our partners, and our sponsors, as two pages (ruling 64), and
   - client success stories.
 - **WT-42.** Each mentor profile is a page on the chapter's own domain, with its own title and summary for search engines (ruling 33).
 - **WT-43.** The chapter applications produce this content as finished page content. The same content serves the framed embeds of the basic path, so it is produced once (ruling 33).
@@ -147,7 +148,8 @@ The Association builds the template website itself, using Cleveland's and Boston
   - the sponsor form,
   - the newsletter signup form, and
   - event registration.
-- **WT-56.** Each framed form sizes itself to its content, so the page shows no inner scroll bar.
+- **WT-56.** Each framed form sizes itself to its content, so the page shows no inner scroll bar. The chapter applications serve a small script inside each form that reports the form's height to the website, and the chapter connector sets the frame to that height (proven by the first prototype).
+- **WT-56b.** A framed form looks part of the website: it takes the website's colours and fonts from System Settings, sits at the page's text width, and drops its own heading, footer and page background, since the website page supplies them (proven by the first prototype; form integration is a key function).
 - **WT-57.** Each framed form is served from the chapter applications address, never a hosting provider's default address. Cleveland's site links once to such a default address today.
 - **WT-58.** Each framed form carries a link that opens the same form full-screen, in case the frame fails to load.
 - **WT-59.** Every "Request a Mentor" button on the website leads to the same client intake form. Cleveland's site has three destinations for that action.
@@ -179,7 +181,8 @@ The Association builds the template website itself, using Cleveland's and Boston
   - Privacy Policy.
   - Terms of Use.
 - **WT-71. Shipped switched off, for the chapter to switch on:**
-  - Partners and Sponsors (key, once built).
+  - Our Partners (key, once built).
+  - Our Sponsors (key, once built).
   - Client Stories (key, once built).
   - Blog.
   - Resources and Templates: downloadable documents grouped by subject.
@@ -187,6 +190,8 @@ The Association builds the template website itself, using Cleveland's and Boston
   - Client Code of Conduct.
   - Mentor Code of Conduct.
   - A campaign landing page, such as Cleveland's page for new business owners who received a postcard.
+- **WT-72a.** The template ships its own header and footer, replacing the starter theme's (ruling 66). The header shows the chapter's logo and name, a short menu, the main key pages and a "Request a Mentor" button. The footer has a Mentoring column listing every switched-on key page and an About us column of ordinary pages.
+- **WT-72b.** The header graphic shows under the header: tall on the home page, a narrow strip on every other page (ruling 65).
 - **WT-72. On every page:**
   - the newsletter signup,
   - a "Request a Mentor" button,
@@ -365,6 +370,7 @@ The Association builds the template website itself, using Cleveland's and Boston
 
 | Problem seen | Website | Requirement that prevents it |
 |---|---|---|
+| 0.7 | 11-07-26 11:01 | Rulings 64 to 66: separate partners and sponsors pages, a header graphic, the template's own header and footer. WT-56 gains the sizing script; WT-56b added for forms that look part of the website. |
 | 0.6 | 11-07-26 10:31 | Findings of the first prototype (ruling 63): WT-10 refuses switches for pages the applications cannot serve; WT-22 puts menu entries in the header only, and only for pages with content; WT-26 fetches every mentor profile ahead of time. Open question 2 answered. |
 | 0.5 | 11-07-26 01:46 | Open questions 3 and 4 answered from a reading of the chapter applications' code; see the implementation notes. WT-53 no longer marked as inferred; the newsletter form is confirmed as new work. |
 | Three different email domains on different pages | Cleveland | WT-11 |

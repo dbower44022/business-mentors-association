@@ -1,10 +1,10 @@
 # Kickoff prompt — the chapter applications' side of the chapter website
 
 **Document:** Prompt to start a Claude Code session in `cbm-client-intake` on the applications' side of the chapter website
-**Version:** 1.0
+**Version:** 1.1
 **Status:** Ready to use
 **Owner:** Doug Bower
-**Last Updated:** 11-07-26 10:33
+**Last Updated:** 11-07-26 11:01
 
 ---
 
@@ -31,7 +31,7 @@ The Business Mentors Association has decided how a chapter's public website conn
 
 All addresses are on the chapter applications address. All are public and need no sign-in.
 
-- `GET /api/website/settings` — the Website group of System Settings (ruling 32, ruling 45): `colors` (the slugs `base`, `contrast`, `accent-1` to `accent-6`), `fonts` (`heading`, `body`), the logo, `chapter` (name, abbreviation, email, phone, address, employer identification number, payment link) and `pages` (an on/off switch per key page: `mentors`, `events`, `recordings`, `partners`, `stories`). System Settings must refuse to switch on a page the applications cannot serve (WT-10).
+- `GET /api/website/settings` — the Website group of System Settings (ruling 32, ruling 45): `colors` (the slugs `base`, `contrast`, `accent-1` to `accent-6`), `fonts` (`heading`, `body`), the logo, `chapter` (name, abbreviation, email, phone, address, employer identification number, payment link) and `headerImage`, and `pages` (an on/off switch per key page: `mentors`, `events`, `recordings`, `partners`, `sponsors`, `stories`). System Settings must refuse to switch on a page the applications cannot serve (WT-10).
 - `GET /api/website/pages/{key}` and `GET /api/website/pages/mentors/{slug}` — finished page content as `{title, description, html}`; `404` for an unknown mentor. Every class name in the HTML starts with `cmw-`, checked by an automated test (ruling 33, WT-44).
 - `GET /api/website/sitemap` — `{paths: [...]}`, every mentor profile's path.
 - `GET /api/website/mentors.json?q=` — `{slugs: [...]}` matching the search; the chapter website's address must be allowed to fetch it (WT-46).
@@ -52,7 +52,7 @@ These were read on 11-07-26; check each one before relying on it.
 
 ## Also owed by the rulings, outside the stand-in
 
-- **Framing.** Nothing names which websites may show the forms in a frame, and there is no script that sizes a frame to its form. Both are needed (ruling 42).
+- **Framing.** Nothing names which websites may show the forms in a frame, and there is no script that sizes a frame to its form. Both are needed (ruling 42). The prototype shows exactly what works: `mock-apps/frame-size.js`, served inside each form, and the embed styles built by `embed_css()` in `mock-apps/server.py`, which map the form's `--cbm-*` colour and font tokens to the Website settings and hide the form's own heading, footer and background (WT-56, WT-56b). The forms already read `campaign` from their address; they do not yet read `placement`.
 - **A newsletter signup form.** None exists. It creates a contact with marketing consent set (ruling 43).
 
 ## Out of scope for this session
@@ -73,4 +73,5 @@ These were read on 11-07-26; check each one before relying on it.
 
 | Version | Date | Change |
 |---|---|---|
+| 1.1 | 11-07-26 11:01 | Added the sponsors page key, the header graphic, the proven frame sizing script and embed styles, and the placement gap. |
 | 1.0 | 11-07-26 10:33 | First version, written after the first prototype. |

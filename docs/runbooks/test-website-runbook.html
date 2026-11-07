@@ -1,0 +1,197 @@
+<title>Test Website Setup</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one narrow reading column; each step is a row with its done box on the left. */
+:root {
+  --bg: #f6f7f5; --panel: #ffffff; --fg: #1d2420; --muted: #5b6660; --line: #d8ddd9;
+  --accent: #0b6e4f; --accent-soft: #e3f1ea; --warn: #8a4b00; --warn-soft: #fff1dc; --code: #eef1ef;
+  --body: "Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #121614; --panel: #1a201d; --fg: #e4ebe7; --muted: #9aa8a0; --line: #2e3833;
+  --accent: #5cc79c; --accent-soft: #1d3329; --warn: #ffbf6b; --warn-soft: #3a2a12; --code: #232b27; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #121614; --panel: #1a201d; --fg: #e4ebe7; --muted: #9aa8a0; --line: #2e3833;
+  --accent: #5cc79c; --accent-soft: #1d3329; --warn: #ffbf6b; --warn-soft: #3a2a12; --code: #232b27; color-scheme: dark }
+body { background: var(--bg); color: var(--fg); font: 16px/1.55 var(--body);
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--panel); }
+.wrap { max-width: 46rem; margin: 0 auto; padding-block: 1.5rem 5rem; }
+h1 { font-size: 1.7rem; margin: 0 0 .25rem; text-wrap: balance; }
+h2 { font-size: 1.15rem; margin: 2.25rem 0 .35rem; text-wrap: balance; }
+.meta { color: var(--muted); font-size: .9rem; margin: 0 0 1rem; }
+.bar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--panel); border-bottom: 1px solid var(--line);
+  display: flex; gap: 1rem; align-items: center; justify-content: space-between; padding: .6rem .9rem; margin: 0 -.9rem 1rem; }
+.progress { font-weight: 600; font-variant-numeric: tabular-nums; }
+.meter { flex: 1; height: 6px; background: var(--line); border-radius: 3px; overflow: hidden; }
+.meter > span { display: block; height: 100%; background: var(--accent); width: 0; transition: width .2s; }
+button { font: inherit; cursor: pointer; }
+.reset { border: 1px solid var(--line); background: transparent; color: var(--fg); border-radius: 6px; padding: .3rem .7rem; font-size: .85rem; }
+.box { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: .9rem 1rem; }
+.why { color: var(--muted); margin: 0 0 .75rem; }
+.step { display: grid; grid-template-columns: 2rem 1fr; gap: .75rem; padding: .9rem 0; border-top: 1px solid var(--line); scroll-margin-top: 4rem; }
+.step:first-of-type { border-top: 0; }
+.step input[type=checkbox] { width: 1.3rem; height: 1.3rem; margin-top: .15rem; accent-color: var(--accent); }
+.step .body { min-width: 0; }
+.step .num { font-weight: 700; color: var(--accent); margin-right: .35rem; }
+.step.done .detail { display: none; }
+.step.done .head { color: var(--muted); text-decoration: line-through; }
+.detail p { margin: .4rem 0; }
+.lbl { font-size: .78rem; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin: .6rem 0 .2rem; }
+.entry { display: flex; gap: .5rem; align-items: stretch; background: var(--code); border-radius: 6px; margin: .3rem 0; }
+.entry code { flex: 1; min-width: 0; overflow-x: auto; padding: .5rem .7rem; font: .9rem/1.4 var(--mono); white-space: pre; }
+.entry button { border: 0; border-left: 1px solid var(--line); background: transparent; color: var(--accent); padding: 0 .8rem; font-size: .85rem; font-weight: 600; border-radius: 0 6px 6px 0; }
+.warn { background: var(--warn-soft); color: var(--warn); border-radius: 6px; padding: .5rem .7rem; margin: .5rem 0; font-size: .92rem; }
+.check { background: var(--accent-soft); border-radius: 8px; padding: .7rem .9rem; margin-top: .75rem; font-size: .95rem; }
+code.inline { font-family: var(--mono); font-size: .9em; background: var(--code); padding: .05rem .3rem; border-radius: 4px; }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; scroll-behavior: auto !important; } }
+</style>
+
+<div class="wrap">
+  <h1>Test website setup</h1>
+  <p class="meta">Runbook · version 1.0 · last updated 11-07-26 11:15 · rulings 26, 27, 32 and 68</p>
+
+  <div class="bar"><span class="progress" id="progress">0 of 0 done</span><div class="meter"><span id="meter"></span></div><button class="reset" id="reset" type="button">Reset</button></div>
+
+  <div class="box">
+    <strong>Before you start.</strong> You need a web browser, your own email address for the Cloudways account, a sign-in to the Association's Cloudflare account (the one holding mentorsassociation.org), and this file on your computer:
+    <div class="entry"><code>/home/doug/Dropbox/Projects/chapter-website-prototype/dist/chapter-connector-0.2.0.zip</code><button type="button">Copy</button></div>
+    <p class="why" style="margin:.5rem 0 0">Result: a test chapter website at chapter-demo.mentorsassociation.org, built from the template and connected to crm-test. Key pages, colours and the header graphic stay hidden until the applications' side is switched on in crm-test; that is expected.</p>
+  </div>
+
+  <div id="steps"></div>
+
+  <h2>Change log</h2>
+  <div class="box"><p style="margin:0"><strong>1.0 · 11-07-26 11:15</strong> — First version. Owner: Doug Bower. Status: ready to follow. The connector zip and its template install were rehearsed on a plain WordPress on 11-07-26; the Cloudways and Cloudflare screens have not been walked through yet, so their labels are written as best known.</p></div>
+</div>
+
+<script>
+// Each section: where the steps happen, why (two sentences at most), its steps, and what to send back.
+// Each step: head (where + action), entries (each copied on its own), expect, fail, warn (optional).
+var SECTIONS = [
+ { title: "1. In Cloudways — create the account", why: "Ruling 68 puts the test website in your own Cloudways account until the Association's accounts exist. Cloudways' screens may word things slightly differently from these steps; where a label is missing, stop and tell me what you see.",
+   steps: [
+   { head: "In a new browser tab, open the address below.", entries: ["https://www.cloudways.com"], expect: "The Cloudways home page, with a button such as Start Free or Start Free Trial.", fail: "If not, stop and tell me exactly what you see." },
+   { head: "On the Cloudways home page, click the Start Free (or Start Free Trial) button.", expect: "A sign-up form asking for your name, email address and a password.", fail: "If not, stop and tell me exactly what you see." },
+   { head: "On the Cloudways sign-up form, fill in your own name, your own email address and a new password, then submit the form.", expect: "Either a request to verify your email address, or a page offering to launch your first server.", fail: "If Cloudways asks for a payment card, stop and tell me — whether to give one is your decision. Otherwise, if neither appears, stop and tell me exactly what you see.", warn: "This creates an account in your own name. Undo: close the account in Cloudways account settings." },
+   { head: "If Cloudways asked you to verify your email address: open the email from Cloudways in your mailbox and click its verification link.", expect: "Cloudways opens, signed in, offering to launch a server. If no verification was asked for, tick this step and move on.", fail: "If no email arrives within 5 minutes, stop and tell me." }
+ ], report: "Send me: \"Cloudways account ready\", or what you saw at the step that stopped." },
+
+ { title: "2. In Cloudways — launch the server and WordPress", why: "One small server on DigitalOcean, with WordPress installed by Cloudways. Fill every field below; each value is given in full.",
+   steps: [
+   { head: "In Cloudways, click Launch (or Add Server) to open the launch form.", expect: "A form with an application list, three name fields, a list of cloud providers, a server size and a location.", fail: "If not, stop and tell me exactly what you see." },
+   { head: "On the launch form, in the application list, choose the plain WordPress option: not WooCommerce, not Multisite, not Clean.", expect: "WordPress is selected, with a version number beside it.", fail: "If there is more than one plain WordPress choice, stop and tell me what the choices say." },
+   { head: "On the launch form, in the field Name your Managed App (or Application name), type:", entries: ["chapter-demo"], expect: "The field shows chapter-demo.", fail: "If the field is not there, stop and tell me the field names you see." },
+   { head: "On the launch form, in the field Name your Managed Server (or Server name), type:", entries: ["mentors-test"], expect: "The field shows mentors-test.", fail: "If the field is not there, stop and tell me the field names you see." },
+   { head: "On the launch form, in the field Project (or Name your Project), type:", entries: ["Business Mentors Association"], expect: "The field shows Business Mentors Association.", fail: "If the field is not there, skip this step; it is optional." },
+   { head: "On the launch form, under the cloud providers, click DigitalOcean.", expect: "DigitalOcean is highlighted.", fail: "If DigitalOcean is not offered, stop and tell me." },
+   { head: "On the launch form, set the server size to the smallest, 1GB.", expect: "1GB is selected, with a monthly price shown beside it.", fail: "If 1GB is not offered, stop and tell me the smallest size shown." },
+   { head: "On the launch form, set the location to New York.", expect: "New York is selected.", fail: "If New York is not offered, choose the nearest location in the eastern United States." },
+   { head: "On the launch form, click Launch Now.", expect: "A progress message that the server is being prepared. It takes about 7 to 10 minutes.", fail: "If an error appears, stop and paste me the error text.", warn: "This starts a server that costs about $14 a month once the free trial ends (from memory, not checked). Undo: in Cloudways, Servers, mentors-test, Delete Server." },
+   { head: "In Cloudways, wait on the Servers page until mentors-test shows as running (a green mark).", expect: "mentors-test with a green mark, and one application, chapter-demo.", fail: "If it is still preparing after 20 minutes, stop and tell me." }
+ ], report: "Send me: \"Server running\", or what you saw at the step that stopped." },
+
+ { title: "3. In Cloudflare — point the address at the server", why: "The test website's address, chapter-demo.mentorsassociation.org, must lead to the new server. The record stays DNS only so the security certificate in section 4 can be issued.",
+   steps: [
+   { head: "In Cloudways, open Servers, then mentors-test, then Master Credentials (on the Server Management page). Find Public IP.", expect: "Public IP shows four numbers separated by dots, for example 203.0.113.25. Keep this tab open; section 3, step 6 needs it.", fail: "If no Public IP is shown, stop and tell me." },
+   { head: "In a new browser tab, open the address below and sign in to the Association's Cloudflare account.", entries: ["https://dash.cloudflare.com"], expect: "The Cloudflare dashboard, listing mentorsassociation.org.", fail: "If mentorsassociation.org is not listed, stop and tell me which account you are signed in to." },
+   { head: "In Cloudflare, click mentorsassociation.org, then DNS, then Records.", expect: "The list of DNS records for mentorsassociation.org, with an Add record button.", fail: "If not, stop and tell me exactly what you see." },
+   { head: "In Cloudflare, on the DNS Records page, click Add record, then set Type to:", entries: ["A"], expect: "A new record row with Type A, and fields Name and IPv4 address.", fail: "If not, stop and tell me exactly what you see." },
+   { head: "In the new Cloudflare record, in the Name field, type:", entries: ["chapter-demo"], expect: "Name shows chapter-demo.", fail: "If not, stop and tell me." },
+   { head: "In the new Cloudflare record, in the IPv4 address field, type the Public IP from the Cloudways tab (section 3, step 1).", expect: "IPv4 address shows the four numbers from Cloudways.", fail: "If you cannot see the Public IP, go back to the Cloudways tab, Servers, mentors-test, Master Credentials." },
+   { head: "In the new Cloudflare record, click the orange cloud so it turns grey and reads DNS only.", expect: "Proxy status reads DNS only, with a grey cloud.", fail: "If it already reads DNS only, leave it." },
+   { head: "In the new Cloudflare record, click Save.", expect: "The record list shows A, chapter-demo, the IP address, DNS only.", fail: "If Cloudflare says a record already exists, stop and tell me what it shows.", warn: "This creates a public address. Undo: in Cloudflare, DNS, Records, the chapter-demo row, Edit, Delete." }
+ ], report: "Send me: \"DNS record saved\", with the Public IP." },
+
+ { title: "4. In Cloudways — attach the address and the certificate", why: "Cloudways must know the website's address and fetch a free security certificate for it, so the site opens over https.",
+   steps: [
+   { head: "In Cloudways, open Applications, then chapter-demo, then Domain Management.", expect: "A Domain Management page with an Add Domain button, and a temporary address ending in cloudwaysapps.com.", fail: "If not, stop and tell me exactly what you see." },
+   { head: "On Domain Management, click Add Domain, and in the domain field type:", entries: ["chapter-demo.mentorsassociation.org"], expect: "The domain field shows chapter-demo.mentorsassociation.org.", fail: "If not, stop and tell me." },
+   { head: "In the Add Domain box, tick Make primary (if offered), then click Add Domain or Save.", expect: "chapter-demo.mentorsassociation.org listed as the primary domain.", fail: "If an error appears, stop and paste me the error text." },
+   { head: "In Cloudways, still in the chapter-demo application, open SSL Certificate.", expect: "An SSL Certificate page offering Let's Encrypt (the free certificate service).", fail: "If not, stop and tell me exactly what you see." },
+   { head: "On SSL Certificate, in the email field (the certificate service's contact address), type your own email address.", expect: "The email field shows your address.", fail: "If there is no email field, continue." },
+   { head: "On SSL Certificate, in the domain field, type:", entries: ["chapter-demo.mentorsassociation.org"], expect: "The domain field shows chapter-demo.mentorsassociation.org.", fail: "If the field is already filled with that address, leave it." },
+   { head: "On SSL Certificate, click Install Certificate.", expect: "After a minute or two, a message that the certificate is installed.", fail: "If it fails saying the domain does not point to the server, wait 10 minutes and try this step once more. If it fails again, stop and paste me the error text." },
+   { head: "On SSL Certificate, switch on HTTPS Redirection (if offered).", expect: "HTTPS Redirection shows as on.", fail: "If it is not offered, continue." },
+   { head: "In a new browser tab, open the address below.", entries: ["https://chapter-demo.mentorsassociation.org"], expect: "A plain WordPress site with a padlock in the address bar.", fail: "If the browser warns the site is not secure, stop and tell me exactly what it says." }
+ ], report: "Send me: \"Site opens over https\", or what you saw." },
+
+ { title: "5. In WordPress — install the template and connector", why: "The chapter connector is the Association's WordPress add-on; its zip file also carries the template's pages, header and footer.",
+   steps: [
+   { head: "In Cloudways, Applications, chapter-demo, Access Details, find Admin Panel: the URL, Username and Password.", expect: "An admin address ending in /wp-admin, a username and a password with a copy button.", fail: "If not, stop and tell me exactly what you see." },
+   { head: "In a new browser tab, open the address below and sign in with the Username and Password from Cloudways' Access Details.", entries: ["https://chapter-demo.mentorsassociation.org/wp-admin"], expect: "The WordPress Dashboard.", fail: "If sign-in fails, stop and tell me the message." },
+   { head: "In WordPress, left menu, Appearance, then Themes.", expect: "Twenty Twenty-Five shown as the active theme.", fail: "If another theme is active, click Activate on Twenty Twenty-Five. If Twenty Twenty-Five is not there, stop and tell me which themes are listed." },
+   { head: "In WordPress, left menu, Plugins, then Add New Plugin, then the Upload Plugin button at the top.", expect: "A box with a Choose File button and an Install Now button.", fail: "If not, stop and tell me exactly what you see." },
+   { head: "In the Upload Plugin box, click Choose File, and in the file dialog paste the path below, then open it.", entries: ["/home/doug/Dropbox/Projects/chapter-website-prototype/dist/chapter-connector-0.2.0.zip"], expect: "chapter-connector-0.2.0.zip is shown beside Choose File.", fail: "If the file is not found, stop and tell me." },
+   { head: "In the Upload Plugin box, click Install Now.", expect: "\"Plugin installed successfully\" and an Activate Plugin button.", fail: "If an error appears, stop and paste me the error text." },
+   { head: "On that page, click Activate Plugin.", expect: "The Plugins list, with Chapter Connector (prototype) active, and a new Chapter connector item in the left menu.", fail: "If not, stop and tell me exactly what you see." },
+   { head: "In WordPress, left menu, Chapter connector. In the Chapter applications address field, type:", entries: ["https://cbm-client-intake-svxs3.ondigitalocean.app"], expect: "The field shows the crm-test applications address.", fail: "If there is no address field, stop and tell me." },
+   { head: "On the Chapter connector screen, click Save address.", expect: "A message that settings are saved, and the address still in the field.", fail: "If not, stop and tell me exactly what you see." },
+   { head: "On the Chapter connector screen, click Install the template's pages, header and footer.", expect: "\"The template's pages, header and footer are installed.\"", fail: "If an error appears, stop and paste me the error text.", warn: "This adds pages and replaces the theme's header and footer. Undo: Pages, move the added pages to the bin; Appearance, Editor, Patterns, Header and Footer, Reset." },
+   { head: "In a new browser tab, open the address below.", entries: ["https://chapter-demo.mentorsassociation.org"], expect: "The template's home page: a header with About, Contact and a Request a Mentor button; a footer with Mentoring and About us columns. No colours, logo, header graphic or Find a Mentor yet — those arrive with the applications' side.", fail: "If the page still looks like the plain theme, in Cloudways open chapter-demo, then Application Settings or Varnish, and click Purge, then reload. If it still does, stop and tell me." },
+   { head: "On the test website, click Request a Mentor.", expect: "crm-test's Request a Mentor form inside the page. Until the applications' side is built it shows Cleveland's wording, Cleveland's colours and may show its own scroll bar.", fail: "If the form area is empty, stop and tell me exactly what you see." }
+ ], report: "Send me: \"Template installed\", and a screenshot of the home page and the Request a Mentor page." }
+];
+
+(function () {
+  var KEY = "test-website-runbook-v1";
+  var done = {};
+  try { done = JSON.parse(localStorage.getItem(KEY) || "{}") || {}; } catch (e) { done = {}; }
+  function save() { try { localStorage.setItem(KEY, JSON.stringify(done)); } catch (e) {} }
+  function el(tag, cls, text) { var n = document.createElement(tag); if (cls) n.className = cls; if (text != null) n.textContent = text; return n; }
+  function entry(text) {
+    var row = el("div", "entry"); var c = el("code", null, text); var b = el("button", null, "Copy"); b.type = "button";
+    row.appendChild(c); row.appendChild(b); return row;
+  }
+  var root = document.getElementById("steps"); var all = [];
+  SECTIONS.forEach(function (sec, si) {
+    root.appendChild(el("h2", null, sec.title));
+    var box = el("div", "box"); box.appendChild(el("p", "why", sec.why));
+    sec.steps.forEach(function (st, i) {
+      var id = "s" + (si + 1) + "-" + (i + 1);
+      var row = el("div", "step"); row.id = id;
+      var cb = el("input"); cb.type = "checkbox"; cb.id = "cb-" + id; cb.setAttribute("aria-label", "Section " + (si + 1) + ", step " + (i + 1) + " done");
+      var body = el("div", "body");
+      var head = el("label", "head"); head.htmlFor = cb.id;
+      head.appendChild(el("span", "num", (si + 1) + "." + (i + 1))); head.appendChild(document.createTextNode(st.head));
+      var det = el("div", "detail");
+      if (st.warn) det.appendChild(el("div", "warn", "Changes something. " + st.warn));
+      (st.entries || []).forEach(function (t) { det.appendChild(entry(t)); });
+      det.appendChild(el("div", "lbl", "You should see")); det.appendChild(el("p", null, st.expect));
+      det.appendChild(el("div", "lbl", "If not")); det.appendChild(el("p", null, st.fail));
+      body.appendChild(head); body.appendChild(det); row.appendChild(cb); row.appendChild(body); box.appendChild(row);
+      all.push({ id: id, row: row, cb: cb });
+      cb.checked = !!done[id]; row.classList.toggle("done", cb.checked);
+      cb.addEventListener("change", function () {
+        done[id] = cb.checked; save(); row.classList.toggle("done", cb.checked); update();
+        if (cb.checked) {
+          var idx = all.findIndex(function (s) { return s.id === id; });
+          var next = all.slice(idx + 1).find(function (s) { return !s.cb.checked; });
+          if (next) requestAnimationFrame(function () { next.row.scrollIntoView({ block: "start", behavior: "smooth" }); });
+        }
+      });
+    });
+    box.appendChild(el("div", "check", sec.report)); root.appendChild(box);
+  });
+  function update() {
+    var n = all.filter(function (s) { return s.cb.checked; }).length;
+    document.getElementById("progress").textContent = n + " of " + all.length + " done";
+    document.getElementById("meter").style.width = (all.length ? 100 * n / all.length : 0) + "%";
+  }
+  document.getElementById("reset").addEventListener("click", function () {
+    done = {}; save(); all.forEach(function (s) { s.cb.checked = false; s.row.classList.remove("done"); }); update(); window.scrollTo({ top: 0 });
+  });
+  document.addEventListener("click", function (e) {
+    var b = e.target.closest(".entry button"); if (!b) return;
+    var code = b.previousElementSibling; var text = code.textContent;
+    function selectIt() { var r = document.createRange(); r.selectNodeContents(code); var s = getSelection(); s.removeAllRanges(); s.addRange(r); }
+    try {
+      navigator.clipboard.writeText(text).then(function () { b.textContent = "Copied"; setTimeout(function () { b.textContent = "Copy"; }, 1500); }, selectIt);
+    } catch (err) { selectIt(); }
+  });
+  update();
+})();
+</script>

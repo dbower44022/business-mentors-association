@@ -1,10 +1,10 @@
 # Decisions — the Association's rulings
 
 **Document:** Every ruling that defines the Business Mentors Association
-**Version:** 2.22
+**Version:** 2.23
 **Status:** Current
 **Owner:** Doug Bower
-**Last Updated:** 11-07-26 01:39
+**Last Updated:** 11-07-26 01:46
 
 ---
 
@@ -116,7 +116,7 @@ Doug confirmed items 3 to 21 of Claude's drafted list as written, and changed it
 
 42. **Forms appear in frames, served from the chapter's own applications address.** The intake, mentor application, information request, partner, sponsor and newsletter signup forms and event registration appear in frames on both paths; on Boston's basic path the mentor directory, events and recordings do too (ruling 33 puts them into the page itself on WordPress sites). A frame is never served from a hosting provider's default address, and each carries a link that opens the same form full-screen if the frame fails. Every "Request a Mentor" button on the website leads to the same client intake form; Cleveland's site has three destinations.
 
-43. **The newsletter signup is a chapter applications form, not the mailing service's own form.** A subscriber lands in the customer relationship management system first, and the applications' existing synchronisation passes them to Constant Contact. Whether the applications already have such a form is not checked; if not, it is built.
+43. **The newsletter signup is a chapter applications form, not the mailing service's own form.** A subscriber lands in the customer relationship management system first, and the applications' existing synchronisation passes them to Constant Contact. The applications have no such form today (checked 11-07-26), so it is built.
 
 44. **The general contact form is the chapter applications' information request form**, so every enquiry lands in the customer relationship management system.
 
@@ -136,7 +136,7 @@ Doug confirmed items 3 to 21 of Claude's drafted list as written, and changed it
 
 52. **A guide offered for an email address uses the mailing service's own landing page**, as Boston does, so a subscriber reaches the customer relationship management system through the existing synchronisation. The template's Resources page has a place to feature one.
 
-53. **Recorded webinars can be filtered by subject**, using the event topics the customer relationship management system holds (inferred from `cbm-client-intake/cevent-topics-crm-handoff.md`, not checked), as on Boston's video library. Shared events a chapter has added link to the host's recording.
+53. **Recorded webinars can be filtered by subject**, using the event topics the customer relationship management system holds, as on Boston's video library. Shared events a chapter has added link to the host's recording.
 
 54. **An events calendar feed.** The chapter applications publish the chapter's public events as a calendar feed a visitor can subscribe to, linked from Workshops and Events. A feature request goes to the committee under ruling 3.
 
@@ -186,6 +186,7 @@ These are not rulings. Each one either follows from a ruling or fills a gap, and
 
 | Version | Date | Change |
 |---|---|---|
+| 2.23 | 11-07-26 01:46 | Rulings 43 and 53 updated from a reading of the chapter applications' code: no newsletter form exists yet; event topics exist and the recordings library already filters by them. |
 | 2.22 | 11-07-26 01:39 | Rulings 42 to 62 added: the website items Claude drafted, confirmed by Doug and moved out of the drafted section. Item 1 reworded to cover forms and the basic path; item 2 changed so the newsletter signup is a chapter applications form. |
 | 2.21 | 11-07-26 01:30 | Ruling 41 added: built ready for other languages, English at launch, with a languages spoken field on mentor profiles. |
 | 2.20 | 11-07-26 01:29 | Ruling 40 added: guest registration and attendance between chapters' applications. Four drafted items added: review highlights, recording filters, a guide for an email address, the In the News page. |

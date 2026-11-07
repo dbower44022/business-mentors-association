@@ -1,10 +1,10 @@
 # Chapter website template — product requirements
 
 **Document:** Requirements for the template website the Association builds and each chapter copies
-**Version:** 0.4
+**Version:** 0.5
 **Status:** Draft for Doug's review
 **Owner:** Doug Bower
-**Last Updated:** 11-07-26 01:40
+**Last Updated:** 11-07-26 01:46
 
 ---
 
@@ -134,7 +134,7 @@ The Association builds the template website itself, using Cleveland's and Boston
 - **WT-50.** Until the features in section 7 are built, the Partners and Sponsors and Client Stories pages are ordinary pages edited by hand. They become key pages when the features are built.
 - **WT-51.** The leadership team is an ordinary page edited in the content management system (ruling 30).
 - **WT-52.** Mentor records and client stories carry a "feature on home page" switch. The home page shows the switched-on ones, rotating daily.
-- **WT-53.** Recorded webinars can be filtered by subject, using the event topics the customer relationship management system holds. That those topics exist is inferred, not checked.
+- **WT-53.** Recorded webinars can be filtered by subject, using the event topics the customer relationship management system holds.
 - **WT-54.** The chapter applications publish the chapter's public events as a calendar feed. A visitor can subscribe to it from Workshops and Events.
 
 ### 5.5 Forms
@@ -320,7 +320,7 @@ The Association builds the template website itself, using Cleveland's and Boston
 5. The test website on the shared test system (WT-95).
 6. Campaigns through the website: campaign links that point at any page, the remembered campaign, and placement tags (section 5.13).
 7. Shared events: the Shared marking, Add Association Events, and the guest and attendance connection between chapters' applications (section 5.17).
-8. The newsletter signup form, if the chapter applications do not already have one (WT-60).
+8. The newsletter signup form, which the chapter applications do not have today (WT-60).
 9. Translatable text throughout the website and the chapter applications' public pages and forms (WT-106).
 
 **Prerequisites, before shared events can work.**
@@ -343,8 +343,8 @@ The Association builds the template website itself, using Cleveland's and Boston
 
 1. **The template website's licence** (ruling 6, and open question 15). The chapter connector's licence is settled by ruling 34. If the template's theme is also published in the public directory, the same licence applies to it.
 2. **Menu control.** Whether the chapter connector can add and remove menu entries cleanly in the content management system's newer kind of theme. This has not been checked, and it is the riskiest part of WT-22.
-3. **Recorded webinars.** Whether the chapter applications already serve Cleveland's public webinar recordings. This was inferred from Cleveland's events add-on, not checked.
-4. **The forms in frames.** Whether the public intake forms already work inside a frame on another website, and what remains of the public mentor pages plan in `cbm-client-intake/prds/public-mentor-pages-plan.md`.
+3. **Recorded webinars.** Answered 11-07-26: the chapter applications already serve the public recordings library, with search and a subject filter. See the implementation notes.
+4. **The forms in frames.** Answered 11-07-26: nothing for frames is built yet — no sizing script and no rule naming which websites may frame the forms — and the public mentor pages plan is not built. Both are build work. See the implementation notes.
 5. **How long the chapter connector keeps a copy.** "A few minutes" is a placeholder.
 6. **The automatic-update recommendation.** Whether the setup guide recommends chapter connector updates on or off (WT-30).
 7. **Tax acknowledgments.** Whether the customer relationship management system sends donors' tax acknowledgments once gifts are recorded automatically.
@@ -365,6 +365,7 @@ The Association builds the template website itself, using Cleveland's and Boston
 
 | Problem seen | Website | Requirement that prevents it |
 |---|---|---|
+| 0.5 | 11-07-26 01:46 | Open questions 3 and 4 answered from a reading of the chapter applications' code; see the implementation notes. WT-53 no longer marked as inferred; the newsletter form is confirmed as new work. |
 | Three different email domains on different pages | Cleveland | WT-11 |
 | "Request a Mentor" goes to three different places | Cleveland | WT-59 |
 | A link to a page that returns "page not found" | Cleveland | WT-22, key pages and their menu entries switch together |

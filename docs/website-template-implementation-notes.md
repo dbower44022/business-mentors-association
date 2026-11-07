@@ -1,10 +1,10 @@
 # Chapter website template — implementation notes
 
 **Document:** The products chosen for the chapter website template, and what is still to be checked
-**Version:** 0.4
+**Version:** 0.5
 **Status:** Draft for Doug's review
 **Owner:** Doug Bower
-**Last Updated:** 11-07-26 01:40
+**Last Updated:** 11-07-26 01:46
 
 ---
 
@@ -45,16 +45,25 @@ Every figure below is from memory. None has been checked.
 - **Stripe's card fee:** about 2.9 percent plus 30 cents per gift. Stripe offers a lower rate to nonprofits that apply.
 - **Squarespace plans that allow scripts**, relevant only to a chapter that keeps Squarespace: about $23 to $39 a month.
 
+## What the chapter applications already have
+
+Read from `cbm-client-intake` on 11-07-26, without changing anything.
+
+- **Recorded webinars and upcoming events: built.** The applications serve them publicly at `/api/events/recordings` and the events listing in `events/public.py`. The recordings library has search and a subject filter, and lists only subjects that have recordings. Cleveland's website shows both through a browser script, `wp-plugin/cbm-events/assets/cbm-events.js`. That script builds the content inside the page, not in a frame, using class names copied from Cleveland's Elementor page. Ruling 33 asks for content placed into the page as it is served, by the chapter connector, and for prefixed style names. The existing script is the starting point, not the finished piece.
+- **Event topics: built.** The recordings library's subject filter uses them (ruling 53).
+- **Newsletter signup form: not built.** The public forms are client intake, volunteer, information request, partner, sponsor, event registration, the prospect response form and the information mailbox. The client intake and event registration forms set the marketing opt-in on the contact, and the mailing synchronisation sends opted-in contacts to Constant Contact. A newsletter form would create a contact with that opt-in set (ruling 43).
+- **Frames: not built.** The applications set no rule saying which websites may show them in a frame, and have no sizing script. Browsers allow framing by default when no rule is set, but whether the hosting platform adds one has not been checked. The public mentor pages plan, which carries the frame design, is marked "not built".
+- **Permission for other websites to fetch data: built.** The applications already have a setting listing the websites allowed to fetch from them (`allowed_origins` in `core/app.py`). The mentor search of ruling 33 can use it.
+
 ## Things to check before the build
 
-1. Whether the five public intake forms work inside a frame on another website, and whether their sizing script is built.
-2. Whether Cleveland's public webinar recordings come from the chapter applications through the `cbm-events` plugin.
-3. Whether Squarespace runs the sizing script on Boston's current plan.
-4. Whether a Stripe Payment Link offers monthly giving.
-5. Which WordPress block theme the template starts from. It must keep its colours and fonts in `theme.json`.
-7. Whether a block theme's navigation block lets a plugin add and remove menu entries cleanly.
-8. How long the chapter connector should keep a fetched copy.
-6. Which plugins are needed at all. The aim is as few as possible, with the reason for each written here.
+1. Whether the hosting platform adds a rule that stops the chapter applications being shown in a frame.
+2. Whether Squarespace runs the sizing script on Boston's current plan.
+3. Whether a Stripe Payment Link offers monthly giving.
+4. Which WordPress block theme the template starts from. It must keep its colours and fonts in `theme.json`.
+5. Whether a block theme's navigation block lets a plugin add and remove menu entries cleanly.
+6. How long the chapter connector should keep a fetched copy.
+7. Which plugins are needed at all. The aim is as few as possible, with the reason for each written here.
 
 ---
 
@@ -62,6 +71,7 @@ Every figure below is from memory. None has been checked.
 
 | Version | Date | Change |
 |---|---|---|
+| 0.5 | 11-07-26 01:46 | Added what the chapter applications already have, read from the code: recordings, events and topics built; newsletter form and frame support not built; cross-site fetch setting built. |
 | 0.4 | 11-07-26 01:40 | The newsletter signup is a chapter applications form, not Constant Contact's own (ruling 43). Drafted marks removed after Doug's confirmation. |
 | 0.3 | 11-07-26 01:31 | Added webinars, campaigns, visitor statistics, site search and translation-ready text (rulings 35 to 41). |
 | 0.2 | 11-07-26 00:51 | Added the chapter connector plugin and the System Settings Website group (rulings 32 to 34); framed embeds now serve forms and chapters not on WordPress. Two checks added. |

@@ -1,10 +1,10 @@
 # Next steps — where the work stands
 
 **Document:** The work in progress and the next steps, kept so a new session can continue where the last one stopped
-**Version:** 1.4
+**Version:** 1.5
 **Status:** Current
 **Owner:** Doug Bower
-**Last Updated:** 11-07-26 15:00
+**Last Updated:** 11-07-26 15:04
 
 ---
 
@@ -18,7 +18,7 @@ A new session reads this file after `README.md` and `DECISIONS.md`. Each item sa
 
 ## Next steps, in recommended order
 
-0. **The Association set up as a chapter (rulings 71 and 72), `docs/demo-chapter-plan.md`.** Track 2: start a `cbm-client-intake` session with the approved prompt `docs/prompts/cbm-client-intake-guide-kickoff.md` (version 1.2); its first deliverable is a plan for correcting the guide, starting with stages 3 to 5. Track 1: Doug reviews piece C at Stop 4 of `cbm-client-intake/prds/chapter-website-plan.md`. *Waits on:* Doug starting that session.
+0. **The Association set up as a chapter (rulings 71 and 72), `docs/demo-chapter-plan.md`.** Track 2: a `cbm-client-intake` session was started 11-07-26 15:04 with the kickoff prompt `docs/prompts/cbm-client-intake-guide-kickoff.md` (version 1.2). Its first deliverable is a plan for correcting the guide, starting with stages 3 to 5. It does not edit this repository; its closing report is recorded here by a session in this repository. Decision D4 (the Zoom and Constant Contact plans) is needed before stage 5. Track 1: Doug reviews piece C at Stop 4 of `cbm-client-intake/prds/chapter-website-plan.md`. *Waits on:* the `cbm-client-intake` session's plan and report; Doug for D4.
 
 1. **Correct the stale ruling numbers in `cbm-client-intake`.** `prds/chapter-website-plan.md` in `dbower44022/cbm-client-intake` cites this repository's rulings by their old numbers: "rulings 24 to 68", "Ruling 45", "Ruling 48", "Rulings 64…". Every ruling from 23 to 68 is now two higher (see the 2.29 entry in this repository's `DECISIONS.md` change log). That repository has its own change process. Read its `CLAUDE.md` first, and make the change only through that process. *Waits on:* Doug's go-ahead to start it there.
 
@@ -48,7 +48,7 @@ A new session reads this file after `README.md` and `DECISIONS.md`. Each item sa
 
 ## Prompt to start the next session
 
-> Operating mode: ARCHITECTURE. Repository: `~/Dropbox/Projects/business-mentors-association`. Pull from GitHub first. Read `README.md`, `DECISIONS.md` and `NEXT-STEPS.md`. Then take up step 0 of `NEXT-STEPS.md` unless I name another step. Before changing anything in `cbm-client-intake`, read that repository's `CLAUDE.md` and follow its process. At the end, update `NEXT-STEPS.md`, commit and push.
+> Operating mode: ARCHITECTURE. Repository: `~/Dropbox/Projects/business-mentors-association`. Pull from GitHub first. Read `README.md`, `DECISIONS.md` and `NEXT-STEPS.md`. If I bring the closing report of the `cbm-client-intake` guide session, record it under step 0; otherwise take up the step I name, or step 2 if I name none. Before changing anything in `cbm-client-intake`, read that repository's `CLAUDE.md` and follow its process. At the end, update `NEXT-STEPS.md`, commit and push.
 
 ---
 
@@ -56,6 +56,7 @@ A new session reads this file after `README.md` and `DECISIONS.md`. Each item sa
 
 | Version | Date | Change |
 |---|---|---|
+| 1.5 | 11-07-26 15:04 | The `cbm-client-intake` guide session started; step 0 now waits on its plan and report; the next-session prompt updated. |
 | 1.4 | 11-07-26 15:00 | Kickoff prompt at version 1.2; Zoom confirmed, D4 narrowed. |
 | 1.3 | 11-07-26 14:52 | Stop B passed; step 0 now points at the approved kickoff prompt. |
 | 1.2 | 11-07-26 14:47 | Step 0 updated for ruling 72 and the guide kickoff prompt; step 4 now decision D1a. |

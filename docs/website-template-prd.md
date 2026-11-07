@@ -1,10 +1,10 @@
 # Chapter website template — product requirements
 
 **Document:** Requirements for the template website the Association builds and each chapter copies
-**Version:** 0.7
+**Version:** 0.8
 **Status:** Draft for Doug's review
 **Owner:** Doug Bower
-**Last Updated:** 11-07-26 11:01
+**Last Updated:** 11-07-26 14:26
 
 ---
 
@@ -370,6 +370,7 @@ The Association builds the template website itself, using Cleveland's and Boston
 
 | Problem seen | Website | Requirement that prevents it |
 |---|---|---|
+| 0.8 | 11-07-26 14:26 | Ruling numbers 23 to 68 renumbered 25 to 70, after merging with rulings 23 and 24 of 09-25-26 (see the rulings file, version 2.29). |
 | 0.7 | 11-07-26 11:01 | Rulings 66 to 68: separate partners and sponsors pages, a header graphic, the template's own header and footer. WT-56 gains the sizing script; WT-56b added for forms that look part of the website. |
 | 0.6 | 11-07-26 10:31 | Findings of the first prototype (ruling 65): WT-10 refuses switches for pages the applications cannot serve; WT-22 puts menu entries in the header only, and only for pages with content; WT-26 fetches every mentor profile ahead of time. Open question 2 answered. |
 | 0.5 | 11-07-26 01:46 | Open questions 3 and 4 answered from a reading of the chapter applications' code; see the implementation notes. WT-53 no longer marked as inferred; the newsletter form is confirmed as new work. |

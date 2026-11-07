@@ -1,0 +1,14 @@
+Business Mentors Association - cost assumptions,,
+"Blue cells are inputs. Yellow cells are the key levers. Black cells are calculated.",,
+,,
+Input,Value,Note
+Account owners with paid mailboxes,2,Ruling 18: at least two owners
+People in the password vault,3,Business plans require at least 3
+People in the request system,3,Support team size
+Fiscal sponsor fee,0.1,Published range 5%-15%; 3%-8% for the lighter form
+Contingency,0.1,Rule of thumb
+Anthropic nonprofit discount,0.8,Stated by Doug 09-19-26
+Google Workspace nonprofit price,0,Free edition once qualified (stated by Doug)
+Federal exemption application fee,600,"$600 full form; $275 short form if receipts stay under $50,000"
+Advanced Pack nonprofit price,295,"EspoCRM nonprofit price for the Advanced Pack extension, per year (stated by Doug 09-20-26)"
+"Statutory agent (Ohio), per year",125,"Ohio requires an agent with a physical Ohio address. A volunteer with one may serve for $0; services charge about $99-$300"

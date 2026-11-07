@@ -1,10 +1,10 @@
 # Decisions — the Association's rulings
 
 **Document:** Every ruling that defines the Business Mentors Association
-**Version:** 2.28
+**Version:** 2.29
 **Status:** Current
 **Owner:** Doug Bower
-**Last Updated:** 11-07-26 14:18
+**Last Updated:** 11-07-26 14:25
 
 ---
 
@@ -12,7 +12,7 @@
 
 Nothing here is a task. **Every ruling below is Doug's.** A ruling changes only when Doug changes it, and then the replaced wording stays visible, marked and dated. Items Claude drafted or assumed are in their own sections at the bottom and are not rulings until Doug confirms them.
 
-The rulings of 09-19-26 came out of one planning conversation. Several of them replace rulings made earlier for the chapter network, whose decision file lives in `dbower44022/cbm-client-intake` at `prds/chapter-network/DECISIONS.md`. **That file still states the replaced wording**; correcting it is owed.
+The rulings of 09-19-26 came out of one planning conversation. Several of them replace rulings made earlier for the chapter network, whose decision file lives in `dbower44022/cbm-client-intake` at `prds/chapter-network/DECISIONS.md`. **That file is being corrected to match**; until the correction is merged it still states the replaced wording.
 
 ---
 
@@ -26,9 +26,9 @@ The rulings of 09-19-26 came out of one planning conversation. Several of them r
 
 3. **One application.** Chapters deploy the application as the Association designs it and do not change it. A chapter that wants something new — a field, for example — submits a feature request; the central technical committee considers it, and if accepted it is built and delivered to every chapter. Chapters may differ through optional settings and different processes; the application itself is the same everywhere. *Amends the chapter network's ruling of strictly identical function, which allowed no per-chapter difference at all.*
 
-4. **A release goes forward on a vote of the chapter representatives**, under a process written into the Association's bylaws or operating procedures. The vote is counted as a double majority — see rulings 11 and 12.
+4. **A release goes forward on a vote of the chapter representatives**, under a process written into the Association's operating agreement. The vote is counted as a double majority — see rulings 11 and 12.
 
-5. **Legal form: fiscal sponsorship first.** An established nonprofit holds the Association's money and signs for it. Becoming an independent nonprofit is a high priority.
+5. **Legal form: fiscal sponsorship first.** An established nonprofit holds the Association's money and signs for it. Becoming an independent nonprofit is a high priority. **Amended 09-25-26 by ruling 23:** the Association is formed as a separate limited liability company. Whether fiscal sponsorship still has a part to play, and whether the company seeks tax-exempt status, are open.
 
 6. **The chapter applications become open source. Doug Bower continues to own CRM Builder.**
 
@@ -38,7 +38,7 @@ The rulings of 09-19-26 came out of one planning conversation. Several of them r
 
 9. **Membership: independent business mentoring nonprofits only.**
 
-10. **The central technical committee has one technical contact from every member chapter while membership is small.** Once membership passes a number set in the bylaws, it becomes a small committee whose seats are elected by the chapter representatives, with the Association's technical lead alongside them.
+10. **The central technical committee has one technical contact from every member chapter while membership is small.** Once membership passes a number set in the governing documents, it becomes a small committee whose seats are elected by the chapter representatives, with the Association's technical lead alongside them.
 
 11. **Dues and voting are set in size bands.** Larger chapters pay more and have more say.
 
@@ -54,7 +54,7 @@ The rulings of 09-19-26 came out of one planning conversation. Several of them r
 
 17. **No limit on how far behind the current release a chapter may fall.** It is not worth enforcing. The Association neither requires chapters to update by a deadline nor limits support to recent releases.
 
-18. **The Association's accounts are held in its own name, and the domain comes first.** Each account — hosting, code hosting, request system and the rest — is opened under an Association email address, with at least two volunteer owners and the sign-ins kept in an Association-owned password vault, billed to the fiscal sponsor once one exists.
+18. **The Association's accounts are held in its own name, and the domain comes first.** Each account — hosting, code hosting, request system and the rest — is opened under an Association email address, with at least two volunteer owners and the sign-ins kept in an Association-owned password vault, billed to the Association once it can pay its own bills.
 
 19. **The Association's domain is businessmentorsassociation.org.** Availability has not been confirmed at the registrar. **Replaced 11-06-26 by ruling 25.**
 
@@ -62,11 +62,17 @@ The rulings of 09-19-26 came out of one planning conversation. Several of them r
 
 ### Ruled 09-20-26
 
-21. **Nonprofit pricing is assumed where it exists.** The Advanced Pack extension costs $395 a year at standard price and $295 a year at EspoCRM's nonprofit price. Anthropic offers nonprofits an 80 percent discount. Google Workspace has a free nonprofit edition. Each requires the Association to qualify as a nonprofit.
+21. **Nonprofit pricing is assumed where it exists.** The Advanced Pack extension costs $395 a year at standard price and $295 a year at EspoCRM's nonprofit price. Anthropic offers nonprofits an 80 percent discount. Google Workspace has a free nonprofit edition. Each requires the Association to qualify, which rulings 23 and 24 may affect.
 
 ### Ruled 09-22-26
 
 22. **Chapter cost estimates exclude Association dues.** Dues are not decided and are reported separately from what a chapter pays itself.
+
+### Ruled 09-25-26
+
+23. **The Association is set up as a separate limited liability company, to shield the individual chapters from its liabilities.** A claim against the Association reaches the Association's own assets, not the chapters' buildings, endowments or donor funds; each chapter's exposure is limited to its dues and to its own systems. *Amends ruling 5, whose path — fiscal sponsorship first, then an independent nonprofit — assumed a nonprofit rather than a company.* Left open: whether the company seeks tax-exempt status, whether fiscal sponsorship still has a part to play, and whether nonprofit pricing (ruling 21) survives the change.
+
+24. **The member chapters own the company.** Each member holds a stake, the representatives' votes follow from that ownership, and a chapter's exposure is limited to its dues and its own systems. Neither Doug Bower nor any single chapter owns it. *Settles what ruling 23 left unsaid, and confirms what the proposal summary had assumed.* It also keeps the door open on tax-exempt status, which generally requires every owner of an exempt company to be exempt itself — and every member chapter is.
 
 ### Ruled 11-06-26
 
@@ -199,6 +205,7 @@ These are not rulings. Each one either follows from a ruling or fills a gap, and
 
 | Version | Date | Change |
 |---|---|---|
+| 2.29 | 11-07-26 14:25 | Merged with the line of work published on 09-25-26, which had added rulings 23 and 24 (the separate limited liability company, and the member chapters owning it). Those keep their numbers. The rulings of 11-06-26 and 11-07-26 were renumbered from 23 to 68 to 25 to 70, here and in every document in this repository that cites them. The two lines numbered their versions separately, so versions 2.1 and 2.2 appear twice below, each with its own date. |
 | 2.28 | 11-07-26 14:18 | Ruling 25 corrected: businessmentorsassociation.org is the website domain and mentorsassociation.org the email domain, registered the way the Association recommends for every chapter. The drafted item that had the website domain forward to the email domain is removed. |
 | 2.27 | 11-07-26 11:11 | Ruling 70: the test chapter website on Cloudways in Doug's account, at chapter-demo.mentorsassociation.org. |
 | 2.26 | 11-07-26 11:08 | Ruling 69: the drafted header graphic placement confirmed by Doug, and the logo links home. |
@@ -227,5 +234,7 @@ These are not rulings. Each one either follows from a ruling or fills a gap, and
 | 2.3 | 11-06-26 23:41 | Ruling 27 added: the maintained website piece is embed code that works on any website platform. |
 | 2.2 | 11-06-26 23:40 | Ruling 26 added: the chapter website template is a hybrid of a copied website and a maintained connected piece. |
 | 2.1 | 11-06-26 22:47 | Ruling 25 added: both mentorsassociation.org and businessmentorsassociation.org are registered, and mentorsassociation.org is the Association's domain. Ruling 19 marked as replaced. Drafted item added: the second domain forwards to the first. |
-| 2.0 | 09-25-26 | Moved into this repository from the interim Claude project document. Ruling 7 superseded: the records live here. Rulings 21 and 22 added from the cost work of 09-20-26 and 09-22-26. |
-| 1.x | 09-19-26 to 09-22-26 | Kept as an interim document in the Claude project while this repository could not be written to. Twenty rulings from the planning conversation of 09-19-26, then the cost rulings. |
+| 2.2 | 09-25-26 | Ruling 24 added: the member chapters own the company. Removed from the drafted section, where it had been Claude's assumption. Ruling 4 now names the operating agreement. |
+| 2.1 | 09-25-26 | Ruling 23 added: the Association is a separate limited liability company, shielding the chapters. Ruling 5 marked as amended by it. |
+| 2.0 | 09-25-26 | Moved into this repository from the interim Claude project document. Ruling 7 superseded: the records live here. Rulings 21 and 22 added. |
+| 1.x | 09-19-26 to 09-22-26 | Kept as an interim document in the Claude project while this repository could not be written to. |

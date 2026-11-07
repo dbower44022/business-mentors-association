@@ -1,10 +1,10 @@
 # Kickoff prompt — the chapter applications' side of the chapter website
 
 **Document:** Prompt to start a Claude Code session in `cbm-client-intake` on the applications' side of the chapter website
-**Version:** 1.3
+**Version:** 1.4
 **Status:** Ready to use
 **Owner:** Doug Bower
-**Last Updated:** 11-07-26 11:25
+**Last Updated:** 11-07-26 14:26
 
 ---
 
@@ -77,6 +77,7 @@ These were read on 11-07-26; check each one before relying on it.
 
 | Version | Date | Change |
 |---|---|---|
+| 1.4 | 11-07-26 14:26 | Ruling numbers 23 to 68 renumbered 25 to 70, after merging with rulings 23 and 24 of 09-25-26 (see the rulings file, version 2.29). |
 | 1.3 | 11-07-26 11:25 | Used on 11-07-26. Its review found gaps (reading list stops at ruling 65; a campaign tag the forms reject; Website settings that repeat Presentation settings). These are recorded in `cbm-client-intake/prds/chapter-website-plan.md`, which supersedes this prompt for that work. |
 | 1.2 | 11-07-26 11:08 | Corrected the process paragraph: this repository has no branch gate; every push to main deploys crm-test and production, and feature flags are the gate. Added the round's goal (a test chapter website connected to crm-test) and the runbook requirement. |
 | 1.1 | 11-07-26 11:01 | Added the sponsors page key, the header graphic, the proven frame sizing script and embed styles, and the placement gap. |

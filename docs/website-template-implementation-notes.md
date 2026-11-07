@@ -1,10 +1,10 @@
 # Chapter website template — implementation notes
 
 **Document:** The products chosen for the chapter website template, and what is still to be checked
-**Version:** 0.5
+**Version:** 0.6
 **Status:** Draft for Doug's review
 **Owner:** Doug Bower
-**Last Updated:** 11-07-26 01:46
+**Last Updated:** 11-07-26 14:26
 
 ---
 
@@ -71,6 +71,7 @@ Read from `cbm-client-intake` on 11-07-26, without changing anything.
 
 | Version | Date | Change |
 |---|---|---|
+| 0.6 | 11-07-26 14:26 | Ruling numbers 23 to 68 renumbered 25 to 70, after merging with rulings 23 and 24 of 09-25-26 (see the rulings file, version 2.29). |
 | 0.5 | 11-07-26 01:46 | Added what the chapter applications already have, read from the code: recordings, events and topics built; newsletter form and frame support not built; cross-site fetch setting built. |
 | 0.4 | 11-07-26 01:40 | The newsletter signup is a chapter applications form, not Constant Contact's own (ruling 45). Drafted marks removed after Doug's confirmation. |
 | 0.3 | 11-07-26 01:31 | Added webinars, campaigns, visitor statistics, site search and translation-ready text (rulings 37 to 43). |

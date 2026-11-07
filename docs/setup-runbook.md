@@ -1,10 +1,10 @@
 # Business Mentors Association — account setup runbook
 
 **Document:** Step-by-step setup of the Association's domain, email, password vault, hosting account and code hosting
-**Version:** 1.3
+**Version:** 1.4
 **Status:** Draft for first use
 **Owner:** Doug Bower
-**Last Updated:** 11-07-26 14:18
+**Last Updated:** 11-07-26 14:26
 
 ---
 
@@ -153,6 +153,7 @@ The Association's records and, later, the open-source applications live on GitHu
 
 | Version | Date | Change |
 |---|---|---|
+| 1.4 | 11-07-26 14:26 | Ruling numbers 23 to 68 renumbered 25 to 70, after merging with rulings 23 and 24 of 09-25-26 (see the rulings file, version 2.29). |
 | 1.3 | 11-07-26 14:18 | Part 1 registers both domains of the corrected ruling 25: businessmentorsassociation.org for the website and mentorsassociation.org for email. |
 | 1.2 | 11-06-26 22:47 | Domain changed to mentorsassociation.org throughout, following ruling 25. The closing check now covers both registered domains. |
 | 1.1 | 09-25-26 | Moved into this repository. Part 5 rewritten: the records now live in a personal GitHub account and should be transferred to an Association-controlled one. Nonprofit edition noted in step 2.3. |

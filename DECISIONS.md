@@ -1,10 +1,10 @@
 # Decisions — the Association's rulings
 
 **Document:** Every ruling that defines the Business Mentors Association
-**Version:** 2.27
+**Version:** 2.28
 **Status:** Current
 **Owner:** Doug Bower
-**Last Updated:** 11-07-26 11:11
+**Last Updated:** 11-07-26 14:18
 
 ---
 
@@ -70,7 +70,7 @@ The rulings of 09-19-26 came out of one planning conversation. Several of them r
 
 ### Ruled 11-06-26
 
-23. **The Association's domain is mentorsassociation.org.** Both mentorsassociation.org and businessmentorsassociation.org are registered; the shorter name is the one the Association uses. *Replaces ruling 19.*
+23. **The Association has two domains, registered the way the Association recommends for every chapter.** businessmentorsassociation.org is the website domain. The shorter mentorsassociation.org is the email domain. *Replaces ruling 19.* *Corrected 11-07-26: first recorded as "The Association's domain is mentorsassociation.org. Both mentorsassociation.org and businessmentorsassociation.org are registered; the shorter name is the one the Association uses."*
 
 24. **The chapter website template is a hybrid.** A chapter copies the template website and then owns it: its pages, layout, design and words. The parts that connect to the chapter's customer relationship management system — the mentor directory, events and registration, and the intake forms — are maintained by the Association and updated as a separate piece. Accepted cost: two things to keep versions of, and the connection between the website and the chapter applications must stay stable across application releases. Chosen over a starter kit copied once and never updated, and over a template the Association maintains in full. *Amended 11-07-26 by ruling 32: for a WordPress chapter, the website's look and its key pages are set in the chapter applications' System Settings and applied by the Association's chapter connector.*
 
@@ -191,7 +191,6 @@ These are not rulings. Each one either follows from a ruling or fills a gap, and
 - **Release notice and test data.** Chapters are told in advance when a release waiting for certification is installed on the shared test system, so a trainer knows which version the trainees will meet. Testers are told that the midnight restore returns the data to its starting point, so records they create while testing are gone the next morning; the restore resets the data, not the installed version.
 - **A record of versions.** The Association keeps a record of which release each chapter runs, so a support request starts from the right version.
 - **Cloudflare for the domain.** The Association's domain is registered through Cloudflare and its domain name records kept there, the same arrangement already ruled for every chapter.
-- **The second domain forwards to the first.** businessmentorsassociation.org sends its web visitors to mentorsassociation.org and passes any mail on to the matching mentorsassociation.org address, so someone using the longer name still reaches the Association. Nothing is published under the longer name.
 - **Membership requirements.** Proposed: own your infrastructure, name a technical contact and a representative, sign the chapter agreement, adopt the application as designed. Also proposed: admission confirmed by a member vote.
 
 ---
@@ -200,6 +199,7 @@ These are not rulings. Each one either follows from a ruling or fills a gap, and
 
 | Version | Date | Change |
 |---|---|---|
+| 2.28 | 11-07-26 14:18 | Ruling 23 corrected: businessmentorsassociation.org is the website domain and mentorsassociation.org the email domain, registered the way the Association recommends for every chapter. The drafted item that had the website domain forward to the email domain is removed. |
 | 2.27 | 11-07-26 11:11 | Ruling 68: the test chapter website on Cloudways in Doug's account, at chapter-demo.mentorsassociation.org. |
 | 2.26 | 11-07-26 11:08 | Ruling 67: the drafted header graphic placement confirmed by Doug, and the logo links home. |
 | 2.25 | 11-07-26 11:01 | Rulings 64 to 66 added after the first prototype: separate partners and sponsors pages, a header graphic, the template's own header and footer. Ruling 47 marked as partly replaced. Drafted item added: where the header graphic is set and shown. |

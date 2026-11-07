@@ -1,10 +1,10 @@
 # Business Mentors Association — cost list for setting dues
 
 **Document:** Every cost the Association's dues must cover, plus what each chapter pays itself
-**Version:** 1.7
+**Version:** 1.8
 **Status:** Draft for review
 **Owner:** Doug Bower
-**Last Updated:** 11-06-26 22:47
+**Last Updated:** 11-07-26 14:18
 
 ---
 
@@ -14,7 +14,7 @@ Dues must cover the Association's own costs (ruling 11). Sections 1 to 5 name ea
 
 **The working figures are in a spreadsheet**, `association-costs.xlsx`, which calculates the Association's totals, shows how they would split into dues by size band, and estimates a chapter's own costs for three example sizes. This document explains the lines; the spreadsheet does the arithmetic. **The spreadsheet is not yet committed to this repository** — Claude's tool writes text files only, so it must be added by hand.
 
-**Estimated Association total: about $4,960 a year at standard prices, or about $3,460 a year once the Association qualifies for the nonprofit programs.** Both include the fiscal sponsor's fee and a 10 percent contingency. Both assume the Association buys its own insurance; if the sponsor's policies cover it, take about $1,300 off.
+**Estimated Association total: about $4,980 a year at standard prices, or about $3,480 a year once the Association qualifies for the nonprofit programs.** Both include the fiscal sponsor's fee and a 10 percent contingency. Both assume the Association buys its own insurance; if the sponsor's policies cover it, take about $1,300 off.
 
 **Three nonprofit programs change the total** (ruling 21), and each needs the Association to qualify as a nonprofit in its own right:
 
@@ -32,7 +32,7 @@ Under fiscal sponsorship the Association may not qualify on its own, which is a 
 
 | Cost | What it pays for | Standard price | Nonprofit price | Confidence |
 |---|---|---|---|---|
-| Domains | mentorsassociation.org and businessmentorsassociation.org (ruling 23), registered through Cloudflare | about $22 / year for the two | Same | Estimate; not checked at the registrar |
+| Domains | businessmentorsassociation.org for the website and mentorsassociation.org for email (ruling 23), registered through Cloudflare | about $11 / year each — $22 / year | Same | Estimate; not checked at the registrar |
 | Shared test system — CRM server | The server holding the shared training and testing CRM (ruling 15). Same size as the trial chapter's, 4 GB memory | $24 / month — $288 / year | Same | Published |
 | Shared test system — server backups | Weekly backups of that server, charged at 20 percent of its price | $4.80 / month — $58 / year | Same | Published |
 | Shared test system — application | The chapter applications running against the test CRM | $5 to $12 / month — $60 to $144 / year | Same | Estimate from published container prices; depends on the size Cleveland's test application uses today |
@@ -117,7 +117,7 @@ Each chapter pays these directly, in its own accounts, as the chapter network ru
 
 Take the Association's annual total and split it across the size bands (ruling 11), in proportion to the share each band carries. The spreadsheet does this: enter the number of chapters in each band and the share per band, and it gives the dues per chapter under both standard and nonprofit prices.
 
-As an example, with one chapter in each of three bands carrying shares of one, two and three, yearly dues come to about $830, $1,650 and $2,480 at standard prices, or about $580, $1,150 and $1,730 at the nonprofit prices.
+As an example, with one chapter in each of three bands carrying shares of one, two and three, yearly dues come to about $830, $1,660 and $2,490 at standard prices, or about $580, $1,160 and $1,740 at the nonprofit prices.
 
 The bands, their shares and the amounts are the committee's to set. Nothing here is decided.
 
@@ -140,6 +140,7 @@ The bands, their shares and the amounts are the committee's to set. Nothing here
 
 | Version | Date | Change |
 |---|---|---|
+| 1.8 | 11-07-26 14:18 | Domain line names each domain's purpose (corrected ruling 23). The spreadsheet's domain quantity changed from 1 to 2, which it had missed in version 1.7; the Association total and the dues example rise by about $13 a year in all. |
 | 1.7 | 11-06-26 22:47 | Domain line changed to the two registered domains, mentorsassociation.org and businessmentorsassociation.org, about $22 a year, following ruling 23. |
 | 1.6 | 09-25-26 | Moved into this repository; ruling numbers now point to this repository's decision file; a note added that the spreadsheet must be committed by hand. |
 | 1.5 | 09-22-26 | Association dues removed from the chapter cost section and from the Chapter costs sheet; dues are not decided and are reported separately. |

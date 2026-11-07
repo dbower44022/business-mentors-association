@@ -1,10 +1,10 @@
 # Business Mentors Association — account setup runbook
 
 **Document:** Step-by-step setup of the Association's domain, email, password vault, hosting account and code hosting
-**Version:** 1.2
+**Version:** 1.3
 **Status:** Draft for first use
 **Owner:** Doug Bower
-**Last Updated:** 11-06-26 22:47
+**Last Updated:** 11-07-26 14:18
 
 ---
 
@@ -29,25 +29,25 @@
 
 ---
 
-## Part 1 — Register the domain (Cloudflare)
+## Part 1 — Register the domains (Cloudflare)
 
-The domain has to exist before any Association address can. So Cloudflare is opened under your own email first and moved to admin@ in step 1.8.
+The Association has two domains (ruling 23): **businessmentorsassociation.org** for the website and **mentorsassociation.org** for email. The email domain has to exist before any Association address can. So Cloudflare is opened under your own email first and moved to admin@ in step 1.8.
 
 1.1. Go to **dash.cloudflare.com** and create an account with your own email address. Turn on two-step verification (**My Profile → Authentication**).
 
 1.2. In the left menu open **Domain Registration → Register Domains**.
 
-1.3. Search **mentorsassociation.org**.
-- If it is available, continue.
-- **If it is taken, stop here.** Ruling 23 names this domain and a replacement needs a ruling.
+1.3. Search **businessmentorsassociation.org**, then **mentorsassociation.org**.
+- If both are available, continue.
+- **If either is taken, stop here.** Ruling 23 names both domains and a replacement needs a ruling.
 
-1.4. Buy it for one year with auto-renew **on**.
+1.4. Buy both for one year with auto-renew **on**.
 
 1.5. For the registrant contact, enter yourself as the person and **"Business Mentors Association"** as the organization. The Association has no legal existence yet, so a person must be the registrant; this is changed to the Association after incorporation.
 
 1.6. Leave **WHOIS privacy** on (Cloudflare's default).
 
-1.7. Confirm that the domain appears under **Websites** with Cloudflare as its DNS. Registration through Cloudflare sets this automatically.
+1.7. Confirm that both domains appear under **Websites** with Cloudflare as its DNS. Registration through Cloudflare sets this automatically.
 
 1.8. **Do this after Part 2 is complete:** in **Manage Account → Configurations** (or **My Profile**), change the account's email to admin@mentorsassociation.org, then in **Manage Account → Members** invite the second owner as a **Super Administrator**. Save the Cloudflare sign-in and recovery codes in the vault (Part 3).
 
@@ -153,6 +153,7 @@ The Association's records and, later, the open-source applications live on GitHu
 
 | Version | Date | Change |
 |---|---|---|
+| 1.3 | 11-07-26 14:18 | Part 1 registers both domains of the corrected ruling 23: businessmentorsassociation.org for the website and mentorsassociation.org for email. |
 | 1.2 | 11-06-26 22:47 | Domain changed to mentorsassociation.org throughout, following ruling 23. The closing check now covers both registered domains. |
 | 1.1 | 09-25-26 | Moved into this repository. Part 5 rewritten: the records now live in a personal GitHub account and should be transferred to an Association-controlled one. Nonprofit edition noted in step 2.3. |
 | 1.0 | 09-19-26 | First version, from rulings 15 and 18 to 20. |

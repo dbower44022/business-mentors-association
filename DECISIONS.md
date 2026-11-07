@@ -1,10 +1,10 @@
 # Decisions — the Association's rulings
 
 **Document:** Every ruling that defines the Business Mentors Association
-**Version:** 2.29
+**Version:** 2.30
 **Status:** Current
 **Owner:** Doug Bower
-**Last Updated:** 11-07-26 14:25
+**Last Updated:** 11-07-26 14:38
 
 ---
 
@@ -174,7 +174,9 @@ Doug confirmed items 3 to 21 of Claude's drafted list as written, and changed it
 
 69. **The header graphic is set in the System Settings Website group, like the colours, and shown under the header: tall on the home page, a narrow strip on every other page.** Confirmed by Doug after seeing it in the prototype. The chapter's logo returns the visitor to the home page.
 
-70. **The test chapter website runs on Cloudways, in Doug's own account for now, at chapter-demo.mentorsassociation.org,** and connects to crm-test to test the integration end to end. It moves to an Association account once those exist. Its domain name records are in the Association's Cloudflare account. Every step is written as a runbook others can follow. Accepted cost: the account is in Doug's name until the move, which departs from ruling 18 for that time, and the move is one more step. Chosen over waiting for an Association account and over a plain DigitalOcean server. The applications' side is built in a separate session in `cbm-client-intake`, in that repository's DETAIL mode.
+70. **The test chapter website runs on Cloudways, in Doug's own account for now, at chapter-demo.mentorsassociation.org,** and connects to crm-test to test the integration end to end. It moves to an Association account once those exist. Its domain name records are in the Association's Cloudflare account. Every step is written as a runbook others can follow. Accepted cost: the account is in Doug's name until the move, which departs from ruling 18 for that time, and the move is one more step. Chosen over waiting for an Association account and over a plain DigitalOcean server. The applications' side is built in a separate session in `cbm-client-intake`, in that repository's DETAIL mode. *Amended 11-07-26 by ruling 71: the test website connects to crm-test only until the demo chapter's own applications are running.*
+
+71. **The demo system is built as a full new chapter, by following the New Chapter Deployment Guide, in two tracks.** First track: the test chapter website goes live connected to crm-test, as ruling 70 says, so the integration between the website and the chapter applications is tested now. Second track, in parallel: a demo chapter is built stage by stage from the guide, with its own Google Workspace, customer relationship management system, chapter applications, Constant Contact account, video meeting account, Stripe account in test mode, and website. Each gap the guide shows is corrected in the guide as that stage is done, through `cbm-client-intake`'s own process. When the demo chapter's applications are running, the test website is switched from crm-test to them. The demo chapter then serves as the shared test system of ruling 15. Accepted cost: monthly accounts in Doug's name beyond the test system the cost list already budgets, estimated at $40 to $70 a month (from memory, not checked); one switch-over step; the finished demo takes several sessions; open question 24, on the Advanced Pack licence, must be answered before the customer relationship management system is built. Chosen over the website alone on crm-test, which shows Cleveland's name and accounts and never tests the guide, and over building the whole demo chapter before any website test. *Amends ruling 70.*
 
 ---
 
@@ -205,6 +207,7 @@ These are not rulings. Each one either follows from a ruling or fills a gap, and
 
 | Version | Date | Change |
 |---|---|---|
+| 2.30 | 11-07-26 14:38 | Ruling 71 added: the demo system is built as a full new chapter by the deployment guide, with the test website on crm-test first and switched over later. Ruling 70 marked as amended. |
 | 2.29 | 11-07-26 14:25 | Merged with the line of work published on 09-25-26, which had added rulings 23 and 24 (the separate limited liability company, and the member chapters owning it). Those keep their numbers. The rulings of 11-06-26 and 11-07-26 were renumbered from 23 to 68 to 25 to 70, here and in every document in this repository that cites them. The two lines numbered their versions separately, so versions 2.1 and 2.2 appear twice below, each with its own date. |
 | 2.28 | 11-07-26 14:18 | Ruling 25 corrected: businessmentorsassociation.org is the website domain and mentorsassociation.org the email domain, registered the way the Association recommends for every chapter. The drafted item that had the website domain forward to the email domain is removed. |
 | 2.27 | 11-07-26 11:11 | Ruling 70: the test chapter website on Cloudways in Doug's account, at chapter-demo.mentorsassociation.org. |

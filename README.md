@@ -1,10 +1,10 @@
 # Business Mentors Association — organizational records
 
 **Document:** What this repository holds and how to read it
-**Version:** 1.2
+**Version:** 1.3
 **Status:** Draft
 **Owner:** Doug Bower
-**Last Updated:** 11-07-26 14:29
+**Last Updated:** 11-07-26 14:38
 
 ---
 
@@ -23,6 +23,7 @@ This repository holds the Association's organizational records. It holds no appl
 5. **[docs/cost-list.md](docs/cost-list.md)** — every cost dues must cover, plus what a chapter pays itself. The figures come from the workbook built by [costs/build_workbook.py](costs/build_workbook.py); see [costs/README.md](costs/README.md).
 6. **[docs/setup-runbook.md](docs/setup-runbook.md)** — step-by-step setup of the Association's domain, email, password vault, hosting account and code hosting.
 7. **[docs/website-template-prd.md](docs/website-template-prd.md)** — requirements for the template website each chapter copies, with the products chosen in [docs/website-template-implementation-notes.md](docs/website-template-implementation-notes.md).
+8. **[docs/demo-chapter-plan.md](docs/demo-chapter-plan.md)** — the plan for building the demo chapter as a full new chapter (ruling 71).
 
 ## Where things stand
 
@@ -43,6 +44,7 @@ The Association does not exist legally yet. It is to be formed as a separate lim
 
 | Version | Date | Change |
 |---|---|---|
+| 1.3 | 11-07-26 14:38 | Demo chapter plan added to the reading list. |
 | 1.2 | 11-07-26 14:29 | Next steps file added to the reading list. Where things stand updated: the company form (rulings 23 and 24), the two domains (ruling 25), and the workbook, which is now committed with its generator. |
 | 1.1 | 11-07-26 00:30 | Added the website template requirements and implementation notes to the reading list. |
 | 1.0 | 09-25-26 | First version. Records moved in from the interim Claude project documents. |

@@ -26,7 +26,7 @@ The Business Mentors Association has decided how a chapter's public website conn
 
 ## Read these, in this order
 
-1. `~/Dropbox/Projects/business-mentors-association/DECISIONS.md`, rulings 24 to 63. These are Doug's rulings. Rulings 32, 33, 35, 42, 43 and 45 bind this work most directly.
+1. `~/Dropbox/Projects/business-mentors-association/DECISIONS.md`, rulings 26 to 65. These are Doug's rulings. Rulings 34, 35, 37, 44, 45 and 47 bind this work most directly.
 2. `~/Dropbox/Projects/business-mentors-association/docs/website-template-prd.md`, sections 5.2 to 5.5, 5.13 and 7. Requirement numbers such as WT-22 refer to it.
 3. `~/Dropbox/Projects/chapter-website-prototype/README.md`, for what the prototype proved and found.
 4. `~/Dropbox/Projects/chapter-website-prototype/mock-apps/server.py` and `mock-apps/settings.json`. **This is the contract.** The website's chapter connector already calls these addresses and expects these shapes.
@@ -35,12 +35,12 @@ The Business Mentors Association has decided how a chapter's public website conn
 
 All addresses are on the chapter applications address. All are public and need no sign-in.
 
-- `GET /api/website/settings` — the Website group of System Settings (ruling 32, ruling 45): `colors` (the slugs `base`, `contrast`, `accent-1` to `accent-6`), `fonts` (`heading`, `body`), the logo, `chapter` (name, abbreviation, email, phone, address, employer identification number, payment link) and `headerImage`, and `pages` (an on/off switch per key page: `mentors`, `events`, `recordings`, `partners`, `sponsors`, `stories`). System Settings must refuse to switch on a page the applications cannot serve (WT-10).
-- `GET /api/website/pages/{key}` and `GET /api/website/pages/mentors/{slug}` — finished page content as `{title, description, html}`; `404` for an unknown mentor. Every class name in the HTML starts with `cmw-`, checked by an automated test (ruling 33, WT-44).
+- `GET /api/website/settings` — the Website group of System Settings (ruling 34, ruling 47): `colors` (the slugs `base`, `contrast`, `accent-1` to `accent-6`), `fonts` (`heading`, `body`), the logo, `chapter` (name, abbreviation, email, phone, address, employer identification number, payment link) and `headerImage`, and `pages` (an on/off switch per key page: `mentors`, `events`, `recordings`, `partners`, `sponsors`, `stories`). System Settings must refuse to switch on a page the applications cannot serve (WT-10).
+- `GET /api/website/pages/{key}` and `GET /api/website/pages/mentors/{slug}` — finished page content as `{title, description, html}`; `404` for an unknown mentor. Every class name in the HTML starts with `cmw-`, checked by an automated test (ruling 35, WT-44).
 - `GET /api/website/sitemap` — `{paths: [...]}`, every mentor profile's path.
 - `GET /api/website/mentors.json?q=` — `{slugs: [...]}` matching the search; the chapter website's address must be allowed to fetch it (WT-46).
 - `GET /assets/website.css` and `GET /assets/search.js` — the styles and the search script for that content. The styles use the website's colour variables, such as `var(--wp--preset--color--accent-1)`.
-- Campaign links may point at a website page: following one sends the visitor to that page with `?cmp=CAMPAIGN` (ruling 35). The stand-in imitates this at `/c/{link}`.
+- Campaign links may point at a website page: following one sends the visitor to that page with `?cmp=CAMPAIGN` (ruling 37). The stand-in imitates this at `/c/{link}`.
 - The framed forms receive `campaign` and `placement` in their address. They must write both to the records they create, alongside the existing campaign tagging (marketing rulings 26 and 27).
 
 ## What already exists here, to build on rather than duplicate
@@ -56,12 +56,12 @@ These were read on 11-07-26; check each one before relying on it.
 
 ## Also owed by the rulings, outside the stand-in
 
-- **Framing.** Nothing names which websites may show the forms in a frame, and there is no script that sizes a frame to its form. Both are needed (ruling 42). The prototype shows exactly what works: `mock-apps/frame-size.js`, served inside each form, and the embed styles built by `embed_css()` in `mock-apps/server.py`, which map the form's `--cbm-*` colour and font tokens to the Website settings and hide the form's own heading, footer and background (WT-56, WT-56b). The forms already read `campaign` from their address; they do not yet read `placement`.
-- **A newsletter signup form.** None exists. It creates a contact with marketing consent set (ruling 43).
+- **Framing.** Nothing names which websites may show the forms in a frame, and there is no script that sizes a frame to its form. Both are needed (ruling 44). The prototype shows exactly what works: `mock-apps/frame-size.js`, served inside each form, and the embed styles built by `embed_css()` in `mock-apps/server.py`, which map the form's `--cbm-*` colour and font tokens to the Website settings and hide the form's own heading, footer and background (WT-56, WT-56b). The forms already read `campaign` from their address; they do not yet read `placement`.
+- **A newsletter signup form.** None exists. It creates a contact with marketing consent set (ruling 45).
 
 ## Out of scope for this session
 
-- Shared events between chapters (rulings 39 and 40). That needs automatic attendance from Zoom proven first, and a clause in the chapter agreement.
+- Shared events between chapters (rulings 41 and 42). That needs automatic attendance from Zoom proven first, and a clause in the chapter agreement.
 - The seven feature requests listed in section 7 of the requirements document. Those go to the committee under ruling 3.
 
 ## Questions to put to Doug, not to decide alone
@@ -77,7 +77,7 @@ These were read on 11-07-26; check each one before relying on it.
 
 | Version | Date | Change |
 |---|---|---|
-| 1.3 | 11-07-26 11:25 | Used on 11-07-26. Its review found gaps (reading list stops at ruling 63; a campaign tag the forms reject; Website settings that repeat Presentation settings). These are recorded in `cbm-client-intake/prds/chapter-website-plan.md`, which supersedes this prompt for that work. |
+| 1.3 | 11-07-26 11:25 | Used on 11-07-26. Its review found gaps (reading list stops at ruling 65; a campaign tag the forms reject; Website settings that repeat Presentation settings). These are recorded in `cbm-client-intake/prds/chapter-website-plan.md`, which supersedes this prompt for that work. |
 | 1.2 | 11-07-26 11:08 | Corrected the process paragraph: this repository has no branch gate; every push to main deploys crm-test and production, and feature flags are the gate. Added the round's goal (a test chapter website connected to crm-test) and the runbook requirement. |
 | 1.1 | 11-07-26 11:01 | Added the sponsors page key, the header graphic, the proven frame sizing script and embed styles, and the placement gap. |
 | 1.0 | 11-07-26 10:33 | First version, written after the first prototype. |

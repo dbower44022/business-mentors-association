@@ -31,7 +31,7 @@
 
 ## Part 1 — Register the domains (Cloudflare)
 
-The Association has two domains (ruling 23): **businessmentorsassociation.org** for the website and **mentorsassociation.org** for email. The email domain has to exist before any Association address can. So Cloudflare is opened under your own email first and moved to admin@ in step 1.8.
+The Association has two domains (ruling 25): **businessmentorsassociation.org** for the website and **mentorsassociation.org** for email. The email domain has to exist before any Association address can. So Cloudflare is opened under your own email first and moved to admin@ in step 1.8.
 
 1.1. Go to **dash.cloudflare.com** and create an account with your own email address. Turn on two-step verification (**My Profile → Authentication**).
 
@@ -39,7 +39,7 @@ The Association has two domains (ruling 23): **businessmentorsassociation.org** 
 
 1.3. Search **businessmentorsassociation.org**, then **mentorsassociation.org**.
 - If both are available, continue.
-- **If either is taken, stop here.** Ruling 23 names both domains and a replacement needs a ruling.
+- **If either is taken, stop here.** Ruling 25 names both domains and a replacement needs a ruling.
 
 1.4. Buy both for one year with auto-renew **on**.
 
@@ -153,7 +153,7 @@ The Association's records and, later, the open-source applications live on GitHu
 
 | Version | Date | Change |
 |---|---|---|
-| 1.3 | 11-07-26 14:18 | Part 1 registers both domains of the corrected ruling 23: businessmentorsassociation.org for the website and mentorsassociation.org for email. |
-| 1.2 | 11-06-26 22:47 | Domain changed to mentorsassociation.org throughout, following ruling 23. The closing check now covers both registered domains. |
+| 1.3 | 11-07-26 14:18 | Part 1 registers both domains of the corrected ruling 25: businessmentorsassociation.org for the website and mentorsassociation.org for email. |
+| 1.2 | 11-06-26 22:47 | Domain changed to mentorsassociation.org throughout, following ruling 25. The closing check now covers both registered domains. |
 | 1.1 | 09-25-26 | Moved into this repository. Part 5 rewritten: the records now live in a personal GitHub account and should be transferred to an Association-controlled one. Nonprofit edition noted in step 2.3. |
 | 1.0 | 09-19-26 | First version, from rulings 15 and 18 to 20. |

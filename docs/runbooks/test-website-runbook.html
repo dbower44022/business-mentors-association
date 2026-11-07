@@ -52,7 +52,7 @@ code.inline { font-family: var(--mono); font-size: .9em; background: var(--code)
 
 <div class="wrap">
   <h1>Test website setup</h1>
-  <p class="meta">Runbook · version 1.0 · last updated 11-07-26 11:15 · rulings 26, 27, 32 and 68</p>
+  <p class="meta">Runbook · version 1.0 · last updated 11-07-26 11:15 · rulings 28, 29, 34 and 70</p>
 
   <div class="bar"><span class="progress" id="progress">0 of 0 done</span><div class="meter"><span id="meter"></span></div><button class="reset" id="reset" type="button">Reset</button></div>
 
@@ -72,7 +72,7 @@ code.inline { font-family: var(--mono); font-size: .9em; background: var(--code)
 // Each section: where the steps happen, why (two sentences at most), its steps, and what to send back.
 // Each step: head (where + action), entries (each copied on its own), expect, fail, warn (optional).
 var SECTIONS = [
- { title: "1. In Cloudways — create the account", why: "Ruling 68 puts the test website in your own Cloudways account until the Association's accounts exist. Cloudways' screens may word things slightly differently from these steps; where a label is missing, stop and tell me what you see.",
+ { title: "1. In Cloudways — create the account", why: "Ruling 70 puts the test website in your own Cloudways account until the Association's accounts exist. Cloudways' screens may word things slightly differently from these steps; where a label is missing, stop and tell me what you see.",
    steps: [
    { head: "In a new browser tab, open the address below.", entries: ["https://www.cloudways.com"], expect: "The Cloudways home page, with a button such as Start Free or Start Free Trial.", fail: "If not, stop and tell me exactly what you see." },
    { head: "On the Cloudways home page, click the Start Free (or Start Free Trial) button.", expect: "A sign-up form asking for your name, email address and a password.", fail: "If not, stop and tell me exactly what you see." },

@@ -32,7 +32,7 @@ Under fiscal sponsorship the Association may not qualify on its own, which is a 
 
 | Cost | What it pays for | Standard price | Nonprofit price | Confidence |
 |---|---|---|---|---|
-| Domains | businessmentorsassociation.org for the website and mentorsassociation.org for email (ruling 23), registered through Cloudflare | about $11 / year each — $22 / year | Same | Estimate; not checked at the registrar |
+| Domains | businessmentorsassociation.org for the website and mentorsassociation.org for email (ruling 25), registered through Cloudflare | about $11 / year each — $22 / year | Same | Estimate; not checked at the registrar |
 | Shared test system — CRM server | The server holding the shared training and testing CRM (ruling 15). Same size as the trial chapter's, 4 GB memory | $24 / month — $288 / year | Same | Published |
 | Shared test system — server backups | Weekly backups of that server, charged at 20 percent of its price | $4.80 / month — $58 / year | Same | Published |
 | Shared test system — application | The chapter applications running against the test CRM | $5 to $12 / month — $60 to $144 / year | Same | Estimate from published container prices; depends on the size Cleveland's test application uses today |
@@ -140,8 +140,8 @@ The bands, their shares and the amounts are the committee's to set. Nothing here
 
 | Version | Date | Change |
 |---|---|---|
-| 1.8 | 11-07-26 14:18 | Domain line names each domain's purpose (corrected ruling 23). The spreadsheet's domain quantity changed from 1 to 2, which it had missed in version 1.7; the Association total and the dues example rise by about $13 a year in all. |
-| 1.7 | 11-06-26 22:47 | Domain line changed to the two registered domains, mentorsassociation.org and businessmentorsassociation.org, about $22 a year, following ruling 23. |
+| 1.8 | 11-07-26 14:18 | Domain line names each domain's purpose (corrected ruling 25). The spreadsheet's domain quantity changed from 1 to 2, which it had missed in version 1.7; the Association total and the dues example rise by about $13 a year in all. |
+| 1.7 | 11-06-26 22:47 | Domain line changed to the two registered domains, mentorsassociation.org and businessmentorsassociation.org, about $22 a year, following ruling 25. |
 | 1.6 | 09-25-26 | Moved into this repository; ruling numbers now point to this repository's decision file; a note added that the spreadsheet must be committed by hand. |
 | 1.5 | 09-22-26 | Association dues removed from the chapter cost section and from the Chapter costs sheet; dues are not decided and are reported separately. |
 | 1.4 | 09-20-26 | Estimated chapter costs added for three sizes. |

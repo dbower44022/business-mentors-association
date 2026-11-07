@@ -76,7 +76,7 @@ The fiscal sponsor. The open-source licence. The size bands, dues and votes per 
 
 | Version | Date | Change |
 |---|---|---|
-| 1.3 | 11-07-26 14:18 | Two domains named, following the corrected ruling 23: businessmentorsassociation.org for the website, mentorsassociation.org for email. |
-| 1.2 | 11-06-26 22:47 | Domain changed to mentorsassociation.org, following ruling 23. |
+| 1.3 | 11-07-26 14:18 | Two domains named, following the corrected ruling 25: businessmentorsassociation.org for the website, mentorsassociation.org for email. |
+| 1.2 | 11-06-26 22:47 | Domain changed to mentorsassociation.org, following ruling 25. |
 | 1.1 | 09-25-26 | Moved into this repository. Cost figures added from the cost list; the open questions now point to the repository's own list. |
 | 1.0 | 09-19-26 | First version, summarising the rulings of 09-19-26. |

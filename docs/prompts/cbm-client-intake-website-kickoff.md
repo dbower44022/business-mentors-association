@@ -1,10 +1,10 @@
 # Kickoff prompt — the chapter applications' side of the chapter website
 
 **Document:** Prompt to start a Claude Code session in `cbm-client-intake` on the applications' side of the chapter website
-**Version:** 1.1
+**Version:** 1.2
 **Status:** Ready to use
 **Owner:** Doug Bower
-**Last Updated:** 11-07-26 11:01
+**Last Updated:** 11-07-26 11:08
 
 ---
 
@@ -18,7 +18,11 @@ Operating mode: DETAIL (this repository's default).
 
 The Business Mentors Association has decided how a chapter's public website connects to the chapter applications in this repository. A prototype of the website side works, built against a stand-in that imitates these applications. This session turns the stand-in's behaviour into tracked requirements here, and then, once Doug approves them, builds the real thing.
 
-**This repository's process comes first.** Read `CLAUDE.md` and `OPEN-ITEMS.md` before anything else. A change here starts as a tracked requirement, on a branch, approved by Doug at the stopping points your plan names. Your first deliverable is the requirement and a plan with named stopping points — not code. Do not write application code until Doug approves the plan.
+**This repository's process comes first.** Read `CLAUDE.md`, `OPEN-ITEMS.md` and `DEPLOYMENT.md` before anything else. There is no branch-level review gate here: every push to `main` builds dev, crm-test and Cleveland's production, and pushing the `release` branch deploys every chapter. The gate is the feature flag. Build each piece dark (default off), switch it on in crm-test's overlay, review it live, and only then consider production — `DEPLOYMENT.md` § *Reviewing a change before it reaches production*. Your first deliverable is a written plan with named stopping points, not code. Do not write application code until Doug approves the plan.
+
+**The goal of this round** is to deploy a test chapter website, built from the template, that is connected to crm-test, so the integration can be tested end to end. Production is not part of this round.
+
+**Runbooks are part of the work.** Every setup and configuration step a chapter's technical person would take — switching the features on, filling in the Website group of System Settings, allowing the website's address to frame the forms and fetch data — is written as a runbook others can follow, to Doug's step-by-step instructions standard (in `~/.claude/CLAUDE.md`).
 
 ## Read these, in this order
 
@@ -73,5 +77,6 @@ These were read on 11-07-26; check each one before relying on it.
 
 | Version | Date | Change |
 |---|---|---|
+| 1.2 | 11-07-26 11:08 | Corrected the process paragraph: this repository has no branch gate; every push to main deploys crm-test and production, and feature flags are the gate. Added the round's goal (a test chapter website connected to crm-test) and the runbook requirement. |
 | 1.1 | 11-07-26 11:01 | Added the sponsors page key, the header graphic, the proven frame sizing script and embed styles, and the placement gap. |
 | 1.0 | 11-07-26 10:33 | First version, written after the first prototype. |

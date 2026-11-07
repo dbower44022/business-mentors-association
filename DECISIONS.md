@@ -1,10 +1,10 @@
 # Decisions — the Association's rulings
 
 **Document:** Every ruling that defines the Business Mentors Association
-**Version:** 2.25
+**Version:** 2.26
 **Status:** Current
 **Owner:** Doug Bower
-**Last Updated:** 11-07-26 11:01
+**Last Updated:** 11-07-26 11:08
 
 ---
 
@@ -166,6 +166,8 @@ Doug confirmed items 3 to 21 of Claude's drafted list as written, and changed it
 
 66. **The template replaces the starter theme's header and footer with its own.** The starter theme's footer menus held placeholder links (Blog, Authors, Shop and others) that looked wrong. The template's footer has a Mentoring column listing the key pages, filled by the chapter connector, and an About us column of ordinary pages.
 
+67. **The header graphic is set in the System Settings Website group, like the colours, and shown under the header: tall on the home page, a narrow strip on every other page.** Confirmed by Doug after seeing it in the prototype. The chapter's logo returns the visitor to the home page.
+
 ---
 
 ## Decisions the committee will make
@@ -181,7 +183,6 @@ Doug confirmed items 3 to 21 of Claude's drafted list as written, and changed it
 
 These are not rulings. Each one either follows from a ruling or fills a gap, and each waits on Doug.
 
-- **Where the header graphic is set and shown** (follows ruling 65). It is set in the System Settings Website group, like the colours, and shown under the header: tall on the home page, a narrow strip on every other page.
 - **"The committee" in rulings 13 and 14** is read as the central technical committee of ruling 10 — one technical contact from each member chapter — because it is the only committee defined.
 - **Everyday requests** (adding a person, resetting a password) are done by each chapter's own technical personnel, with the Association as backup. This follows from ruling 1 and would replace the chapter network's 09-18-26 ruling that the Association's support team handles them as they arrive.
 - **A second trained volunteer.** Recommended practice: train a second volunteer to build releases and back up support, so the Association does not depend on one person.
@@ -197,6 +198,7 @@ These are not rulings. Each one either follows from a ruling or fills a gap, and
 
 | Version | Date | Change |
 |---|---|---|
+| 2.26 | 11-07-26 11:08 | Ruling 67: the drafted header graphic placement confirmed by Doug, and the logo links home. |
 | 2.25 | 11-07-26 11:01 | Rulings 64 to 66 added after the first prototype: separate partners and sponsors pages, a header graphic, the template's own header and footer. Ruling 47 marked as partly replaced. Drafted item added: where the header graphic is set and shown. |
 | 2.24 | 11-07-26 01:59 | Ruling 63 added: the first prototype is the website side only, with the applications imitated. |
 | 2.23 | 11-07-26 01:46 | Rulings 43 and 53 updated from a reading of the chapter applications' code: no newsletter form exists yet; event topics exist and the recordings library already filters by them. |

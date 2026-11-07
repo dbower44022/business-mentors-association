@@ -4,7 +4,7 @@
 **Version:** 1.2
 **Status:** Current
 **Owner:** Doug Bower
-**Last Updated:** 11-07-26 14:50
+**Last Updated:** 11-07-26 14:47
 
 ---
 
@@ -55,6 +55,6 @@ A new session reads this file after `README.md` and `DECISIONS.md`. Each item sa
 
 | Version | Date | Change |
 |---|---|---|
-| 1.2 | 11-07-26 14:50 | Step 0 updated for ruling 72 and the guide kickoff prompt; step 4 now decision D1a. |
+| 1.2 | 11-07-26 14:47 | Step 0 updated for ruling 72 and the guide kickoff prompt; step 4 now decision D1a. |
 | 1.1 | 11-07-26 14:38 | Step 0 added for the demo chapter (ruling 71); step 4 folded into its decision D1. |
 | 1.0 | 11-07-26 14:29 | First version, written at the end of the session that corrected ruling 25 and merged the two lines of work. |

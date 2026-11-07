@@ -4,7 +4,7 @@
 **Version:** 1.0
 **Status:** Draft — waiting on Doug's approval (Stop B of `docs/demo-chapter-plan.md`)
 **Owner:** Doug Bower
-**Last Updated:** 11-07-26 14:50
+**Last Updated:** 11-07-26 14:47
 
 ---
 
@@ -58,4 +58,4 @@ Doug follows the guide next at stages 3 to 5 (domains, Google Workspace, hosting
 
 | Version | Date | Change |
 |---|---|---|
-| 1.0 | 11-07-26 14:50 | First version, after rulings 71 and 72. |
+| 1.0 | 11-07-26 14:47 | First version, after rulings 71 and 72. |

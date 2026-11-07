@@ -1,10 +1,10 @@
 # Decisions — the Association's rulings
 
 **Document:** Every ruling that defines the Business Mentors Association
-**Version:** 2.23
+**Version:** 2.24
 **Status:** Current
 **Owner:** Doug Bower
-**Last Updated:** 11-07-26 01:46
+**Last Updated:** 11-07-26 01:59
 
 ---
 
@@ -156,6 +156,8 @@ Doug confirmed items 3 to 21 of Claude's drafted list as written, and changed it
 
 62. **The template website meets the Web Content Accessibility Guidelines (WCAG) version 2.2 at level AA** on every page, in every key page and in every framed form. Every image has a text description.
 
+63. **The first prototype is the website side only, with the chapter applications imitated.** It runs locally: WordPress, a starter theme, a first chapter connector, and a stand-in for the chapter applications that serves the Website settings and mentor content. It shows crm-test's real intake form in a frame. It lives in a new local repository, `~/Dropbox/Projects/chapter-website-prototype`, not pushed until the Association's code hosting account exists. Nothing changes in `cbm-client-intake`. It tests the riskiest assumption first — that the chapter connector can own the key pages and their menu entries — and its data shapes become the written requirement for the applications' side. Accepted cost: the applications' side stays imitated until a second prototype builds it. Chosen over an end-to-end prototype and over prototyping shared events first. Work proceeds in PROTOTYPE mode from 11-07-26 01:59.
+
 ---
 
 ## Decisions the committee will make
@@ -186,6 +188,7 @@ These are not rulings. Each one either follows from a ruling or fills a gap, and
 
 | Version | Date | Change |
 |---|---|---|
+| 2.24 | 11-07-26 01:59 | Ruling 63 added: the first prototype is the website side only, with the applications imitated. |
 | 2.23 | 11-07-26 01:46 | Rulings 43 and 53 updated from a reading of the chapter applications' code: no newsletter form exists yet; event topics exist and the recordings library already filters by them. |
 | 2.22 | 11-07-26 01:39 | Rulings 42 to 62 added: the website items Claude drafted, confirmed by Doug and moved out of the drafted section. Item 1 reworded to cover forms and the basic path; item 2 changed so the newsletter signup is a chapter applications form. |
 | 2.21 | 11-07-26 01:30 | Ruling 41 added: built ready for other languages, English at launch, with a languages spoken field on mentor profiles. |

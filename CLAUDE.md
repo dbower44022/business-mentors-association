@@ -1,10 +1,10 @@
 # CLAUDE.md — working in this repository
 
 **Document:** Rules for any Claude session working on the Association's records
-**Version:** 1.0
+**Version:** 1.1
 **Status:** Current
 **Owner:** Doug Bower
-**Last Updated:** 09-25-26
+**Last Updated:** 11-07-26 14:32
 
 ---
 
@@ -14,7 +14,7 @@ The organizational records of the Business Mentors Association: its rulings, its
 
 ## Read first
 
-`README.md`, then `DECISIONS.md`. Do not propose anything that contradicts a ruling without saying plainly that it does.
+`README.md`, then `DECISIONS.md`, then `NEXT-STEPS.md`. Do not propose anything that contradicts a ruling without saying plainly that it does.
 
 ## The rules
 
@@ -24,6 +24,7 @@ The organizational records of the Business Mentors Association: its rulings, its
 - **Every document carries a header and a change log.** Document, Version, Status, Owner, and Last Updated in `MM-DD-YY HH:MM` format, with a change log table at the end.
 - **Write for a technical but not expert reader.** No record identifiers standing in for content, no shortened terms, no jargon used as if it were a definition. Plain words, short sentences.
 - **Commit messages follow Conventional Commits** (`docs:`, `fix:`, and so on).
+- **Pull before starting; commit, push and update `NEXT-STEPS.md` before ending.** Unpushed work in two sessions once produced two different rulings with the same number.
 
 ## The standards this follows
 
@@ -40,4 +41,5 @@ Doug's own standards — the operating modes, the writing register, terminology 
 
 | Version | Date | Change |
 |---|---|---|
+| 1.1 | 11-07-26 14:32 | `NEXT-STEPS.md` added to the reading order. New rule: pull before starting, and commit, push and update `NEXT-STEPS.md` before ending. |
 | 1.0 | 09-25-26 | First version. |

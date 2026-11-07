@@ -1,10 +1,10 @@
 # Chapter website template — product requirements
 
 **Document:** Requirements for the template website the Association builds and each chapter copies
-**Version:** 0.5
+**Version:** 0.6
 **Status:** Draft for Doug's review
 **Owner:** Doug Bower
-**Last Updated:** 11-07-26 01:46
+**Last Updated:** 11-07-26 10:31
 
 ---
 
@@ -88,7 +88,7 @@ The Association builds the template website itself, using Cleveland's and Boston
   - the website's colours,
   - its fonts,
   - its logo, and
-  - an on/off switch for each key page.
+  - an on/off switch for each key page. System Settings refuses to switch on a key page the chapter applications cannot yet serve, such as Client Stories before it is built (found by the first prototype).
 - **WT-11.** The Website group also holds each chapter-wide value, set once and used everywhere it appears.
   - the chapter's name and abbreviation,
   - its contact email, telephone and mailing address,
@@ -104,11 +104,11 @@ The Association builds the template website itself, using Cleveland's and Boston
 
 - **WT-20.** The chapter connector is set up by entering one value: the chapter applications address.
 - **WT-21.** The chapter connector applies the colours, fonts and logo from System Settings to every page of the website, including pages editors build by hand (ruling 32).
-- **WT-22.** The chapter connector creates and owns the key pages. A key page switched off in System Settings is not shown, and its menu entry disappears. A key page switched on appears with its menu entry (ruling 32).
+- **WT-22.** The chapter connector creates and owns the key pages. A key page switched off in System Settings is not shown, and its menu entry disappears. A key page switched on appears with its menu entry (ruling 32). Menu entries go in the website's header menu only, never in footer menus. The chapter connector adds a menu entry only for a page the applications actually serve, so a menu never leads to "page not found" (both found by the first prototype).
 - **WT-23.** Key pages do not appear among the pages editors manage. In the content management system, the chapter connector shows a screen saying the key pages are managed in System Settings, with a link to it.
 - **WT-24.** The chapter connector supplies the chapter-wide values of WT-11 to the website's footer and Donate button.
 - **WT-25.** The chapter connector needs no password. Everything it fetches is public (ruling 32).
-- **WT-26.** The chapter connector keeps the last settings and content it fetched. If the chapter applications cannot be reached, the website stays up and shows those (ruling 32).
+- **WT-26.** The chapter connector keeps the last settings and content it fetched. If the chapter applications cannot be reached, the website stays up and shows those (ruling 32). The chapter connector fetches every mentor profile ahead of time, not only when someone views it, so a profile nobody has viewed is still available during an outage (found by the first prototype).
 - **WT-27.** The chapter connector works with older releases of the chapter applications, since chapters may run different releases with no deadline (rulings 2 and 17). Where a feature needs a newer release, the chapter connector says so plainly in its screen in the content management system, rather than failing (ruling 32).
 - **WT-28.** The chapter connector is open source under the GNU General Public License, version 2 or later, or a compatible licence (rulings 6 and 34).
 - **WT-29.** Each new version of the chapter connector is published in the content management system's public add-on directory, only after the release vote passes (rulings 4 and 34).
@@ -342,7 +342,7 @@ The Association builds the template website itself, using Cleveland's and Boston
 ## 8. Open questions
 
 1. **The template website's licence** (ruling 6, and open question 15). The chapter connector's licence is settled by ruling 34. If the template's theme is also published in the public directory, the same licence applies to it.
-2. **Menu control.** Whether the chapter connector can add and remove menu entries cleanly in the content management system's newer kind of theme. This has not been checked, and it is the riskiest part of WT-22.
+2. **Menu control.** Answered 11-07-26 by the first prototype: the chapter connector can add and remove menu entries in the header menu of the content management system's newer kind of theme. Results are in `~/Dropbox/Projects/chapter-website-prototype/README.md`.
 3. **Recorded webinars.** Answered 11-07-26: the chapter applications already serve the public recordings library, with search and a subject filter. See the implementation notes.
 4. **The forms in frames.** Answered 11-07-26: nothing for frames is built yet — no sizing script and no rule naming which websites may frame the forms — and the public mentor pages plan is not built. Both are build work. See the implementation notes.
 5. **How long the chapter connector keeps a copy.** "A few minutes" is a placeholder.
@@ -365,6 +365,7 @@ The Association builds the template website itself, using Cleveland's and Boston
 
 | Problem seen | Website | Requirement that prevents it |
 |---|---|---|
+| 0.6 | 11-07-26 10:31 | Findings of the first prototype (ruling 63): WT-10 refuses switches for pages the applications cannot serve; WT-22 puts menu entries in the header only, and only for pages with content; WT-26 fetches every mentor profile ahead of time. Open question 2 answered. |
 | 0.5 | 11-07-26 01:46 | Open questions 3 and 4 answered from a reading of the chapter applications' code; see the implementation notes. WT-53 no longer marked as inferred; the newsletter form is confirmed as new work. |
 | Three different email domains on different pages | Cleveland | WT-11 |
 | "Request a Mentor" goes to three different places | Cleveland | WT-59 |

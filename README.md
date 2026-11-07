@@ -1,10 +1,10 @@
 # Business Mentors Association — organizational records
 
 **Document:** What this repository holds and how to read it
-**Version:** 1.0
+**Version:** 1.1
 **Status:** Draft
 **Owner:** Doug Bower
-**Last Updated:** 09-25-26
+**Last Updated:** 11-07-26 00:30
 
 ---
 
@@ -21,6 +21,7 @@ This repository holds the Association's organizational records. It holds no appl
 3. **[docs/proposal-summary.md](docs/proposal-summary.md)** — the executive summary of the proposal, written for chapter leaders.
 4. **[docs/cost-list.md](docs/cost-list.md)** — every cost dues must cover, plus what a chapter pays itself.
 5. **[docs/setup-runbook.md](docs/setup-runbook.md)** — step-by-step setup of the Association's domain, email, password vault, hosting account and code hosting.
+6. **[docs/website-template-prd.md](docs/website-template-prd.md)** — requirements for the template website each chapter copies, with the products chosen in [docs/website-template-implementation-notes.md](docs/website-template-implementation-notes.md).
 
 ## Where things stand
 
@@ -41,4 +42,5 @@ The Association does not exist legally yet. It will start under fiscal sponsorsh
 
 | Version | Date | Change |
 |---|---|---|
+| 1.1 | 11-07-26 00:30 | Added the website template requirements and implementation notes to the reading list. |
 | 1.0 | 09-25-26 | First version. Records moved in from the interim Claude project documents. |

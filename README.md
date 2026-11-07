@@ -4,7 +4,7 @@
 **Version:** 1.2
 **Status:** Draft
 **Owner:** Doug Bower
-**Last Updated:** 11-07-26 14:32
+**Last Updated:** 11-07-26 14:29
 
 ---
 
@@ -43,6 +43,6 @@ The Association does not exist legally yet. It is to be formed as a separate lim
 
 | Version | Date | Change |
 |---|---|---|
-| 1.2 | 11-07-26 14:32 | Next steps file added to the reading list. Where things stand updated: the company form (rulings 23 and 24), the two domains (ruling 25), and the workbook, which is now committed with its generator. |
+| 1.2 | 11-07-26 14:29 | Next steps file added to the reading list. Where things stand updated: the company form (rulings 23 and 24), the two domains (ruling 25), and the workbook, which is now committed with its generator. |
 | 1.1 | 11-07-26 00:30 | Added the website template requirements and implementation notes to the reading list. |
 | 1.0 | 09-25-26 | First version. Records moved in from the interim Claude project documents. |

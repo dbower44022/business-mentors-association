@@ -4,7 +4,7 @@
 **Version:** 1.1
 **Status:** Current
 **Owner:** Doug Bower
-**Last Updated:** 11-07-26 14:32
+**Last Updated:** 11-07-26 14:29
 
 ---
 
@@ -41,5 +41,5 @@ Doug's own standards — the operating modes, the writing register, terminology 
 
 | Version | Date | Change |
 |---|---|---|
-| 1.1 | 11-07-26 14:32 | `NEXT-STEPS.md` added to the reading order. New rule: pull before starting, and commit, push and update `NEXT-STEPS.md` before ending. |
+| 1.1 | 11-07-26 14:29 | `NEXT-STEPS.md` added to the reading order. New rule: pull before starting, and commit, push and update `NEXT-STEPS.md` before ending. |
 | 1.0 | 09-25-26 | First version. |

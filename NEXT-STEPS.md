@@ -4,7 +4,7 @@
 **Version:** 1.0
 **Status:** Current
 **Owner:** Doug Bower
-**Last Updated:** 11-07-26 14:31
+**Last Updated:** 11-07-26 14:29
 
 ---
 
@@ -51,4 +51,4 @@ A new session reads this file after `README.md` and `DECISIONS.md`. Each item sa
 
 | Version | Date | Change |
 |---|---|---|
-| 1.0 | 11-07-26 14:31 | First version, written at the end of the session that corrected ruling 25 and merged the two lines of work. |
+| 1.0 | 11-07-26 14:29 | First version, written at the end of the session that corrected ruling 25 and merged the two lines of work. |

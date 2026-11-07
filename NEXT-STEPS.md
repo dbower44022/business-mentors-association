@@ -1,10 +1,10 @@
 # Next steps — where the work stands
 
 **Document:** The work in progress and the next steps, kept so a new session can continue where the last one stopped
-**Version:** 1.2
+**Version:** 1.3
 **Status:** Current
 **Owner:** Doug Bower
-**Last Updated:** 11-07-26 14:47
+**Last Updated:** 11-07-26 14:52
 
 ---
 
@@ -18,7 +18,7 @@ A new session reads this file after `README.md` and `DECISIONS.md`. Each item sa
 
 ## Next steps, in recommended order
 
-0. **The Association set up as a chapter (rulings 71 and 72), `docs/demo-chapter-plan.md`.** Track 1: Doug reviews piece C at Stop 4 of `cbm-client-intake/prds/chapter-website-plan.md`. Track 2: Doug approves the kickoff prompt `docs/prompts/cbm-client-intake-guide-kickoff.md` (Stop B), then starts a `cbm-client-intake` session with it. Doug also confirms the two consequences recorded with ruling 72. *Waits on:* Doug.
+0. **The Association set up as a chapter (rulings 71 and 72), `docs/demo-chapter-plan.md`.** Track 2: start a `cbm-client-intake` session with the approved prompt `docs/prompts/cbm-client-intake-guide-kickoff.md`; its first deliverable is a plan for correcting the guide, starting with stages 3 to 5. Track 1: Doug reviews piece C at Stop 4 of `cbm-client-intake/prds/chapter-website-plan.md`. *Waits on:* Doug starting that session.
 
 1. **Correct the stale ruling numbers in `cbm-client-intake`.** `prds/chapter-website-plan.md` in `dbower44022/cbm-client-intake` cites this repository's rulings by their old numbers: "rulings 24 to 68", "Ruling 45", "Ruling 48", "Rulings 64…". Every ruling from 23 to 68 is now two higher (see the 2.29 entry in this repository's `DECISIONS.md` change log). That repository has its own change process. Read its `CLAUDE.md` first, and make the change only through that process. *Waits on:* Doug's go-ahead to start it there.
 
@@ -38,7 +38,7 @@ A new session reads this file after `README.md` and `DECISIONS.md`. Each item sa
 
 ## Done recently
 
-- **11-07-26** — Ruling 72: the demo chapter is the Association itself. Kickoff prompt for correcting the guide drafted.
+- **11-07-26** — Ruling 72: the demo chapter is the Association itself. Kickoff prompt for correcting the guide drafted and approved; the two consequences of ruling 72 confirmed.
 - **11-07-26** — Ruling 71: the demo system is built as a full new chapter by the deployment guide. The guide reviewed; findings and the two-track plan in `docs/demo-chapter-plan.md`.
 - **11-07-26** — Ruling 25: two domains, businessmentorsassociation.org for the website and mentorsassociation.org for email. The setup runbook, cost list, proposal summary, workbook generator, workbook and number snapshot all updated.
 - **11-07-26** — The rulings of 09-25-26 (ruling 23, a separate limited liability company; ruling 24, owned by the member chapters) merged with the website and domain work. Rulings of 11-06-26 and 11-07-26 renumbered from 23–68 to 25–70 across this repository.
@@ -55,6 +55,7 @@ A new session reads this file after `README.md` and `DECISIONS.md`. Each item sa
 
 | Version | Date | Change |
 |---|---|---|
+| 1.3 | 11-07-26 14:52 | Stop B passed; step 0 now points at the approved kickoff prompt. |
 | 1.2 | 11-07-26 14:47 | Step 0 updated for ruling 72 and the guide kickoff prompt; step 4 now decision D1a. |
 | 1.1 | 11-07-26 14:38 | Step 0 added for the demo chapter (ruling 71); step 4 folded into its decision D1. |
 | 1.0 | 11-07-26 14:29 | First version, written at the end of the session that corrected ruling 25 and merged the two lines of work. |

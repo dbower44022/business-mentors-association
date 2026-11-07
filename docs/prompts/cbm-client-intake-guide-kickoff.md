@@ -1,10 +1,10 @@
 # Kickoff prompt — correcting the New Chapter Deployment Guide while the Association is set up as a chapter
 
 **Document:** Prompt to start a Claude Code session in `cbm-client-intake` that corrects the New Chapter Deployment Guide stage by stage, as the Association is set up as a chapter
-**Version:** 1.0
-**Status:** Draft — waiting on Doug's approval (Stop B of `docs/demo-chapter-plan.md`)
+**Version:** 1.1
+**Status:** Approved by Doug 11-07-26 (Stop B of `docs/demo-chapter-plan.md`)
 **Owner:** Doug Bower
-**Last Updated:** 11-07-26 14:47
+**Last Updated:** 11-07-26 14:52
 
 ---
 
@@ -44,7 +44,7 @@ Doug follows the guide next at stages 3 to 5 (domains, Google Workspace, hosting
 
 - Stages 1 and 2 cannot be done yet: the Association is not legally formed (rulings 23 and 24). Later stages use placeholder values, such as the employer identification number, until it is.
 - The Association's domains are already registered: businessmentorsassociation.org for the website, mentorsassociation.org for email (ruling 25).
-- The CRM system and applications hold invented training data restored every night (ruling 15), while the Google Workspace, Constant Contact and Zoom accounts are the Association's real ones. Two consequences are recorded with ruling 72 for Doug to confirm: the applications' Google permission grant reaches every Association mailbox, and invented contacts must never be sent mail from the Association's domain or reach Constant Contact.
+- The CRM system and applications hold invented training data restored every night (ruling 15), while the Google Workspace, Constant Contact and Zoom accounts are the Association's real ones. Two consequences are recorded with ruling 72 as accepted costs, confirmed by Doug: the applications' Google permission grant reaches every Association mailbox, and invented contacts must never be sent mail from the Association's domain or reach Constant Contact.
 
 ## Questions to put to Doug, not to decide alone
 
@@ -58,4 +58,5 @@ Doug follows the guide next at stages 3 to 5 (domains, Google Workspace, hosting
 
 | Version | Date | Change |
 |---|---|---|
+| 1.1 | 11-07-26 14:52 | Approved by Doug; the ruling 72 consequences marked as confirmed. |
 | 1.0 | 11-07-26 14:47 | First version, after rulings 71 and 72. |

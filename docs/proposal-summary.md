@@ -1,10 +1,10 @@
 # Business Mentors Association — proposal summary
 
 **Document:** Executive summary of the proposal to form a shared technical services association for business mentoring chapters
-**Version:** 1.1
+**Version:** 1.2
 **Status:** Draft for review
 **Owner:** Doug Bower
-**Last Updated:** 09-25-26
+**Last Updated:** 11-06-26 22:47
 
 ---
 
@@ -41,7 +41,7 @@ The applications already exist and have run Cleveland Business Mentors' operatio
 - **Legal form:** it starts under fiscal sponsorship, where an established nonprofit holds its money. Becoming an independent nonprofit is a high priority.
 - **Staffing:** volunteers at first. The committee decides later whether to pay for staff.
 - **Ownership:** the chapter applications become open source. The tool used to build and configure each chapter's system stays the property of its developer, Doug Bower.
-- **Its own accounts:** its own domain (businessmentorsassociation.org), email, password vault and hosting, each with at least two owners, so no one person holds the keys. The shared training and testing system moves from Cleveland's account to the Association's.
+- **Its own accounts:** its own domain (mentorsassociation.org), email, password vault and hosting, each with at least two owners, so no one person holds the keys. The shared training and testing system moves from Cleveland's account to the Association's.
 
 ## What it costs
 
@@ -76,5 +76,6 @@ The fiscal sponsor. The open-source licence. The size bands, dues and votes per 
 
 | Version | Date | Change |
 |---|---|---|
+| 1.2 | 11-06-26 22:47 | Domain changed to mentorsassociation.org, following ruling 23. |
 | 1.1 | 09-25-26 | Moved into this repository. Cost figures added from the cost list; the open questions now point to the repository's own list. |
 | 1.0 | 09-19-26 | First version, summarising the rulings of 09-19-26. |

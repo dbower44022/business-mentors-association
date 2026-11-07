@@ -1,10 +1,10 @@
 # Business Mentors Association — account setup runbook
 
 **Document:** Step-by-step setup of the Association's domain, email, password vault, hosting account and code hosting
-**Version:** 1.1
+**Version:** 1.2
 **Status:** Draft for first use
 **Owner:** Doug Bower
-**Last Updated:** 09-25-26
+**Last Updated:** 11-06-26 22:47
 
 ---
 
@@ -25,7 +25,7 @@
 - **Group address** — an address such as admin@ that belongs to no single person and delivers every message to all its members.
 - **Recovery codes** — one-time codes an account gives you for signing in when your phone is unavailable. Every set goes into the password vault.
 
-**The rule for every account:** the sign-in email is **admin@businessmentorsassociation.org** (a group address, so both owners receive every reset and notice), two-step verification is on, and the sign-in and recovery codes are saved in the password vault.
+**The rule for every account:** the sign-in email is **admin@mentorsassociation.org** (a group address, so both owners receive every reset and notice), two-step verification is on, and the sign-in and recovery codes are saved in the password vault.
 
 ---
 
@@ -37,9 +37,9 @@ The domain has to exist before any Association address can. So Cloudflare is ope
 
 1.2. In the left menu open **Domain Registration → Register Domains**.
 
-1.3. Search **businessmentorsassociation.org**.
+1.3. Search **mentorsassociation.org**.
 - If it is available, continue.
-- **If it is taken, stop here.** Ruling 19 names this domain and a replacement needs a ruling.
+- **If it is taken, stop here.** Ruling 23 names this domain and a replacement needs a ruling.
 
 1.4. Buy it for one year with auto-renew **on**.
 
@@ -49,7 +49,7 @@ The domain has to exist before any Association address can. So Cloudflare is ope
 
 1.7. Confirm that the domain appears under **Websites** with Cloudflare as its DNS. Registration through Cloudflare sets this automatically.
 
-1.8. **Do this after Part 2 is complete:** in **Manage Account → Configurations** (or **My Profile**), change the account's email to admin@businessmentorsassociation.org, then in **Manage Account → Members** invite the second owner as a **Super Administrator**. Save the Cloudflare sign-in and recovery codes in the vault (Part 3).
+1.8. **Do this after Part 2 is complete:** in **Manage Account → Configurations** (or **My Profile**), change the account's email to admin@mentorsassociation.org, then in **Manage Account → Members** invite the second owner as a **Super Administrator**. Save the Cloudflare sign-in and recovery codes in the vault (Part 3).
 
 ---
 
@@ -59,17 +59,17 @@ Google Workspace needs one person account to be its first administrator. That is
 
 2.1. Go to **workspace.google.com** and choose **Get started**. Business name: **Business Mentors Association**. Number of employees: **Just you**.
 
-2.2. When asked for a domain, choose **Yes, I have one I can use** and enter **businessmentorsassociation.org**.
+2.2. When asked for a domain, choose **Yes, I have one I can use** and enter **mentorsassociation.org**.
 
-2.3. Create your administrator account, for example **doug@businessmentorsassociation.org**. Choose the smallest plan offered (Business Starter). Enter the payment card. Apply for the free nonprofit edition once the Association qualifies (ruling 21).
+2.3. Create your administrator account, for example **doug@mentorsassociation.org**. Choose the smallest plan offered (Business Starter). Enter the payment card. Apply for the free nonprofit edition once the Association qualifies (ruling 21).
 
-2.4. **Verify the domain.** Google offers to sign in to Cloudflare and add the records itself. Accept it. If that option does not appear, Google shows a verification record (a line beginning `google-site-verification=`); add it in Cloudflare under **Websites → businessmentorsassociation.org → DNS → Records → Add record**, type **TXT**, name **@**, and return to Google to click **Verify**.
+2.4. **Verify the domain.** Google offers to sign in to Cloudflare and add the records itself. Accept it. If that option does not appear, Google shows a verification record (a line beginning `google-site-verification=`); add it in Cloudflare under **Websites → mentorsassociation.org → DNS → Records → Add record**, type **TXT**, name **@**, and return to Google to click **Verify**.
 
 2.5. **Mail routing.** Google's automatic setup adds this. If it did not, add in Cloudflare DNS: type **MX**, name **@**, mail server **smtp.google.com**, priority **1**. Remove any other MX records.
 
 2.6. **Sender proof records** — these stop the Association's mail being marked as spam. In Cloudflare DNS add:
 - type **TXT**, name **@**, content `v=spf1 include:_spf.google.com ~all`
-- type **TXT**, name **_dmarc**, content `v=DMARC1; p=none; rua=mailto:admin@businessmentorsassociation.org`
+- type **TXT**, name **_dmarc**, content `v=DMARC1; p=none; rua=mailto:admin@mentorsassociation.org`
 
 2.7. **Signing key.** In the Google Admin console (**admin.google.com**) go to **Apps → Google Workspace → Gmail → Authenticate email**, click **Generate new record**, and copy the value. In Cloudflare DNS add type **TXT**, name **google._domainkey**, and paste the value. Wait an hour, return to the same page and click **Start authentication**.
 
@@ -92,7 +92,7 @@ For each group, under **Access settings**, set **Who can post** to **Anyone on t
 
 The Association uses the same password manager already ruled for chapters, so volunteers learn one tool.
 
-3.1. Go to **proton.me/pass** and choose a **business** plan. Sign up with **admin@businessmentorsassociation.org** as the account email.
+3.1. Go to **proton.me/pass** and choose a **business** plan. Sign up with **admin@mentorsassociation.org** as the account email.
 
 3.2. Turn on two-step verification and save the recovery phrase. **The recovery phrase is the one thing not stored in the vault itself.** Print it and give one copy to each owner to keep somewhere safe.
 
@@ -108,7 +108,7 @@ The Association uses the same password manager already ruled for chapters, so vo
 
 ## Part 4 — Open the hosting account (DigitalOcean)
 
-4.1. Go to **cloud.digitalocean.com** and sign up with **admin@businessmentorsassociation.org**.
+4.1. Go to **cloud.digitalocean.com** and sign up with **admin@mentorsassociation.org**.
 
 4.2. Turn on two-step verification and save the sign-in and recovery codes in the vault.
 
@@ -128,7 +128,7 @@ The Association's records and, later, the open-source applications live on GitHu
 
 5.1. Decide where the Association's repositories live. They are in a personal account today (`dbower44022/business-mentors-association`); under ruling 18 they belong in an account the Association controls. Creating an organization and transferring the repository into it is the cleanest move, and GitHub keeps redirects for transferred repositories.
 
-5.2. In that account's or organization's settings, set the **billing email** to **admin@businessmentorsassociation.org**.
+5.2. In that account's or organization's settings, set the **billing email** to **admin@mentorsassociation.org**.
 
 5.3. Invite the second owner's GitHub account with the **Owner** role.
 
@@ -142,7 +142,7 @@ The Association's records and, later, the open-source applications live on GitHu
 
 ## Done when
 
-- businessmentorsassociation.org is registered, with auto-renew on.
+- mentorsassociation.org and businessmentorsassociation.org are registered, each with auto-renew on.
 - A message sent to admin@ reaches both owners.
 - Cloudflare, Google Workspace, Proton Pass, DigitalOcean and the code hosting each have **two owners**, two-step verification, and their sign-ins and recovery codes in the Association Operations vault.
 - Every receipt is kept for reimbursement.
@@ -153,5 +153,6 @@ The Association's records and, later, the open-source applications live on GitHu
 
 | Version | Date | Change |
 |---|---|---|
+| 1.2 | 11-06-26 22:47 | Domain changed to mentorsassociation.org throughout, following ruling 23. The closing check now covers both registered domains. |
 | 1.1 | 09-25-26 | Moved into this repository. Part 5 rewritten: the records now live in a personal GitHub account and should be transferred to an Association-controlled one. Nonprofit edition noted in step 2.3. |
 | 1.0 | 09-19-26 | First version, from rulings 15 and 18 to 20. |

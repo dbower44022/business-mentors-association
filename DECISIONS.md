@@ -1,10 +1,10 @@
 # Decisions — the Association's rulings
 
 **Document:** Every ruling that defines the Business Mentors Association
-**Version:** 2.26
+**Version:** 2.27
 **Status:** Current
 **Owner:** Doug Bower
-**Last Updated:** 11-07-26 11:08
+**Last Updated:** 11-07-26 11:11
 
 ---
 
@@ -168,6 +168,8 @@ Doug confirmed items 3 to 21 of Claude's drafted list as written, and changed it
 
 67. **The header graphic is set in the System Settings Website group, like the colours, and shown under the header: tall on the home page, a narrow strip on every other page.** Confirmed by Doug after seeing it in the prototype. The chapter's logo returns the visitor to the home page.
 
+68. **The test chapter website runs on Cloudways, in Doug's own account for now, at chapter-demo.mentorsassociation.org,** and connects to crm-test to test the integration end to end. It moves to an Association account once those exist. Its domain name records are in the Association's Cloudflare account. Every step is written as a runbook others can follow. Accepted cost: the account is in Doug's name until the move, which departs from ruling 18 for that time, and the move is one more step. Chosen over waiting for an Association account and over a plain DigitalOcean server. The applications' side is built in a separate session in `cbm-client-intake`, in that repository's DETAIL mode.
+
 ---
 
 ## Decisions the committee will make
@@ -198,6 +200,7 @@ These are not rulings. Each one either follows from a ruling or fills a gap, and
 
 | Version | Date | Change |
 |---|---|---|
+| 2.27 | 11-07-26 11:11 | Ruling 68: the test chapter website on Cloudways in Doug's account, at chapter-demo.mentorsassociation.org. |
 | 2.26 | 11-07-26 11:08 | Ruling 67: the drafted header graphic placement confirmed by Doug, and the logo links home. |
 | 2.25 | 11-07-26 11:01 | Rulings 64 to 66 added after the first prototype: separate partners and sponsors pages, a header graphic, the template's own header and footer. Ruling 47 marked as partly replaced. Drafted item added: where the header graphic is set and shown. |
 | 2.24 | 11-07-26 01:59 | Ruling 63 added: the first prototype is the website side only, with the applications imitated. |

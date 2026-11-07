@@ -1,21 +1,21 @@
 # Demo chapter — plan
 
-**Document:** Plan for building the demo chapter as a full new chapter, and for finishing the test chapter website, under ruling 71
-**Version:** 0.1
-**Status:** Draft — drafted by Claude, waiting on Doug's decisions in section 4
+**Document:** Plan for building the demo chapter as a full new chapter, and for finishing the test chapter website, under rulings 71 and 72
+**Version:** 0.2
+**Status:** Draft — drafted by Claude; decision D1 answered by ruling 72
 **Owner:** Doug Bower
-**Last Updated:** 11-07-26 14:38
+**Last Updated:** 11-07-26 14:46
 
 ---
 
 ## 1. What this plan delivers
 
-A demo chapter that is exactly what a new chapter would run: its own domains, Google Workspace, customer relationship management (CRM) system, chapter applications, Constant Contact account, video meeting account, Stripe account in test mode, and a WordPress website with the chapter connector. It is built by following the New Chapter Deployment Guide, and the guide is corrected wherever it proves wrong or incomplete. The demo chapter then serves as the Association's shared test system (ruling 15).
+The Association itself, set up as a chapter (ruling 72), running exactly what a new chapter would run: its own two domains, businessmentorsassociation.org and mentorsassociation.org, Google Workspace, customer relationship management (CRM) system, chapter applications, Constant Contact account, video meeting account, Stripe account in test mode, and a WordPress website with the chapter connector. It is built by following the New Chapter Deployment Guide, and the guide is corrected wherever it proves wrong or incomplete. The demo chapter then serves as the Association's shared test system (ruling 15).
 
 Two tracks run side by side (ruling 71).
 
 - **Track 1 — the test website on crm-test.** Finishes the integration between the website and the chapter applications now, on Cleveland's test system.
-- **Track 2 — the demo chapter.** Builds the demo chapter's own accounts and systems, stage by stage. When its applications run, the test website is switched over to them.
+- **Track 2 — the Association as a chapter.** Builds the Association's own chapter accounts and systems, stage by stage. When its applications run, the test website is switched over to them.
 
 ## 2. Where the work happens
 
@@ -40,9 +40,10 @@ These are findings, not changes. Each is corrected in `cbm-client-intake` when i
 
 Taken one at a time. Each recommendation is Claude's, not a ruling.
 
-- **D1. The demo chapter's domains and Google Workspace.** Whether the demo chapter has its own domains and its own Google Workspace, or uses the Association's. Decides guide stages 3, 4 and 10, and the test website's final address (next-steps item 4).
+- **D1. The demo chapter's domains and Google Workspace.** *Answered by ruling 72:* the Association's own two domains and a new Google Workspace on mentorsassociation.org. Two consequences are recorded with the ruling for Doug to confirm: the applications' permission grant reaches every Association mailbox, and invented contacts must never be sent mail from the Association's domain (see D3).
+- **D1a. The test website's final address.** chapter-demo.mentorsassociation.org (ruling 70) sits on the email domain. Whether the switched-over website moves under businessmentorsassociation.org, and whether it becomes the Association's own public website with the chapter directory of ruling 40. Needed before stage 13.
 - **D2. The extension licences** (open questions 24 and 25). Whether the demo CRM shares Cleveland's Advanced Pack licence, and what the Google Integration licence costs. Needed before stage 9.
-- **D3. The demo chapter's data.** Ruling 15 gives the shared test system invented training data restored every night. Whether that data is a copy of crm-test's training data or built fresh. Needed before stage 15.
+- **D3. The demo chapter's data.** Ruling 15 gives the shared test system invented training data restored every night. Whether that data is a copy of crm-test's training data or built fresh, and how its invented contacts are kept from receiving mail or reaching Constant Contact. Needed before stage 15.
 - **D4. The video meeting service and the Constant Contact plan.** Which service and which plan, at what price. Needed before stage 5.
 
 ## 5. Order and stopping points
@@ -58,10 +59,10 @@ Work pauses for Doug's go-ahead at each stop. Between two stops it proceeds with
 
 **Track 2 — the demo chapter.**
 
-1. **Stop A — decision D1.**
+1. **Stop A — decision D1.** Done: ruling 72.
 2. Claude writes a kickoff prompt for a `cbm-client-intake` session that corrects the guide stage by stage, starting with the findings in section 3. **Stop B — Doug approves the prompt.**
-3. Stages 1 and 2 (legal organization, agreement) are recorded as not applicable to a demo chapter, with invented placeholder values where later stages need them, such as an employer identification number.
-4. Accounts: stages 3 to 5, plus the missing services — Constant Contact, Stripe in test mode, Cloudflare Web Analytics. Each set of steps a person follows is written as a runbook. **Stop C — every account open and recorded.** Decision D4 is taken before this stage starts.
+3. Stages 1 and 2 (legal organization, agreement) are recorded as not yet possible: the Association is not formed (rulings 23 and 24), so later stages use placeholder values, such as an employer identification number, until it is.
+4. Accounts: stages 3 to 5, followed together with this repository's `docs/setup-runbook.md`, which already covers the Association's domains, Google Workspace, password vault and hosting account. The guide's steps lead; the setup runbook keeps only what is the Association's alone, such as the code hosting. Plus the missing services — Constant Contact, Stripe in test mode, Cloudflare Web Analytics. Each set of steps a person follows is written as a runbook. **Stop C — every account open and recorded.** Decision D4 is taken before this stage starts.
 5. Stages 7 and 8: policy documents from the template's drafts, and the chapter information form. **Stop D — Doug reviews the completed form.**
 6. Stage 9, the CRM build, run by Doug with CRM Builder. Decision D2 is taken first. **Stop E — the CRM system passes the checking tool.**
 7. Stages 10 to 12: Google permissions, the applications deployed, backups, monitoring and the nightly restore. **Stop F — the applications healthy and the restore proven once.**
@@ -81,4 +82,5 @@ Work pauses for Doug's go-ahead at each stop. Between two stops it proceeds with
 
 | Version | Date (MM-DD-YY HH:MM) | Author | Change |
 |---|---|---|---|
+| 0.2 | 11-07-26 14:46 | Claude (Claude Code) | Ruling 72: the demo chapter is the Association itself. D1 answered; D1a added for the website's final address; D3 widened to keep invented contacts from receiving mail; stage 1 and 2 wording and the link to the setup runbook added. |
 | 0.1 | 11-07-26 14:38 | Claude (Claude Code) | First draft, after ruling 71 and a review of the New Chapter Deployment Guide's data files as of 09-25-26. |

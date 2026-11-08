@@ -1,10 +1,10 @@
 # Next steps — where the work stands
 
 **Document:** The work in progress and the next steps, kept so a new session can continue where the last one stopped
-**Version:** 1.5
+**Version:** 1.6
 **Status:** Current
 **Owner:** Doug Bower
-**Last Updated:** 11-07-26 15:04
+**Last Updated:** 11-08-26 09:54
 
 ---
 
@@ -18,11 +18,11 @@ A new session reads this file after `README.md` and `DECISIONS.md`. Each item sa
 
 ## Next steps, in recommended order
 
-0. **The Association set up as a chapter (rulings 71 and 72), `docs/demo-chapter-plan.md`.** Track 2: a `cbm-client-intake` session was started 11-07-26 15:04 with the kickoff prompt `docs/prompts/cbm-client-intake-guide-kickoff.md` (version 1.2). Its first deliverable is a plan for correcting the guide, starting with stages 3 to 5. It does not edit this repository; its closing report is recorded here by a session in this repository. Decision D4 (the Zoom and Constant Contact plans) is needed before stage 5. Track 1: Doug reviews piece C at Stop 4 of `cbm-client-intake/prds/chapter-website-plan.md`. *Waits on:* the `cbm-client-intake` session's plan and report; Doug for D4.
+0. **The Association set up as a chapter (rulings 71 and 72), `docs/demo-chapter-plan.md`.** Track 2: the `cbm-client-intake` guide session (11-08-26) finished stages 3 to 5 for the Association, working in Doug's browser, and corrected the guide's stages 3 to 5 from the real screens (its plan: `cbm-client-intake/prds/chapter-network/deployment-guide/association-setup-plan.md`, version 1.5; owed items: that repository's `OPEN-ITEMS.md` item 73). Done: both domains on Cloudflare (still registered at GoDaddy); Google Workspace on mentorsassociation.org, Business Starter, with doug.bower@ and info@ mailboxes and the admin@ and allmembers@ groups, mail tested both ways; DigitalOcean, Zoom Pro, Constant Contact (trial), Stripe (test mode, donation link) and an Association Cloudways account, all signed in with admin@ apart from Stripe. Decision D4 answered: Zoom Pro without the Webinars add-on, Constant Contact Lite monthly. Doug's decisions in that session: every account signs in with admin@; GoDaddy stays on businessmentors@dougbower.com; compulsory two-step sign-in not yet; the Cloudways account is the Association's own. Owed: the second owner (ruling 18), two-step sign-in on six accounts, GoDaddy auto-renew, Constant Contact Lite before the trial ends, Stripe's email to admin@, DMARC to quarantine on or after 12-06-26, the admin@ group's spam setting. Nothing in `cbm-client-intake` is pushed; its `main` also holds another session's code fix, so its push is decided with that. Next: stage 6, the website, after a short plan in a `cbm-client-intake` session. Track 1: Doug reviews piece C at Stop 4 of `cbm-client-intake/prds/chapter-website-plan.md`. *Waits on:* Doug: the owed items above, and the start of the stage 6 session.
 
 1. **Correct the stale ruling numbers in `cbm-client-intake`.** `prds/chapter-website-plan.md` in `dbower44022/cbm-client-intake` cites this repository's rulings by their old numbers: "rulings 24 to 68", "Ruling 45", "Ruling 48", "Rulings 64…". Every ruling from 23 to 68 is now two higher (see the 2.29 entry in this repository's `DECISIONS.md` change log). That repository has its own change process. Read its `CLAUDE.md` first, and make the change only through that process. *Waits on:* Doug's go-ahead to start it there.
 
-2. **Bring the setup runbook in line with what is already done.** Both domains are registered (ruling 25), but Part 1 of `docs/setup-runbook.md` still tells the reader to search for them and buy them. Mark Part 1 as done, and record the registrar and the price actually paid. Then replace the estimate in the "Domains" line of `docs/cost-list.md` and in `costs/build_workbook.py`, which still say "about $11 / year each" and "not checked at the registrar". *Waits on:* Doug: which registrar holds the two domains, the price paid, and whether auto-renew is on.
+2. **Bring the setup runbook in line with what is already done.** Both domains are registered (ruling 25), but Part 1 of `docs/setup-runbook.md` still tells the reader to search for them and buy them. Mark Part 1 as done, and record the registrar and the price actually paid. Then replace the estimate in the "Domains" line of `docs/cost-list.md` and in `costs/build_workbook.py`, which still say "about $11 / year each" and "not checked at the registrar". The registrar is GoDaddy (public lookup, 11-07-26): both domains were registered 11-07-26 and expire 11-07-27; their name records are now at Cloudflare. *Waits on:* Doug: the price paid, and auto-renew turned on at GoDaddy.
 
 3. **Decide whether the chapter cost estimate counts two domains.** Ruling 25 says the Association registered two domains "the way the Association recommends for every chapter". The chapter cost section of `docs/cost-list.md`, and the Chapter costs sheet that `costs/build_workbook.py` builds, still count one domain per chapter at about $11 a year. The chapter network's deployment guide in `cbm-client-intake` still calls one domain or two an open question. *Waits on:* Doug: is two domains the recommendation, or one of two options?
 
@@ -56,6 +56,7 @@ A new session reads this file after `README.md` and `DECISIONS.md`. Each item sa
 
 | Version | Date | Change |
 |---|---|---|
+| 1.6 | 11-08-26 09:54 | Step 0: the closing report of the `cbm-client-intake` guide session (stages 3 to 5 done, D4 answered, what is owed). Step 2: the registrar is GoDaddy. |
 | 1.5 | 11-07-26 15:04 | The `cbm-client-intake` guide session started; step 0 now waits on its plan and report; the next-session prompt updated. |
 | 1.4 | 11-07-26 15:00 | Kickoff prompt at version 1.2; Zoom confirmed, D4 narrowed. |
 | 1.3 | 11-07-26 14:52 | Stop B passed; step 0 now points at the approved kickoff prompt. |

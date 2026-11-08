@@ -1,10 +1,10 @@
 # Demo chapter — plan
 
 **Document:** Plan for building the demo chapter as a full new chapter, and for finishing the test chapter website, under rulings 71 and 72
-**Version:** 0.4
+**Version:** 0.5
 **Status:** Draft — drafted by Claude; decision D1 answered by ruling 72
 **Owner:** Doug Bower
-**Last Updated:** 11-07-26 15:00
+**Last Updated:** 11-08-26 09:54
 
 ---
 
@@ -44,7 +44,7 @@ Taken one at a time. Each recommendation is Claude's, not a ruling.
 - **D1a. The test website's final address.** chapter-demo.mentorsassociation.org (ruling 70) sits on the email domain. Whether the switched-over website moves under businessmentorsassociation.org, and whether it becomes the Association's own public website with the chapter directory of ruling 40. Needed before stage 13.
 - **D2. The extension licences** (open questions 24 and 25). Whether the demo CRM shares Cleveland's Advanced Pack licence, and what the Google Integration licence costs. Needed before stage 9.
 - **D3. The demo chapter's data.** Ruling 15 gives the shared test system invented training data restored every night. Whether that data is a copy of crm-test's training data or built fresh, and how its invented contacts are kept from receiving mail or reaching Constant Contact. Needed before stage 15.
-- **D4. The Zoom plan and the Constant Contact plan.** Which plan of each, at what price. Needed before stage 5. *The service is settled: Doug confirmed Zoom 11-07-26, as ruling 72 names it.*
+- **D4. The Zoom plan and the Constant Contact plan.** Which plan of each, at what price. Needed before stage 5. *The service is settled: Doug confirmed Zoom 11-07-26, as ruling 72 names it.* *Answered by Doug 11-07-26: a Zoom Pro seat without the Webinars add-on, and Constant Contact Lite paid monthly, about $25 to $30 a month together (third-party prices, not checked on the vendors' pages). Webinars and attendance stay untested until the add-on is bought.*
 
 ## 5. Order and stopping points
 
@@ -62,7 +62,7 @@ Work pauses for Doug's go-ahead at each stop. Between two stops it proceeds with
 1. **Stop A — decision D1.** Done: ruling 72.
 2. Claude writes a kickoff prompt for a `cbm-client-intake` session that corrects the guide stage by stage, starting with the findings in section 3. **Stop B — Doug approves the prompt.** Done 11-07-26: `docs/prompts/cbm-client-intake-guide-kickoff.md`.
 3. Stages 1 and 2 (legal organization, agreement) are recorded as not yet possible: the Association is not formed (rulings 23 and 24), so later stages use placeholder values, such as an employer identification number, until it is.
-4. Accounts: stages 3 to 5, followed together with this repository's `docs/setup-runbook.md`, which already covers the Association's domains, Google Workspace, password vault and hosting account. The guide's steps lead; the setup runbook keeps only what is the Association's alone, such as the code hosting. Plus the missing services — Constant Contact, Stripe in test mode, Cloudflare Web Analytics. Each set of steps a person follows is written as a runbook. **Stop C — every account open and recorded.** Decision D4 is taken before this stage starts.
+4. Accounts: stages 3 to 5, followed together with this repository's `docs/setup-runbook.md`, which already covers the Association's domains, Google Workspace, password vault and hosting account. The guide's steps lead; the setup runbook keeps only what is the Association's alone, such as the code hosting. Plus the missing services — Constant Contact, Stripe in test mode, Cloudflare Web Analytics. Each set of steps a person follows is written as a runbook. **Stop C — every account open and recorded.** *Reached 11-08-26: stages 3 to 5 done; what is owed is in `cbm-client-intake/OPEN-ITEMS.md` item 73.* Decision D4 is taken before this stage starts.
 5. Stages 7 and 8: policy documents from the template's drafts, and the chapter information form. **Stop D — Doug reviews the completed form.**
 6. Stage 9, the CRM build, run by Doug with CRM Builder. Decision D2 is taken first. **Stop E — the CRM system passes the checking tool.**
 7. Stages 10 to 12: Google permissions, the applications deployed, backups, monitoring and the nightly restore. **Stop F — the applications healthy and the restore proven once.**
@@ -82,6 +82,7 @@ Work pauses for Doug's go-ahead at each stop. Between two stops it proceeds with
 
 | Version | Date (MM-DD-YY HH:MM) | Author | Change |
 |---|---|---|---|
+| 0.5 | 11-08-26 09:54 | Claude (Claude Code) | D4 answered by Doug; Stop C reached. |
 | 0.4 | 11-07-26 15:00 | Claude (Claude Code) | D4 narrowed to the plans and prices: Doug confirmed Zoom as the video meeting service. |
 | 0.3 | 11-07-26 14:52 | Claude (Claude Code) | Stop B passed: Doug approved the kickoff prompt and confirmed the ruling 72 consequences. |
 | 0.2 | 11-07-26 14:46 | Claude (Claude Code) | Ruling 72: the demo chapter is the Association itself. D1 answered; D1a added for the website's final address; D3 widened to keep invented contacts from receiving mail; stage 1 and 2 wording and the link to the setup runbook added. |

@@ -1,10 +1,10 @@
 # Decisions — the Association's rulings
 
 **Document:** Every ruling that defines the Business Mentors Association
-**Version:** 2.32
+**Version:** 2.33
 **Status:** Current
 **Owner:** Doug Bower
-**Last Updated:** 11-07-26 14:52
+**Last Updated:** 11-08-26 12:25
 
 ---
 
@@ -130,7 +130,7 @@ Doug confirmed items 3 to 21 of Claude's drafted list as written, and changed it
 
 48. **If a visitor arrives through a second campaign in the same visit, the later campaign replaces the earlier** (follows ruling 37).
 
-49. **The template's pages.** Drawn from Cleveland's and Boston's sites (ruling 31). Published at launch: Home; About, including mission, history, how mentors are chosen and the leadership team; How It Works, including what a client can expect; Find a Mentor, with the embedded directory and profiles; Request a Mentor; Become a Mentor; Workshops and Events, with embedded listings, registration and recordings; Support Us, with the Donate button, sponsorship and partnership; Contact; Frequently Asked Questions; Privacy Policy; Terms of Use. Shipped as unpublished drafts a chapter may switch on: Blog; Resources and Templates; Partners and Sponsors; Client Stories; In the News; Client Code of Conduct; Mentor Code of Conduct; a campaign landing page like Cleveland's postcard page. On every page: newsletter signup, member sign-in link to the chapter applications, social links, and a footer stating 501(c)(3) status and the employer identification number. Legal pages ship as drafts marked for review by the chapter's own attorney; Boston's site has no privacy policy although its forms collect personal details. *The single Partners and Sponsors page was replaced 11-07-26 by ruling 66.*
+49. **The template's pages.** Drawn from Cleveland's and Boston's sites (ruling 31). Published at launch: Home; About, including mission, history, how mentors are chosen and the leadership team; How It Works, including what a client can expect; Find a Mentor, with the embedded directory and profiles; Request a Mentor; Become a Mentor; Workshops and Events, with embedded listings, registration and recordings; Support Us, with the Donate button, sponsorship and partnership; Contact; Frequently Asked Questions; Privacy Policy; Terms of Use. Shipped as unpublished drafts a chapter may switch on: Blog; Resources and Templates; Partners and Sponsors; Client Stories; In the News; Client Code of Conduct; Mentor Code of Conduct *(the two codes amended 11-08-26 by ruling 73: published, marked as drafts)*; a campaign landing page like Cleveland's postcard page. On every page: newsletter signup, member sign-in link to the chapter applications, social links, and a footer stating 501(c)(3) status and the employer identification number. Legal pages ship as drafts marked for review by the chapter's own attorney; Boston's site has no privacy policy although its forms collect personal details. *The single Partners and Sponsors page was replaced 11-07-26 by ruling 66.*
 
 50. **A "How can we help you?" chooser on the home page.** Three tiles: ask a question (the information request form), request a mentor (the client intake form) and meet our mentors (Find a Mentor), as on Cleveland's site.
 
@@ -180,6 +180,10 @@ Doug confirmed items 3 to 21 of Claude's drafted list as written, and changed it
 
 72. **The demo chapter is the Association itself, set up as a chapter.** The Association gets its own chapter environment on its own two domains (ruling 25): a new Google Workspace on mentorsassociation.org (ruling 20), a Constant Contact account, a Zoom account and the rest, exactly as a new chapter would. No separate demo domains or demo Workspace are registered. *Answers the question ruling 71 left open, which domains and Google Workspace the demo chapter uses.* Accepted cost, confirmed by Doug 11-07-26 (first noted by Claude): the chapter applications' Google machine account holds a permission grant over every mailbox in that Workspace (deployment guide stage 10), so it reaches the Association's real mailboxes; and the demo's invented contacts must not be sent mail from the Association's real domain, which would harm its standing with mail providers.
 
+### Ruled 11-08-26
+
+73. **The template publishes all four policy documents — Privacy Policy, Terms of Use, Client Code of Conduct and Mentor Code of Conduct — each marked as a draft for review by the chapter's own attorney.** Every public form's consent box links to the two codes, so unpublished codes would leave those links dead on every form. Accepted cost: the codes are live, marked as drafts, before a chapter's attorney has read them. Chosen over keeping the codes unpublished until each chapter publishes them. *Amends ruling 49, which shipped both codes as unpublished drafts.* Doug chose Claude's recommendation 11-08-26.
+
 ---
 
 ## Decisions the committee will make
@@ -209,6 +213,7 @@ These are not rulings. Each one either follows from a ruling or fills a gap, and
 
 | Version | Date | Change |
 |---|---|---|
+| 2.33 | 11-08-26 12:25 | Ruling 73 added: the template publishes all four policy documents, marked as drafts. Ruling 49 marked as amended. |
 | 2.32 | 11-07-26 14:52 | Ruling 72: Doug confirmed the two consequences Claude had noted as accepted costs. |
 | 2.31 | 11-07-26 14:46 | Ruling 72 added: the demo chapter is the Association itself, set up as a chapter on its own domains and accounts. |
 | 2.30 | 11-07-26 14:38 | Ruling 71 added: the demo system is built as a full new chapter by the deployment guide, with the test website on crm-test first and switched over later. Ruling 70 marked as amended. |

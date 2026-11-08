@@ -1,10 +1,10 @@
 # Policy documents — model drafts
 
 **Document:** Index of the Association's model policy drafts for chapter websites
-**Version:** 0.1
+**Version:** 0.2
 **Status:** Drafts — drafted by Claude, not legal advice
 **Owner:** Doug Bower
-**Last Updated:** 11-08-26 10:15
+**Last Updated:** 11-08-26 12:25
 
 ---
 
@@ -17,7 +17,7 @@ Four model drafts a chapter may start from at guide stage 7, and that the Associ
 | Terms of Use | `terms-of-use.md` | /legal-notices/ |
 | Privacy Policy | `privacy-policy.md` | /privacy-policy/ |
 
-Owed: the chapter connector's template ships only a placeholder Privacy Policy page today; it should create all four pages from these drafts (prototype repository).
+The chapter connector's template (version 0.2.2, prototype repository) publishes all four pages from these drafts, each marked as a draft (ruling 73).
 
 ---
 
@@ -25,4 +25,5 @@ Owed: the chapter connector's template ships only a placeholder Privacy Policy p
 
 | Version | Date | Change |
 |---|---|---|
+| 0.2 | 11-08-26 12:25 | The chapter connector 0.2.2 publishes all four pages (ruling 73). |
 | 0.1 | 11-08-26 10:15 | First version. |

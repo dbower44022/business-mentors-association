@@ -1,10 +1,10 @@
 # Decisions — the Association's rulings
 
 **Document:** Every ruling that defines the Business Mentors Association
-**Version:** 2.33
+**Version:** 2.34
 **Status:** Current
 **Owner:** Doug Bower
-**Last Updated:** 11-08-26 12:25
+**Last Updated:** 11-08-26 14:19
 
 ---
 
@@ -176,13 +176,15 @@ Doug confirmed items 3 to 21 of Claude's drafted list as written, and changed it
 
 70. **The test chapter website runs on Cloudways, in Doug's own account for now, at chapter-demo.mentorsassociation.org,** and connects to crm-test to test the integration end to end. It moves to an Association account once those exist. Its domain name records are in the Association's Cloudflare account. Every step is written as a runbook others can follow. Accepted cost: the account is in Doug's name until the move, which departs from ruling 18 for that time, and the move is one more step. Chosen over waiting for an Association account and over a plain DigitalOcean server. The applications' side is built in a separate session in `cbm-client-intake`, in that repository's DETAIL mode. *Amended 11-07-26 by ruling 71: the test website connects to crm-test only until the demo chapter's own applications are running.*
 
-71. **The demo system is built as a full new chapter, by following the New Chapter Deployment Guide, in two tracks.** First track: the test chapter website goes live connected to crm-test, as ruling 70 says, so the integration between the website and the chapter applications is tested now. Second track, in parallel: a demo chapter is built stage by stage from the guide, with its own Google Workspace, customer relationship management system, chapter applications, Constant Contact account, video meeting account, Stripe account in test mode, and website. Each gap the guide shows is corrected in the guide as that stage is done, through `cbm-client-intake`'s own process. When the demo chapter's applications are running, the test website is switched from crm-test to them. The demo chapter then serves as the shared test system of ruling 15. Accepted cost: monthly accounts in Doug's name beyond the test system the cost list already budgets, estimated at $40 to $70 a month (from memory, not checked); one switch-over step; the finished demo takes several sessions; open question 24, on the Advanced Pack licence, must be answered before the customer relationship management system is built. Chosen over the website alone on crm-test, which shows Cleveland's name and accounts and never tests the guide, and over building the whole demo chapter before any website test. *Amends ruling 70.*
+71. **The demo system is built as a full new chapter, by following the New Chapter Deployment Guide, in two tracks.** First track: the test chapter website goes live connected to crm-test, as ruling 70 says, so the integration between the website and the chapter applications is tested now. Second track, in parallel: a demo chapter is built stage by stage from the guide, with its own Google Workspace, customer relationship management system, chapter applications, Constant Contact account, video meeting account, Stripe account in test mode, and website. Each gap the guide shows is corrected in the guide as that stage is done, through `cbm-client-intake`'s own process. When the demo chapter's applications are running, the test website is switched from crm-test to them. The demo chapter then serves as the shared test system of ruling 15. Accepted cost: monthly accounts in Doug's name beyond the test system the cost list already budgets, estimated at $40 to $70 a month (from memory, not checked); one switch-over step; the finished demo takes several sessions; open question 24, on the Advanced Pack licence, must be answered before the customer relationship management system is built *(amended 11-08-26 by ruling 74: built first, extensions added at step 9.5)*. Chosen over the website alone on crm-test, which shows Cleveland's name and accounts and never tests the guide, and over building the whole demo chapter before any website test. *Amends ruling 70.*
 
 72. **The demo chapter is the Association itself, set up as a chapter.** The Association gets its own chapter environment on its own two domains (ruling 25): a new Google Workspace on mentorsassociation.org (ruling 20), a Constant Contact account, a Zoom account and the rest, exactly as a new chapter would. No separate demo domains or demo Workspace are registered. *Answers the question ruling 71 left open, which domains and Google Workspace the demo chapter uses.* Accepted cost, confirmed by Doug 11-07-26 (first noted by Claude): the chapter applications' Google machine account holds a permission grant over every mailbox in that Workspace (deployment guide stage 10), so it reaches the Association's real mailboxes; and the demo's invented contacts must not be sent mail from the Association's real domain, which would harm its standing with mail providers.
 
 ### Ruled 11-08-26
 
 73. **The template publishes all four policy documents — Privacy Policy, Terms of Use, Client Code of Conduct and Mentor Code of Conduct — each marked as a draft for review by the chapter's own attorney.** Every public form's consent box links to the two codes, so unpublished codes would leave those links dead on every form. Accepted cost: the codes are live, marked as drafts, before a chapter's attorney has read them. Chosen over keeping the codes unpublished until each chapter publishes them. *Amends ruling 49, which shipped both codes as unpublished drafts.* Doug chose Claude's recommendation 11-08-26.
+
+74. **The Association's CRM is built without the two paid extensions first, and they are bought at guide step 9.5 once decision D2 is settled**, as Boston's CRM was. Stages 9 to 11 go ahead without waiting. Accepted cost: until the extensions are installed, the CRM does not fully match the standard, and the features that need them cannot be tested. *Amends ruling 71, which said open question 24 must be answered before the CRM is built.* Doug chose Claude's recommendation 11-08-26.
 
 ---
 
@@ -213,6 +215,7 @@ These are not rulings. Each one either follows from a ruling or fills a gap, and
 
 | Version | Date | Change |
 |---|---|---|
+| 2.34 | 11-08-26 14:19 | Ruling 74 added: the CRM is built without the paid extensions first. Ruling 71 marked as amended. |
 | 2.33 | 11-08-26 12:25 | Ruling 73 added: the template publishes all four policy documents, marked as drafts. Ruling 49 marked as amended. |
 | 2.32 | 11-07-26 14:52 | Ruling 72: Doug confirmed the two consequences Claude had noted as accepted costs. |
 | 2.31 | 11-07-26 14:46 | Ruling 72 added: the demo chapter is the Association itself, set up as a chapter on its own domains and accounts. |

@@ -4,7 +4,7 @@
 **Version:** 1.12
 **Status:** Current
 **Owner:** Doug Bower
-**Last Updated:** 11-09-26 17:12
+**Last Updated:** 11-09-26 17:02
 
 ---
 
@@ -60,7 +60,7 @@ A new session reads this file after `README.md` and `DECISIONS.md`. Each item sa
 
 | Version | Date | Change |
 |---|---|---|
-| 1.12 | 11-09-26 17:12 | Step 8 done and moved to Done recently; the service account key step renumbered to 8. |
+| 1.12 | 11-09-26 17:02 | Step 8 done and moved to Done recently; the service account key step renumbered to 8. |
 | 1.11 | 11-09-26 14:51 | Step 8: step 5.10 done; stage 6 handed to the guide session; the comparison's Cloudways price to correct. |
 | 1.10 | 11-09-26 14:21 | Step 8 corrected: the work is in the deployment guide, not the setup runbook. |
 | 1.9 | 11-09-26 14:18 | Step 9 added: replace the Google service account key. |

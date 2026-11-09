@@ -4,7 +4,7 @@
 **Version:** 1.2
 **Status:** Decided — ruling 75 (option 3)
 **Owner:** Doug Bower
-**Last Updated:** 11-09-26 17:10
+**Last Updated:** 11-09-26 17:02
 
 ---
 
@@ -14,7 +14,7 @@ Ruling 29 put every chapter's WordPress site on Cloudways, a lightly managed hos
 
 ## The finding
 
-**Correction, 11-09-26 17:10:** the Cloudways figures below assumed the 1 GB server. Cloudways' own sign-up form warns that 1 GB is for staging or low-traffic sites and advises 2 GB for a live site, so a live chapter site costs more than this document first said. See "Cost per chapter". The ruling (option 3) is not affected: it names no single host.
+**Correction, 11-09-26 17:02:** the Cloudways figures below assumed the 1 GB server. Cloudways' own sign-up form warns that 1 GB is for staging or low-traffic sites and advises 2 GB for a live site, so a live chapter site costs more than this document first said. See "Cost per chapter". The ruling (option 3) is not affected: it names no single host.
 
 **Hostinger costs at least about $550 less per chapter over the first four years, and more than $1,000 less if the Cloudways server is 2 GB.** On the 1 GB server, Hostinger costs slightly more per year after year four; on a 2 GB server, it does not. Both meet the hosting requirements WT-90 to WT-92, as long as the chapter buys Hostinger's second plan, Unlimited. The plan the maintainer quoted, about $100 for four years, is Hostinger's first plan, Premium. It takes backups weekly, not daily, so it does not meet WT-90.
 
@@ -82,6 +82,6 @@ For comparison, the server a chapter runs itself, which ruling 29 rejected, is a
 
 | Version | Date | Change |
 |---|---|---|
-| 1.2 | 11-09-26 17:10 | Cloudways cost corrected: the sign-up form's 1 GB Standard price of $11 a month, and the 2 GB server Cloudways advises for a live site, at $28 a month on the pricing page. The four-year gap to Hostinger widened accordingly. Staging and backup wording from the pricing page added. |
+| 1.2 | 11-09-26 17:02 | Cloudways cost corrected: the sign-up form's 1 GB Standard price of $11 a month, and the 2 GB server Cloudways advises for a live site, at $28 a month on the pricing page. The four-year gap to Hostinger widened accordingly. Staging and backup wording from the pricing page added. |
 | 1.1 | 11-09-26 14:10 | Ruling 75 recorded: option 3. |
 | 1.0 | 11-09-26 13:50 | First version, written by Claude after Doug reopened ruling 29. |

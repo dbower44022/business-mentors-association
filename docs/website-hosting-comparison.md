@@ -1,16 +1,16 @@
 # Website hosting — Cloudways and Hostinger compared
 
 **Document:** Checked prices and features for reopening ruling 29, where a chapter's WordPress site is hosted
-**Version:** 1.0
-**Status:** Draft by Claude — no ruling yet
+**Version:** 1.1
+**Status:** Decided — ruling 75 (option 3)
 **Owner:** Doug Bower
-**Last Updated:** 11-09-26 13:50
+**Last Updated:** 11-09-26 14:10
 
 ---
 
 ## Why this exists
 
-Ruling 29 put every chapter's WordPress site on Cloudways, a lightly managed host running on a DigitalOcean server. The ruling's cost figure was marked "prices from memory, not yet checked", and it recorded no reason for choosing Cloudways over a fully managed WordPress host. Cleveland's website maintainer has since recommended Hostinger instead. Doug reopened the ruling on 11-09-26 and asked for checked prices. Nothing here is a ruling.
+Ruling 29 put every chapter's WordPress site on Cloudways, a lightly managed host running on a DigitalOcean server. The ruling's cost figure was marked "prices from memory, not yet checked", and it recorded no reason for choosing Cloudways over a fully managed WordPress host. Cleveland's website maintainer has since recommended Hostinger instead. Doug reopened the ruling on 11-09-26 and asked for checked prices. Nothing here is a ruling. **Doug ruled on 11-09-26 (ruling 75):** option 3. A chapter chooses its own host; the Association runs its own websites on Cloudways and tests only there.
 
 ## The finding
 
@@ -78,4 +78,5 @@ For comparison, the server a chapter runs itself, which ruling 29 rejected, is a
 
 | Version | Date | Change |
 |---|---|---|
+| 1.1 | 11-09-26 14:10 | Ruling 75 recorded: option 3. |
 | 1.0 | 11-09-26 13:50 | First version, written by Claude after Doug reopened ruling 29. |

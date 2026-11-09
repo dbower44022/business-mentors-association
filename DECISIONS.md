@@ -1,10 +1,10 @@
 # Decisions — the Association's rulings
 
 **Document:** Every ruling that defines the Business Mentors Association
-**Version:** 2.34
+**Version:** 2.35
 **Status:** Current
 **Owner:** Doug Bower
-**Last Updated:** 11-08-26 14:19
+**Last Updated:** 11-09-26 14:10
 
 ---
 
@@ -84,7 +84,7 @@ The rulings of 09-19-26 came out of one planning conversation. Several of them r
 
 28. **The template website is built on WordPress.** Chosen for an openly shareable template, a full exit for a chapter that leaves, editing a volunteer can manage, and the largest pool of vendors and volunteers who know it. Accepted cost: someone must apply security updates to WordPress, its plugins and its server every month. Chosen over Squarespace (easiest editing and no upkeep, but the template cannot be shared openly and a departing chapter loses its design) and over a static site (cheapest and safest, but the weakest editing for volunteers). Wix, Webflow, Google Sites, Ghost, Drupal, Joomla and serving the whole site from the chapter applications were set aside earlier in the same discussion.
 
-29. **A chapter's WordPress site runs on a lightly managed host on DigitalOcean (Cloudways).** The host keeps the server's operating system and PHP up to date, takes backups, provides the security certificate and a staging copy. The chapter's only upkeep is WordPress's own updates, which can run automatically. The website never shares a server with the chapter's customer relationship management system. Accepted cost: roughly $50 to $100 a year more than a server the chapter runs itself (prices from memory, not yet checked), one more account for the chapter to own, and a one-line change to Rochester's request, which names a basic DigitalOcean server. Chosen over a server the chapter runs itself and over a fully managed WordPress host. Hosting every chapter's site centrally was set aside because it contradicts ruling 1.
+29. **A chapter's WordPress site runs on a lightly managed host on DigitalOcean (Cloudways).** The host keeps the server's operating system and PHP up to date, takes backups, provides the security certificate and a staging copy. The chapter's only upkeep is WordPress's own updates, which can run automatically. The website never shares a server with the chapter's customer relationship management system. Accepted cost: roughly $50 to $100 a year more than a server the chapter runs itself (prices from memory, not yet checked), one more account for the chapter to own, and a one-line change to Rochester's request, which names a basic DigitalOcean server. Chosen over a server the chapter runs itself and over a fully managed WordPress host. Hosting every chapter's site centrally was set aside because it contradicts ruling 1. **Replaced 11-09-26 by ruling 75:** a chapter chooses its own host against stated requirements, and the Association runs its own websites on Cloudways.
 
 30. **Online donations use a Stripe Payment Link in the chapter's own Stripe account, as Cleveland's site does now, and a feature request goes to the committee for the chapter applications to record each gift in the customer relationship management system automatically.** The template ships the Donate button and the script that opens the payment page; each chapter supplies its own link. Under the feature request, Stripe notifies the chapter applications when a payment completes and the applications create the donor and the contribution record; card details stay with Stripe. Accepted cost: until the feature is accepted and built, staff enter gifts by hand and the chapter sends donors' tax acknowledgments itself; the Association takes on code that handles payment notices. Chosen over a hosted donation service and over hand entry with no feature request.
 
@@ -186,6 +186,8 @@ Doug confirmed items 3 to 21 of Claude's drafted list as written, and changed it
 
 74. **The Association's CRM is built without the two paid extensions first, and they are bought at guide step 9.5 once decision D2 is settled**, as Boston's CRM was. Stages 9 to 11 go ahead without waiting. Accepted cost: until the extensions are installed, the CRM does not fully match the standard, and the features that need them cannot be tested. *Amends ruling 71, which said open question 24 must be answered before the CRM is built.* Doug chose Claude's recommendation 11-08-26.
 
+75. **A chapter chooses its own website host. The Association names what the host must do, not which host, and runs its own websites on Cloudways.** Whatever host a chapter chooses must keep the server's operating system and PHP up to date, take daily backups, provide the security certificate and a staging copy, sit in the chapter's own account, and never share a server with the chapter's customer relationship management system (website template requirements WT-90 to WT-92). The Association's own websites, the test website of ruling 70 among them, run on Cloudways, a lightly managed host on DigitalOcean servers. The Association tests the chapter connector there, so Cloudways is the one host it has verified. Why: a chapter's choice of host is often argued out between the chapter and its technical person, and the Association stays out of that argument (ruling 1). The Association is technical enough to use Cloudways' fuller server access. And a host whose low price depends on paying four years in advance is a negative sign, because companies ask for that when they need the cash. Checked prices and the options: `docs/website-hosting-comparison.md`. Accepted cost, noted by Claude and not yet confirmed by Doug: a chapter on another host runs on a platform the Association has not tested, and the setup runbook covers Cloudways only. *Replaces ruling 29.* Doug chose option 3 of the comparison 11-09-26, after Cleveland's website maintainer recommended Hostinger.
+
 ---
 
 ## Decisions the committee will make
@@ -215,6 +217,7 @@ These are not rulings. Each one either follows from a ruling or fills a gap, and
 
 | Version | Date | Change |
 |---|---|---|
+| 2.35 | 11-09-26 14:10 | Ruling 75 added: a chapter chooses its own website host; the Association runs its own websites on Cloudways. Ruling 29 marked as replaced. |
 | 2.34 | 11-08-26 14:19 | Ruling 74 added: the CRM is built without the paid extensions first. Ruling 71 marked as amended. |
 | 2.33 | 11-08-26 12:25 | Ruling 73 added: the template publishes all four policy documents, marked as drafts. Ruling 49 marked as amended. |
 | 2.32 | 11-07-26 14:52 | Ruling 72: Doug confirmed the two consequences Claude had noted as accepted costs. |

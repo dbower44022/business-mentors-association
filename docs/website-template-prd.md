@@ -1,10 +1,10 @@
 # Chapter website template — product requirements
 
 **Document:** Requirements for the template website the Association builds and each chapter copies
-**Version:** 0.8
+**Version:** 0.9
 **Status:** Draft for Doug's review
 **Owner:** Doug Bower
-**Last Updated:** 11-07-26 14:26
+**Last Updated:** 11-09-26 14:10
 
 ---
 
@@ -217,13 +217,13 @@ The Association builds the template website itself, using Cleveland's and Boston
 
 ### 5.9 Hosting and upkeep
 
-- **WT-90.** The website runs on a hosting service in the chapter's own account (ruling 29). The hosting service:
+- **WT-90.** The website runs on a hosting service the chapter chooses, in the chapter's own account (ruling 75). The Association uses and tests Cloudways; a chapter may choose any host that meets this requirement. The hosting service:
   - keeps the server's operating system and programming language up to date,
   - takes daily backups,
   - provides the security certificate that serves the site over an encrypted connection, and
   - provides a staging copy of the website where changes can be tried before they go live.
 - **WT-91.** The content management system and its other add-ons update themselves automatically. Updates of the chapter connector follow WT-30.
-- **WT-92.** The website never shares a server with the customer relationship management system (ruling 29). Someone who broke into the website could otherwise reach client records.
+- **WT-92.** The website never shares a server with the customer relationship management system (ruling 75). Someone who broke into the website could otherwise reach client records.
 - **WT-93.** The template website uses as few add-ons as possible. Each add-on is named in the implementation notes with the reason for it.
 - **WT-94.** The website's domain name records are kept in the chapter's own domain name account, as the chapter network already rules for every chapter.
 - **WT-95.** The shared test system has its own copy of the template website running the chapter connector. Chapters' technical people certify each chapter connector release there before the vote.
@@ -355,7 +355,7 @@ The Association builds the template website itself, using Cleveland's and Boston
 7. **Tax acknowledgments.** Whether the customer relationship management system sends donors' tax acknowledgments once gifts are recorded automatically.
 8. **Monthly giving.** Whether the hosted payment page offers monthly giving.
 9. **Partner logos.** Size and format rules.
-10. **Cleveland.** Whether Cleveland's existing website moves to the template and to the hosting arrangement of ruling 29.
+10. **Cleveland.** Whether Cleveland's existing website moves to the template and to a host that meets WT-90 to WT-92 (ruling 75).
 11. **Rochester.** Whether Rochester adapts the template instead of issuing its request for proposals, and if so, when it needs the template (ruling 31).
 12. **Who builds the template, and by when.** Ruling 31 places the work on Association volunteers.
 13. **The chapter connector's name.**
@@ -370,6 +370,7 @@ The Association builds the template website itself, using Cleveland's and Boston
 
 | Problem seen | Website | Requirement that prevents it |
 |---|---|---|
+| 0.9 | 11-09-26 14:10 | WT-90, WT-92 and question 10 follow ruling 75: the chapter chooses its host; the Association uses and tests Cloudways. |
 | 0.8 | 11-07-26 14:26 | Ruling numbers 23 to 68 renumbered 25 to 70, after merging with rulings 23 and 24 of 09-25-26 (see the rulings file, version 2.29). |
 | 0.7 | 11-07-26 11:01 | Rulings 66 to 68: separate partners and sponsors pages, a header graphic, the template's own header and footer. WT-56 gains the sizing script; WT-56b added for forms that look part of the website. |
 | 0.6 | 11-07-26 10:31 | Findings of the first prototype (ruling 65): WT-10 refuses switches for pages the applications cannot serve; WT-22 puts menu entries in the header only, and only for pages with content; WT-26 fetches every mentor profile ahead of time. Open question 2 answered. |

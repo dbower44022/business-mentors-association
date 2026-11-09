@@ -1,10 +1,10 @@
 # Chapter website template — implementation notes
 
 **Document:** The products chosen for the chapter website template, and what is still to be checked
-**Version:** 0.6
+**Version:** 0.7
 **Status:** Draft for Doug's review
 **Owner:** Doug Bower
-**Last Updated:** 11-07-26 14:26
+**Last Updated:** 11-09-26 14:10
 
 ---
 
@@ -15,7 +15,7 @@ The requirements in [`website-template-prd.md`](website-template-prd.md) name no
 ## The products
 
 - **Content management system: WordPress** (ruling 28). The template uses WordPress's built-in block editor and a block theme. It uses no paid page builder, so Elementor, which Cleveland's site uses, is not used.
-- **Hosting: Cloudways, on a DigitalOcean server in the chapter's own Cloudways account** (ruling 29). Cloudways keeps the server and PHP, the programming language WordPress runs on, up to date. It also takes backups, installs the security certificate, and provides a staging copy of the website. WordPress core and plugin updates run automatically. The site never runs on the server that holds the chapter's EspoCRM system.
+- **Hosting: Cloudways, on a DigitalOcean server, for the Association's own websites and as the one host the Association tests** (ruling 75). A chapter may choose any host that meets WT-90 to WT-92, in its own account. Cloudways keeps the server and PHP, the programming language WordPress runs on, up to date. It also takes backups, installs the security certificate, and provides a staging copy of the website. WordPress core and plugin updates run automatically. The site never runs on the server that holds the chapter's EspoCRM system.
 - **Domain name records: Cloudflare, in the chapter's own account**, as the chapter network already rules. The website's address and the chapter applications address are both kept there.
 - **Donations: a Stripe Payment Link in the chapter's own Stripe account** (ruling 30). The Donate button runs a short script that opens the Payment Link in a popup window, as Cleveland's Support Us page does today. The Payment Link address is set in the script. The template adds what Cleveland's script lacks: if the browser blocks the popup, the page opens in the same tab.
 - **Newsletter: a chapter applications form** (ruling 45). The subscriber lands in EspoCRM first, and the applications' existing Constant Contact synchronisation, described in `cbm-client-intake/MAILING-SETUP.md`, passes them on. Whether the applications already have a newsletter signup form is not checked.
@@ -38,9 +38,9 @@ Both checked on 11-06-26.
 
 ## Prices to check before anyone relies on them
 
-Every figure below is from memory. None has been checked.
+Every figure below is from memory unless marked. Hosting prices were checked 11-09-26 in `docs/website-hosting-comparison.md`.
 
-- **Cloudways** on a small DigitalOcean server: about $14 a month.
+- **Cloudways** on its smallest DigitalOcean server: $14 a month, billed monthly, plus backup storage (checked 11-09-26).
 - **A server the chapter runs itself**, for comparison: about $6 to $12 a month, plus about $2 for backups.
 - **Stripe's card fee:** about 2.9 percent plus 30 cents per gift. Stripe offers a lower rate to nonprofits that apply.
 - **Squarespace plans that allow scripts**, relevant only to a chapter that keeps Squarespace: about $23 to $39 a month.
@@ -71,6 +71,7 @@ Read from `cbm-client-intake` on 11-07-26, without changing anything.
 
 | Version | Date | Change |
 |---|---|---|
+| 0.7 | 11-09-26 14:10 | Hosting follows ruling 75; the Cloudways price checked. |
 | 0.6 | 11-07-26 14:26 | Ruling numbers 23 to 68 renumbered 25 to 70, after merging with rulings 23 and 24 of 09-25-26 (see the rulings file, version 2.29). |
 | 0.5 | 11-07-26 01:46 | Added what the chapter applications already have, read from the code: recordings, events and topics built; newsletter form and frame support not built; cross-site fetch setting built. |
 | 0.4 | 11-07-26 01:40 | The newsletter signup is a chapter applications form, not Constant Contact's own (ruling 45). Drafted marks removed after Doug's confirmation. |

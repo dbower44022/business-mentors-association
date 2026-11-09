@@ -1,10 +1,10 @@
 # Next steps — where the work stands
 
 **Document:** The work in progress and the next steps, kept so a new session can continue where the last one stopped
-**Version:** 1.7
+**Version:** 1.8
 **Status:** Current
 **Owner:** Doug Bower
-**Last Updated:** 11-08-26 14:19
+**Last Updated:** 11-09-26 14:10
 
 ---
 
@@ -34,10 +34,13 @@ A new session reads this file after `README.md` and `DECISIONS.md`. Each item sa
 
 7. **Correct `cbm-client-intake`'s chapter network decision file.** Its `prds/chapter-network/DECISIONS.md` still states rulings that this repository's rulings 1 to 3 replaced (noted in `README.md`). Same process rule as step 1. *Waits on:* Doug's go-ahead, best done together with step 1.
 
+8. **Bring the setup runbook in line with ruling 75.** `docs/setup-runbook.md` and the test website runbook should say the host is the chapter's choice, list WT-90 to WT-92 as the test any host must pass, and keep Cloudways as the worked example. Also confirm, during the test website's setup, whether Cloudways' smallest plan includes staging and what its default backup schedule is (`docs/website-hosting-comparison.md`). *Waits on:* nothing.
+
 ---
 
 ## Done recently
 
+- **11-09-26** — Ruling 29 reopened and replaced by ruling 75. Prices checked for Cloudways and Hostinger; a chapter now chooses its own host.
 - **11-07-26** — Kickoff prompt reviewed and revised to version 1.2: commit and push rules for `cbm-client-intake`, where a push to `main` deploys production; the stale ruling numbers flagged; open decisions listed. Zoom confirmed as the video meeting service, so decision D4 is now the Zoom and Constant Contact plans.
 - **11-07-26** — Ruling 72: the demo chapter is the Association itself. Kickoff prompt for correcting the guide drafted and approved; the two consequences of ruling 72 confirmed.
 - **11-07-26** — Ruling 71: the demo system is built as a full new chapter by the deployment guide. The guide reviewed; findings and the two-track plan in `docs/demo-chapter-plan.md`.
@@ -56,6 +59,7 @@ A new session reads this file after `README.md` and `DECISIONS.md`. Each item sa
 
 | Version | Date | Change |
 |---|---|---|
+| 1.8 | 11-09-26 14:10 | Ruling 75 recorded; step 8 added for the runbook. |
 | 1.7 | 11-08-26 14:19 | Step 0: stages 6 to 8 progress, stage 9 blocked on CRMBuilder, rulings 73 and 74. |
 | 1.6 | 11-08-26 09:54 | Step 0: the closing report of the `cbm-client-intake` guide session (stages 3 to 5 done, D4 answered, what is owed). Step 2: the registrar is GoDaddy. |
 | 1.5 | 11-07-26 15:04 | The `cbm-client-intake` guide session started; step 0 now waits on its plan and report; the next-session prompt updated. |

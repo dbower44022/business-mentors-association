@@ -1,10 +1,10 @@
 # Next steps — where the work stands
 
 **Document:** The work in progress and the next steps, kept so a new session can continue where the last one stopped
-**Version:** 1.11
+**Version:** 1.12
 **Status:** Current
 **Owner:** Doug Bower
-**Last Updated:** 11-09-26 14:51
+**Last Updated:** 11-09-26 17:12
 
 ---
 
@@ -34,14 +34,13 @@ A new session reads this file after `README.md` and `DECISIONS.md`. Each item sa
 
 7. **Correct `cbm-client-intake`'s chapter network decision file.** Its `prds/chapter-network/DECISIONS.md` still states rulings that this repository's rulings 1 to 3 replaced (noted in `README.md`). Same process rule as step 1. *Waits on:* Doug's go-ahead, best done together with step 1.
 
-8. **Bring the New Chapter Deployment Guide in line with ruling 75.** The guide lives in `cbm-client-intake` (`prds/chapter-network/deployment-guide/steps/`). Step 5.10 and stage 6 tell every chapter to use Cloudways; they should say the host is the chapter's choice, list what any host must do (WT-90 to WT-92), and keep Cloudways as the worked path the Association tests. This repository's setup runbook needs no change: it opens the Association's own accounts, and the Association uses Cloudways. The test website runbook's header now cites ruling 75. Also confirm, during the test website's setup, whether Cloudways' smallest plan includes staging and what its default backup schedule is (`docs/website-hosting-comparison.md`). **Update 11-09-26:** step 5.10 done (`cbm-client-intake` commit a20d43c3). Stage 6's wording is handed to the `cbm-client-intake` guide session, which is rewriting stage 6 for the Cloudways screens. Then correct `docs/website-hosting-comparison.md`: Cloudways' 1 GB Standard server is $11 a month in the sign-up form, and Cloudways advises 2 GB for a live site. *Waits on:* the guide session's stage 6 commit.
-
-9. **Replace the Association's Google service account key.** The key for the service account in the Association's Google Cloud project was left in this folder for a day and was copied into local backups before Doug moved it to his password vault on 11-09-26. Create a new key, store it in the vault, and delete the old key in the Google Cloud console, so the copies stop working. Do it before guide stage 10, where the chapter applications first use the key. Claude writes the steps as a step page when this starts. *Waits on:* Doug, who chose to do it later (11-09-26).
+8. **Replace the Association's Google service account key.** The key for the service account in the Association's Google Cloud project was left in this folder for a day and was copied into local backups before Doug moved it to his password vault on 11-09-26. Create a new key, store it in the vault, and delete the old key in the Google Cloud console, so the copies stop working. Do it before guide stage 10, where the chapter applications first use the key. Claude writes the steps as a step page when this starts. *Waits on:* Doug, who chose to do it later (11-09-26).
 
 ---
 
 ## Done recently
 
+- **11-09-26** — The New Chapter Deployment Guide follows ruling 75: step 5.10 lists the five things any host must do, and stage 6 builds on the chosen host with Cloudways as the tested path (`cbm-client-intake` commits a20d43c3 and 2a084142; checked, no further change needed). `docs/website-hosting-comparison.md` corrected to version 1.2: Cloudways' 1 GB Standard server is $11 a month in the sign-up form, and the 2 GB server advised for a live site is $28 a month on the pricing page. Still to confirm in the Cloudways account: staging on the smallest plan, the default backup schedule, and the 2 GB Standard price.
 - **11-09-26** — Ruling 29 reopened and replaced by ruling 75. Prices checked for Cloudways and Hostinger; a chapter now chooses its own host.
 - **11-07-26** — Kickoff prompt reviewed and revised to version 1.2: commit and push rules for `cbm-client-intake`, where a push to `main` deploys production; the stale ruling numbers flagged; open decisions listed. Zoom confirmed as the video meeting service, so decision D4 is now the Zoom and Constant Contact plans.
 - **11-07-26** — Ruling 72: the demo chapter is the Association itself. Kickoff prompt for correcting the guide drafted and approved; the two consequences of ruling 72 confirmed.
@@ -61,6 +60,7 @@ A new session reads this file after `README.md` and `DECISIONS.md`. Each item sa
 
 | Version | Date | Change |
 |---|---|---|
+| 1.12 | 11-09-26 17:12 | Step 8 done and moved to Done recently; the service account key step renumbered to 8. |
 | 1.11 | 11-09-26 14:51 | Step 8: step 5.10 done; stage 6 handed to the guide session; the comparison's Cloudways price to correct. |
 | 1.10 | 11-09-26 14:21 | Step 8 corrected: the work is in the deployment guide, not the setup runbook. |
 | 1.9 | 11-09-26 14:18 | Step 9 added: replace the Google service account key. |

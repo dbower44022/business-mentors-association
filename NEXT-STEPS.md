@@ -1,10 +1,10 @@
 # Next steps — where the work stands
 
 **Document:** The work in progress and the next steps, kept so a new session can continue where the last one stopped
-**Version:** 1.9
+**Version:** 1.10
 **Status:** Current
 **Owner:** Doug Bower
-**Last Updated:** 11-09-26 14:18
+**Last Updated:** 11-09-26 14:21
 
 ---
 
@@ -34,7 +34,7 @@ A new session reads this file after `README.md` and `DECISIONS.md`. Each item sa
 
 7. **Correct `cbm-client-intake`'s chapter network decision file.** Its `prds/chapter-network/DECISIONS.md` still states rulings that this repository's rulings 1 to 3 replaced (noted in `README.md`). Same process rule as step 1. *Waits on:* Doug's go-ahead, best done together with step 1.
 
-8. **Bring the setup runbook in line with ruling 75.** `docs/setup-runbook.md` and the test website runbook should say the host is the chapter's choice, list WT-90 to WT-92 as the test any host must pass, and keep Cloudways as the worked example. Also confirm, during the test website's setup, whether Cloudways' smallest plan includes staging and what its default backup schedule is (`docs/website-hosting-comparison.md`). *Waits on:* nothing.
+8. **Bring the New Chapter Deployment Guide in line with ruling 75.** The guide lives in `cbm-client-intake` (`prds/chapter-network/deployment-guide/steps/`). Step 5.10 and stage 6 tell every chapter to use Cloudways; they should say the host is the chapter's choice, list what any host must do (WT-90 to WT-92), and keep Cloudways as the worked path the Association tests. This repository's setup runbook needs no change: it opens the Association's own accounts, and the Association uses Cloudways. The test website runbook's header now cites ruling 75. Also confirm, during the test website's setup, whether Cloudways' smallest plan includes staging and what its default backup schedule is (`docs/website-hosting-comparison.md`). *Waits on:* a `cbm-client-intake` session's uncommitted stage 6 edits (11-09-26).
 
 9. **Replace the Association's Google service account key.** The key for the service account in the Association's Google Cloud project was left in this folder for a day and was copied into local backups before Doug moved it to his password vault on 11-09-26. Create a new key, store it in the vault, and delete the old key in the Google Cloud console, so the copies stop working. Do it before guide stage 10, where the chapter applications first use the key. Claude writes the steps as a step page when this starts. *Waits on:* Doug, who chose to do it later (11-09-26).
 
@@ -61,6 +61,7 @@ A new session reads this file after `README.md` and `DECISIONS.md`. Each item sa
 
 | Version | Date | Change |
 |---|---|---|
+| 1.10 | 11-09-26 14:21 | Step 8 corrected: the work is in the deployment guide, not the setup runbook. |
 | 1.9 | 11-09-26 14:18 | Step 9 added: replace the Google service account key. |
 | 1.8 | 11-09-26 14:10 | Ruling 75 recorded; step 8 added for the runbook. |
 | 1.7 | 11-08-26 14:19 | Step 0: stages 6 to 8 progress, stage 9 blocked on CRMBuilder, rulings 73 and 74. |

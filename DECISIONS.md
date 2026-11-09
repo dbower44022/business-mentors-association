@@ -1,10 +1,10 @@
 # Decisions — the Association's rulings
 
 **Document:** Every ruling that defines the Business Mentors Association
-**Version:** 2.35
+**Version:** 2.36
 **Status:** Current
 **Owner:** Doug Bower
-**Last Updated:** 11-09-26 14:10
+**Last Updated:** 11-09-26 14:17
 
 ---
 
@@ -186,7 +186,7 @@ Doug confirmed items 3 to 21 of Claude's drafted list as written, and changed it
 
 74. **The Association's CRM is built without the two paid extensions first, and they are bought at guide step 9.5 once decision D2 is settled**, as Boston's CRM was. Stages 9 to 11 go ahead without waiting. Accepted cost: until the extensions are installed, the CRM does not fully match the standard, and the features that need them cannot be tested. *Amends ruling 71, which said open question 24 must be answered before the CRM is built.* Doug chose Claude's recommendation 11-08-26.
 
-75. **A chapter chooses its own website host. The Association names what the host must do, not which host, and runs its own websites on Cloudways.** Whatever host a chapter chooses must keep the server's operating system and PHP up to date, take daily backups, provide the security certificate and a staging copy, sit in the chapter's own account, and never share a server with the chapter's customer relationship management system (website template requirements WT-90 to WT-92). The Association's own websites, the test website of ruling 70 among them, run on Cloudways, a lightly managed host on DigitalOcean servers. The Association tests the chapter connector there, so Cloudways is the one host it has verified. Why: a chapter's choice of host is often argued out between the chapter and its technical person, and the Association stays out of that argument (ruling 1). The Association is technical enough to use Cloudways' fuller server access. And a host whose low price depends on paying four years in advance is a negative sign, because companies ask for that when they need the cash. Checked prices and the options: `docs/website-hosting-comparison.md`. Accepted cost, noted by Claude and not yet confirmed by Doug: a chapter on another host runs on a platform the Association has not tested, and the setup runbook covers Cloudways only. *Replaces ruling 29.* Doug chose option 3 of the comparison 11-09-26, after Cleveland's website maintainer recommended Hostinger.
+75. **A chapter chooses its own website host. The Association names what the host must do, not which host, and runs its own websites on Cloudways.** Whatever host a chapter chooses must keep the server's operating system and PHP up to date, take daily backups, provide the security certificate and a staging copy, sit in the chapter's own account, and never share a server with the chapter's customer relationship management system (website template requirements WT-90 to WT-92). The Association's own websites, the test website of ruling 70 among them, run on Cloudways, a lightly managed host on DigitalOcean servers. The Association tests the chapter connector there, so Cloudways is the one host it has verified. Why: a chapter's choice of host is often argued out between the chapter and its technical person, and the Association stays out of that argument (ruling 1). The Association is technical enough to use Cloudways' fuller server access. And a host whose low price depends on paying four years in advance is a negative sign, because companies ask for that when they need the cash. Checked prices and the options: `docs/website-hosting-comparison.md`. Accepted cost: a chapter on another host runs on a platform the Association has not tested, and the setup runbook covers Cloudways only. *Replaces ruling 29.* Doug chose option 3 of the comparison 11-09-26, after Cleveland's website maintainer recommended Hostinger, and confirmed the accepted cost the same day.
 
 ---
 
@@ -217,6 +217,7 @@ These are not rulings. Each one either follows from a ruling or fills a gap, and
 
 | Version | Date | Change |
 |---|---|---|
+| 2.36 | 11-09-26 14:17 | Ruling 75: Doug confirmed the accepted cost Claude had noted. |
 | 2.35 | 11-09-26 14:10 | Ruling 75 added: a chapter chooses its own website host; the Association runs its own websites on Cloudways. Ruling 29 marked as replaced. |
 | 2.34 | 11-08-26 14:19 | Ruling 74 added: the CRM is built without the paid extensions first. Ruling 71 marked as amended. |
 | 2.33 | 11-08-26 12:25 | Ruling 73 added: the template publishes all four policy documents, marked as drafts. Ruling 49 marked as amended. |

@@ -1,10 +1,10 @@
 # Next steps — where the work stands
 
 **Document:** The work in progress and the next steps, kept so a new session can continue where the last one stopped
-**Version:** 1.15
+**Version:** 1.16
 **Status:** Current
 **Owner:** Doug Bower
-**Last Updated:** 11-10-26 01:45
+**Last Updated:** 11-10-26 09:03
 
 ---
 
@@ -37,12 +37,13 @@ A new session reads this file after `README.md` and `DECISIONS.md`. Each item sa
 8. **Replace the Association's Google service account key.** The key for the service account in the Association's Google Cloud project was left in this folder for a day and was copied into local backups before Doug moved it to his password vault on 11-09-26. Create a new key, store it in the vault, and delete the old key in the Google Cloud console, so the copies stop working. Do it before guide stage 10, where the chapter applications first use the key. Claude writes the steps as a step page when this starts. *Waits on:* Doug, who chose to do it later (11-09-26).
 
 
-9. **Clear the test website's server cache.** Chapter connector 0.2.5 moved the Member Login link to the end of the footer's bottom line (Doug, 11-10-26). It is installed on chapter-demo.mentorsassociation.org, but the Cloudways server cache still serves old copies of some pages: the home page and Find a Mentor without the link, and About with the link above the header. The cache is cleared in the Cloudways console, which needs Doug's sign-in. *Waits on:* Doug, to sign in to Cloudways.
+9. **Clear the test website's server cache again.** Chapter connector 0.2.6 makes the Member Login link open in a new tab (Doug, 11-10-26). It is installed on chapter-demo.mentorsassociation.org, but the Cloudways server cache saved some pages again after Doug cleared it, with 0.2.5 still running: the home page, Find a Mentor and Contact. Every connector update needs the cache cleared afterwards. *Waits on:* Doug, in the Cloudways console.
 
 ---
 
 ## Done recently
 
+- **11-10-26** — Member Login opens in a new tab: chapter connector 0.2.6, installed on the test website. It goes to apps.businessmentorsassociation.org, the Association's own applications, whose first page is the sign-in screen.
 - **11-10-26** — Member Login link moved to the footer's bottom line at Doug's request: chapter connector 0.2.5, installed on the test website.
 - **11-10-26** — Chapter connector 0.2.4 installed on chapter-demo.mentorsassociation.org. The Member Login link shows on every page, lined up above "Request a Mentor", and opens the chapter applications' sign-in page. 0.2.4 fixes 0.2.3, which put the link at the window's far edge on a wide screen.
 - **11-10-26** — A "Member Login" link added to the chapter website template: chapter connector 0.2.3, in `chapter-website-prototype` commit a1d6ed9. It sits in a slim bar above the header, because as a menu entry it pushed "Request a Mentor" onto a second line. It links to the chapter applications' address, whose root page is their sign-in page. Tested on desktop and phone width in the local prototype.
@@ -66,6 +67,7 @@ A new session reads this file after `README.md` and `DECISIONS.md`. Each item sa
 
 | Version | Date | Change |
 |---|---|---|
+| 1.16 | 11-10-26 09:03 | Connector 0.2.6 (new tab) installed; step 9 is now a second cache clear. |
 | 1.15 | 11-10-26 01:45 | Member Login link moved to the footer (0.2.5); step 9 added to clear the test website's server cache. |
 | 1.14 | 11-10-26 01:39 | Step 9 done: connector 0.2.4 installed on the test website. |
 | 1.13 | 11-10-26 01:35 | Member Login link done in the prototype; step 9 added to install it on the test website. |

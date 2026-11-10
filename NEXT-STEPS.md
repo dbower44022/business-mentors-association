@@ -1,10 +1,10 @@
 # Next steps — where the work stands
 
 **Document:** The work in progress and the next steps, kept so a new session can continue where the last one stopped
-**Version:** 1.13
+**Version:** 1.14
 **Status:** Current
 **Owner:** Doug Bower
-**Last Updated:** 11-10-26 01:35
+**Last Updated:** 11-10-26 01:39
 
 ---
 
@@ -36,12 +36,12 @@ A new session reads this file after `README.md` and `DECISIONS.md`. Each item sa
 
 8. **Replace the Association's Google service account key.** The key for the service account in the Association's Google Cloud project was left in this folder for a day and was copied into local backups before Doug moved it to his password vault on 11-09-26. Create a new key, store it in the vault, and delete the old key in the Google Cloud console, so the copies stop working. Do it before guide stage 10, where the chapter applications first use the key. Claude writes the steps as a step page when this starts. *Waits on:* Doug, who chose to do it later (11-09-26).
 
-9. **Install chapter connector 0.2.3 on the test website.** The new version adds a "Member Login" link above the header on every page, leading to the chapter applications' sign-in page (requirement WT-72 of `docs/website-template-prd.md`). It is built at `~/Dropbox/Projects/chapter-website-prototype/dist/chapter-connector-0.2.3.zip` and tested in the local prototype. It is not yet on chapter-demo.mentorsassociation.org. *Waits on:* Doug, to upload it in that site's WordPress administration, or to let Claude do it in his browser.
 
 ---
 
 ## Done recently
 
+- **11-10-26** — Chapter connector 0.2.4 installed on chapter-demo.mentorsassociation.org. The Member Login link shows on every page, lined up above "Request a Mentor", and opens the chapter applications' sign-in page. 0.2.4 fixes 0.2.3, which put the link at the window's far edge on a wide screen.
 - **11-10-26** — A "Member Login" link added to the chapter website template: chapter connector 0.2.3, in `chapter-website-prototype` commit a1d6ed9. It sits in a slim bar above the header, because as a menu entry it pushed "Request a Mentor" onto a second line. It links to the chapter applications' address, whose root page is their sign-in page. Tested on desktop and phone width in the local prototype.
 - **11-09-26** — The New Chapter Deployment Guide follows ruling 75: step 5.10 lists the five things any host must do, and stage 6 builds on the chosen host with Cloudways as the tested path (`cbm-client-intake` commits a20d43c3 and 2a084142; checked, no further change needed). `docs/website-hosting-comparison.md` corrected to version 1.2: Cloudways' 1 GB Standard server is $11 a month in the sign-up form, and the 2 GB server advised for a live site is $28 a month on the pricing page. Still to confirm in the Cloudways account: staging on the smallest plan, the default backup schedule, and the 2 GB Standard price.
 - **11-09-26** — Ruling 29 reopened and replaced by ruling 75. Prices checked for Cloudways and Hostinger; a chapter now chooses its own host.
@@ -63,6 +63,7 @@ A new session reads this file after `README.md` and `DECISIONS.md`. Each item sa
 
 | Version | Date | Change |
 |---|---|---|
+| 1.14 | 11-10-26 01:39 | Step 9 done: connector 0.2.4 installed on the test website. |
 | 1.13 | 11-10-26 01:35 | Member Login link done in the prototype; step 9 added to install it on the test website. |
 | 1.12 | 11-09-26 17:02 | Step 8 done and moved to Done recently; the service account key step renumbered to 8. |
 | 1.11 | 11-09-26 14:51 | Step 8: step 5.10 done; stage 6 handed to the guide session; the comparison's Cloudways price to correct. |

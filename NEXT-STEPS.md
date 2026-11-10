@@ -43,7 +43,7 @@ A new session reads this file after `README.md` and `DECISIONS.md`. Each item sa
 
 ## Done recently
 
-- **11-10-26** — The Association's Zoom credentials checked, read-only: Zoom issues a token and finds admin@mentorsassociation.org, licensed; webinars are refused without the Webinars add-on, as expected. Nothing was put into the Association's applications; the values go in through the chapter information form when the add-on is bought (Doug's choice). Recorded in `cbm-client-intake` commit on `main`, not pushed: guide step 5.5, the setup plan and open item 73.
+- **11-10-26** — The Association's Zoom credentials checked, read-only: Zoom issues a token and finds admin@mentorsassociation.org, licensed; webinars are refused without the Webinars add-on, as expected. Nothing was put into the Association's applications; the values go in through the chapter information form when the add-on is bought (Doug's choice). Recorded in `cbm-client-intake` commit 534efaa2, pushed: guide step 5.5, the setup plan and open item 73.
 - **11-10-26** — Member Login opens in a new tab: chapter connector 0.2.6, installed on the test website. It goes to apps.businessmentorsassociation.org, the Association's own applications, whose first page is the sign-in screen.
 - **11-10-26** — Member Login link moved to the footer's bottom line at Doug's request: chapter connector 0.2.5, installed on the test website.
 - **11-10-26** — Chapter connector 0.2.4 installed on chapter-demo.mentorsassociation.org. The Member Login link shows on every page, lined up above "Request a Mentor", and opens the chapter applications' sign-in page. 0.2.4 fixes 0.2.3, which put the link at the window's far edge on a wide screen.

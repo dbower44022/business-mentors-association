@@ -1,10 +1,10 @@
 # Next steps — where the work stands
 
 **Document:** The work in progress and the next steps, kept so a new session can continue where the last one stopped
-**Version:** 1.19
+**Version:** 1.20
 **Status:** Current
 **Owner:** Doug Bower
-**Last Updated:** 11-11-26 22:36
+**Last Updated:** 11-11-26 23:07
 
 ---
 
@@ -39,7 +39,7 @@ A new session reads this file after `README.md` and `DECISIONS.md`. Each item sa
 
 ## Done recently
 
-- **11-11-26** — Step 3 done: ruling 76, two domains recommended to every chapter and counted in the chapter cost estimate, at about $21 a year each. Cost list 1.10, proposal summary 1.6, workbook generator, workbook and snapshot updated. Still owed in `cbm-client-intake`: its deployment guide calls one domain or two an open question; that change goes through that repository's process.
+- **11-11-26** — Step 3 done: ruling 76, two domains recommended to every chapter and counted in the chapter cost estimate, at about $21 a year each. Cost list 1.10, proposal summary 1.6, workbook generator, workbook and snapshot updated. The deployment guide in `cbm-client-intake` follows it (guide stage 3 version 0.8, planning document 1.5), committed there 11-11-26.
 - **11-11-26** — Step 2 done: the domains' prices paid at GoDaddy, $20.88 (businessmentorsassociation.org) and $20.68 (mentorsassociation.org) a year, renewal the same, stated by Doug. Setup runbook Part 1 marked done (version 1.5); cost list 1.9, proposal summary 1.5, workbook generator, workbook and snapshot updated. Association total now about $5,154 a year, or $3,653 at nonprofit prices. Auto-renew on both domains is still to be checked; it was not in Doug's answer.
 - **11-10-26** — The Association's Zoom credentials checked, read-only: Zoom issues a token and finds admin@mentorsassociation.org, licensed; webinars are refused without the Webinars add-on, as expected. Nothing was put into the Association's applications; the values go in through the chapter information form when the add-on is bought (Doug's choice). Recorded in `cbm-client-intake` commit 534efaa2, pushed: guide step 5.5, the setup plan and open item 73.
 - **11-10-26** — Member Login opens in a new tab: chapter connector 0.2.6, installed on the test website. It goes to apps.businessmentorsassociation.org, the Association's own applications, whose first page is the sign-in screen.
@@ -66,6 +66,7 @@ A new session reads this file after `README.md` and `DECISIONS.md`. Each item sa
 
 | Version | Date | Change |
 |---|---|---|
+| 1.20 | 11-11-26 23:07 | Ruling 76 carried into the deployment guide. |
 | 1.19 | 11-11-26 22:36 | Step 3 done: ruling 76. |
 | 1.18 | 11-11-26 22:13 | Step 2 done and removed; step 3 notes the domain price; step 6 no longer waits on step 2. |
 | 1.17 | 11-10-26 10:41 | Zoom credentials checked. |

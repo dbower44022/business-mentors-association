@@ -1,10 +1,10 @@
 # Next steps — where the work stands
 
 **Document:** The work in progress and the next steps, kept so a new session can continue where the last one stopped
-**Version:** 1.18
+**Version:** 1.19
 **Status:** Current
 **Owner:** Doug Bower
-**Last Updated:** 11-11-26 22:13
+**Last Updated:** 11-11-26 22:36
 
 ---
 
@@ -21,8 +21,6 @@ A new session reads this file after `README.md` and `DECISIONS.md`. Each item sa
 0. **The Association set up as a chapter (rulings 71 and 72), `docs/demo-chapter-plan.md`.** Track 2: the `cbm-client-intake` guide session (11-08-26) finished stages 3 to 5 for the Association, working in Doug's browser, and corrected the guide's stages 3 to 5 from the real screens (its plan: `cbm-client-intake/prds/chapter-network/deployment-guide/association-setup-plan.md`, version 1.5; owed items: that repository's `OPEN-ITEMS.md` item 73). Done: both domains on Cloudflare (still registered at GoDaddy); Google Workspace on mentorsassociation.org, Business Starter, with doug.bower@ and info@ mailboxes and the admin@ and allmembers@ groups, mail tested both ways; DigitalOcean, Zoom Pro, Constant Contact (trial), Stripe (test mode, donation link) and an Association Cloudways account, all signed in with admin@ apart from Stripe. Decision D4 answered: Zoom Pro without the Webinars add-on, Constant Contact Lite monthly. Doug's decisions in that session: every account signs in with admin@; GoDaddy stays on businessmentors@dougbower.com; compulsory two-step sign-in not yet; the Cloudways account is the Association's own. Owed: the second owner (ruling 18), two-step sign-in on six accounts, GoDaddy auto-renew, Constant Contact Lite before the trial ends, Stripe's email to admin@, DMARC to quarantine on or after 12-06-26, the admin@ group's spam setting. Nothing in `cbm-client-intake` is pushed; its `main` also holds another session's code fix, so its push is decided with that. Next: stage 6, the website, after a short plan in a `cbm-client-intake` session. Track 1: Doug reviews piece C at Stop 4 of `cbm-client-intake/prds/chapter-website-plan.md`. *Waits on:* Doug: the owed items above, and the start of the stage 6 session. **Update 11-08-26 14:19:** stage 6's guide rewritten and the website waits on Cloudways' account check; stage 7 guide updated and model policy drafts in `docs/policy-drafts/`; stage 8 done (`cbm-client-intake/prds/chapter-network/chapters/bma-values.yaml`); stage 9 blocked until CRMBuilder can hold a new deployment's own tokens — kickoff `cbm-client-intake/prompts/crmbuilder-deployment-credentials-kickoff.md` (Doug's choice). Rulings 73 and 74 added. The owed items are deferred by Doug while these are test systems.
 
 1. **Correct the stale ruling numbers in `cbm-client-intake`.** `prds/chapter-website-plan.md` in `dbower44022/cbm-client-intake` cites this repository's rulings by their old numbers: "rulings 24 to 68", "Ruling 45", "Ruling 48", "Rulings 64…". Every ruling from 23 to 68 is now two higher (see the 2.29 entry in this repository's `DECISIONS.md` change log). That repository has its own change process. Read its `CLAUDE.md` first, and make the change only through that process. *Waits on:* Doug's go-ahead to start it there.
-
-3. **Decide whether the chapter cost estimate counts two domains.** Ruling 25 says the Association registered two domains "the way the Association recommends for every chapter". The chapter cost section of `docs/cost-list.md`, and the Chapter costs sheet that `costs/build_workbook.py` builds, still count one domain per chapter at about $11 a year. The Association paid about $20.78 a year per domain at GoDaddy (11-11-26), so the $11 estimate may also be low. The chapter network's deployment guide in `cbm-client-intake` still calls one domain or two an open question. *Waits on:* Doug: is two domains the recommendation, or one of two options?
 
 4. **Decide the test website's address.** Now decision D1a in `docs/demo-chapter-plan.md`: whether the switched-over website moves under businessmentorsassociation.org and becomes the Association's own public website. *Waits on:* Doug, before stage 13.
 
@@ -41,6 +39,7 @@ A new session reads this file after `README.md` and `DECISIONS.md`. Each item sa
 
 ## Done recently
 
+- **11-11-26** — Step 3 done: ruling 76, two domains recommended to every chapter and counted in the chapter cost estimate, at about $21 a year each. Cost list 1.10, proposal summary 1.6, workbook generator, workbook and snapshot updated. Still owed in `cbm-client-intake`: its deployment guide calls one domain or two an open question; that change goes through that repository's process.
 - **11-11-26** — Step 2 done: the domains' prices paid at GoDaddy, $20.88 (businessmentorsassociation.org) and $20.68 (mentorsassociation.org) a year, renewal the same, stated by Doug. Setup runbook Part 1 marked done (version 1.5); cost list 1.9, proposal summary 1.5, workbook generator, workbook and snapshot updated. Association total now about $5,154 a year, or $3,653 at nonprofit prices. Auto-renew on both domains is still to be checked; it was not in Doug's answer.
 - **11-10-26** — The Association's Zoom credentials checked, read-only: Zoom issues a token and finds admin@mentorsassociation.org, licensed; webinars are refused without the Webinars add-on, as expected. Nothing was put into the Association's applications; the values go in through the chapter information form when the add-on is bought (Doug's choice). Recorded in `cbm-client-intake` commit 534efaa2, pushed: guide step 5.5, the setup plan and open item 73.
 - **11-10-26** — Member Login opens in a new tab: chapter connector 0.2.6, installed on the test website. It goes to apps.businessmentorsassociation.org, the Association's own applications, whose first page is the sign-in screen.
@@ -59,7 +58,7 @@ A new session reads this file after `README.md` and `DECISIONS.md`. Each item sa
 
 ## Prompt to start the next session
 
-> Operating mode: ARCHITECTURE. Repository: `~/Dropbox/Projects/business-mentors-association`. Pull from GitHub first. Read `README.md`, `DECISIONS.md` and `NEXT-STEPS.md`. If I bring the closing report of the `cbm-client-intake` guide session, record it under step 0; otherwise take up the step I name, or step 3 if I name none. Before changing anything in `cbm-client-intake`, read that repository's `CLAUDE.md` and follow its process. At the end, update `NEXT-STEPS.md`, commit and push.
+> Operating mode: ARCHITECTURE. Repository: `~/Dropbox/Projects/business-mentors-association`. Pull from GitHub first. Read `README.md`, `DECISIONS.md` and `NEXT-STEPS.md`. If I bring the closing report of the `cbm-client-intake` guide session, record it under step 0; otherwise take up the step I name, or step 6 if I name none. Before changing anything in `cbm-client-intake`, read that repository's `CLAUDE.md` and follow its process. At the end, update `NEXT-STEPS.md`, commit and push.
 
 ---
 
@@ -67,6 +66,7 @@ A new session reads this file after `README.md` and `DECISIONS.md`. Each item sa
 
 | Version | Date | Change |
 |---|---|---|
+| 1.19 | 11-11-26 22:36 | Step 3 done: ruling 76. |
 | 1.18 | 11-11-26 22:13 | Step 2 done and removed; step 3 notes the domain price; step 6 no longer waits on step 2. |
 | 1.17 | 11-10-26 10:41 | Zoom credentials checked. |
 | 1.16 | 11-10-26 09:03 | Connector 0.2.6 (new tab) installed; step 9 is now a second cache clear. |

@@ -1,10 +1,10 @@
 # Business Mentors Association — proposal summary
 
 **Document:** Executive summary of the proposal to form a shared technical services association for business mentoring chapters
-**Version:** 1.5
+**Version:** 1.6
 **Status:** Draft for review
 **Owner:** Doug Bower
-**Last Updated:** 11-11-26 22:12
+**Last Updated:** 11-11-26 22:36
 
 ---
 
@@ -61,7 +61,7 @@ The applications already exist and have run Cleveland Business Mentors' operatio
 
 Whether a company owned by nonprofits qualifies for that nonprofit pricing is one of the open questions, and it is worth roughly $1,500 a year to the Association.
 
-**Each chapter** pays its own hosting, email, extension licences and password vault: roughly $1,100 to $1,450 a year at nonprofit prices, whatever its size. Dues come on top of that and are not yet decided.
+**Each chapter** pays its own hosting, email, extension licences and password vault: roughly $1,150 to $1,450 a year at nonprofit prices, whatever its size. Dues come on top of that and are not yet decided.
 
 ## What could go wrong
 
@@ -92,6 +92,7 @@ Whether the company seeks tax-exempt status. The open-source licence. The size b
 
 | Version | Date | Change |
 |---|---|---|
+| 1.6 | 11-11-26 22:36 | A chapter's own costs restated as roughly $1,150 to $1,450 a year: two domains per chapter (ruling 76). |
 | 1.5 | 11-11-26 22:12 | Association running cost restated as about $3,700 to $5,200 a year, after the domains' price paid at GoDaddy replaced the estimate (Doug, 11-11-26). |
 | 1.4 | 11-07-26 14:25 | Two domains named, following ruling 25: businessmentorsassociation.org for the website, mentorsassociation.org for email. Merges the domain edits of 11-06-26 and 11-07-26, made on a separate line of work. |
 | 1.3 | 09-25-26 | Ownership by the member chapters is now ruled rather than assumed (ruling 24). Costs restated for a company: about $3,600 to $5,100 a year, and $100 to $740 to form. |

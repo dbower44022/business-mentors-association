@@ -1,10 +1,10 @@
 # Decisions — the Association's rulings
 
 **Document:** Every ruling that defines the Business Mentors Association
-**Version:** 2.36
+**Version:** 2.37
 **Status:** Current
 **Owner:** Doug Bower
-**Last Updated:** 11-09-26 14:17
+**Last Updated:** 11-11-26 22:36
 
 ---
 
@@ -188,6 +188,10 @@ Doug confirmed items 3 to 21 of Claude's drafted list as written, and changed it
 
 75. **A chapter chooses its own website host. The Association names what the host must do, not which host, and runs its own websites on Cloudways.** Whatever host a chapter chooses must keep the server's operating system and PHP up to date, take daily backups, provide the security certificate and a staging copy, sit in the chapter's own account, and never share a server with the chapter's customer relationship management system (website template requirements WT-90 to WT-92). The Association's own websites, the test website of ruling 70 among them, run on Cloudways, a lightly managed host on DigitalOcean servers. The Association tests the chapter connector there, so Cloudways is the one host it has verified. Why: a chapter's choice of host is often argued out between the chapter and its technical person, and the Association stays out of that argument (ruling 1). The Association is technical enough to use Cloudways' fuller server access. And a host whose low price depends on paying four years in advance is a negative sign, because companies ask for that when they need the cash. Checked prices and the options: `docs/website-hosting-comparison.md`. Accepted cost: a chapter on another host runs on a platform the Association has not tested, and the setup runbook covers Cloudways only. *Replaces ruling 29.* Doug chose option 3 of the comparison 11-09-26, after Cleveland's website maintainer recommended Hostinger, and confirmed the accepted cost the same day.
 
+### Ruled 11-11-26
+
+76. **The Association recommends two domains to every chapter, one for its website and one for its email, and a chapter's cost estimate counts two.** This is how the Association set up its own (ruling 25). Accepted cost: a second domain at about $21 a year per chapter, the price the Association paid at GoDaddy; a chapter that already owns a domain buys one more. *Answers the question ruling 25 left open, whether two domains is the recommendation or one of two options.* Doug, 11-11-26.
+
 ---
 
 ## Decisions the committee will make
@@ -217,6 +221,7 @@ These are not rulings. Each one either follows from a ruling or fills a gap, and
 
 | Version | Date | Change |
 |---|---|---|
+| 2.37 | 11-11-26 22:36 | Ruling 76 added: two domains recommended to every chapter, and counted in the chapter cost estimate. |
 | 2.36 | 11-09-26 14:17 | Ruling 75: Doug confirmed the accepted cost Claude had noted. |
 | 2.35 | 11-09-26 14:10 | Ruling 75 added: a chapter chooses its own website host; the Association runs its own websites on Cloudways. Ruling 29 marked as replaced. |
 | 2.34 | 11-08-26 14:19 | Ruling 74 added: the CRM is built without the paid extensions first. Ruling 71 marked as amended. |

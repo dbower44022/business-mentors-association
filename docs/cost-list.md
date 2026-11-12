@@ -1,10 +1,10 @@
 # Business Mentors Association — cost list for setting dues
 
 **Document:** Every cost the Association's dues must cover, plus what each chapter pays itself
-**Version:** 1.9
+**Version:** 1.10
 **Status:** Draft for review
 **Owner:** Doug Bower
-**Last Updated:** 11-11-26 22:12
+**Last Updated:** 11-11-26 22:36
 
 ---
 
@@ -103,16 +103,16 @@ Each chapter pays these directly, in its own accounts, as the chapter network ru
 | CRM server backups | 20 percent of the server | $58 | $58 | $58 |
 | Application container | $12 / month | $144 | $144 | $144 |
 | Application database | $15 / month, managed | $180 | $180 | $180 |
-| Domain name | about $11 / year | $11 | $11 | $11 |
+| Domain names, website and email (ruling 76) | about $21 / year each, two domains | $42 | $42 | $42 |
 | Domain name records (Cloudflare) | Free | $0 | $0 | $0 |
 | Google Workspace — staff and mentor mailboxes | Free nonprofit edition | $0 | $0 | $0 |
 | Advanced Pack extension licence | $295 / year (nonprofit price) | $295 | $295 | $295 |
 | Google Integration extension licence | **Price needed** | — | — | — |
 | Password vault | $4.49 / person / month, at least 3 people | $162 | $162 | $269 |
 | Video meeting account | about $16 / month, only for public webinars | $0 | $192 | $192 |
-| **Chapter's own costs** | | **$1,137** | **$1,329** | **$1,437** |
+| **Chapter's own costs** | | **$1,168** | **$1,360** | **$1,468** |
 
-**Nonprofit status is what makes this affordable.** At standard prices the same chapters would pay about $2,410, $5,630 and $11,620 a year. Almost all of that difference is mailboxes: a large chapter's 120 mailboxes cost about $10,000 a year at $7 each per month, and nothing on the free nonprofit edition.
+**Nonprofit status is what makes this affordable.** At standard prices the same chapters would pay about $2,440, $5,660 and $11,650 a year. Almost all of that difference is mailboxes: a large chapter's 120 mailboxes cost about $10,000 a year at $7 each per month, and nothing on the free nonprofit edition.
 
 **A larger chapter costs the Association no more to serve.** Its own costs barely rise with size, because the application and CRM are the same. If larger chapters contribute more, that follows from the shares in ruling 11, not from a larger cost to serve.
 
@@ -148,6 +148,7 @@ The bands, their shares and the amounts are the committee's to set. Nothing here
 
 | Version | Date | Change |
 |---|---|---|
+| 1.10 | 11-11-26 22:36 | Chapter costs count two domains (ruling 76) at about $21 a year each, the Association's GoDaddy price, instead of one at $11. A chapter's own costs now about $1,168, $1,360 and $1,468 a year. |
 | 1.9 | 11-11-26 22:12 | Domains: the price paid at GoDaddy, $20.88 and $20.68 a year, $41.56 together, replaces the $22 estimate (Doug, 11-11-26). Totals now about $5,154 and $3,653; the dues example updated. The note that the spreadsheet was not committed was out of date and is corrected. |
 | 1.8 | 11-07-26 14:26 | Two domains (ruling 25): businessmentorsassociation.org for the website and mentorsassociation.org for email, about $22 a year. The generator script, the workbook and the snapshot now count both. Totals restated at about $5,130 and $3,630, and the dues example to match. Merges the domain edits of 11-06-26 and 11-07-26, made on a separate line of work. |
 | 1.7 | 09-25-26 | Formation costs rewritten for a limited liability company (rulings 23 and 24): Ohio articles of organization, trade name registration, the operating agreement, and the federal exemption application only if exempt status is sought. A statutory agent added as a recurring cost. Totals restated at about $5,120 and $3,620. Nonprofit pricing flagged as needing confirmation for a company. |

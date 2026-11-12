@@ -4,7 +4,7 @@
 **Version:** 0.6
 **Status:** Draft — drafted by Claude; decision D1 answered by ruling 72
 **Owner:** Doug Bower
-**Last Updated:** 11-12-26 00:26
+**Last Updated:** 11-12-26 00:22
 
 ---
 
@@ -82,7 +82,7 @@ Work pauses for Doug's go-ahead at each stop. Between two stops it proceeds with
 
 | Version | Date (MM-DD-YY HH:MM) | Author | Change |
 |---|---|---|---|
-| 0.6 | 11-12-26 00:26 | Claude (Claude Code) | Decision D3 answered by ruling 77. |
+| 0.6 | 11-12-26 00:22 | Claude (Claude Code) | Decision D3 answered by ruling 77. |
 | 0.5 | 11-08-26 09:54 | Claude (Claude Code) | D4 answered by Doug; Stop C reached. |
 | 0.4 | 11-07-26 15:00 | Claude (Claude Code) | D4 narrowed to the plans and prices: Doug confirmed Zoom as the video meeting service. |
 | 0.3 | 11-07-26 14:52 | Claude (Claude Code) | Stop B passed: Doug approved the kickoff prompt and confirmed the ruling 72 consequences. |

@@ -4,7 +4,7 @@
 **Version:** 2.39
 **Status:** Current
 **Owner:** Doug Bower
-**Last Updated:** 11-12-26 00:26
+**Last Updated:** 11-12-26 00:22
 
 ---
 
@@ -225,7 +225,7 @@ These are not rulings. Each one either follows from a ruling or fills a gap, and
 
 | Version | Date | Change |
 |---|---|---|
-| 2.39 | 11-12-26 00:26 | Ruling 77 added: the Association's training data comes from rerunning crm-test's training data scripts. Answers decision D3 of the demo chapter plan. |
+| 2.39 | 11-12-26 00:22 | Ruling 77 added: the Association's training data comes from rerunning crm-test's training data scripts. Answers decision D3 of the demo chapter plan. |
 | 2.38 | 11-11-26 22:42 | Ruling 76: Doug confirmed the accepted cost Claude had noted. |
 | 2.37 | 11-11-26 22:36 | Ruling 76 added: two domains recommended to every chapter, and counted in the chapter cost estimate. |
 | 2.36 | 11-09-26 14:17 | Ruling 75: Doug confirmed the accepted cost Claude had noted. |

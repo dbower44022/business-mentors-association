@@ -4,7 +4,7 @@
 **Version:** 1.22
 **Status:** Current
 **Owner:** Doug Bower
-**Last Updated:** 11-12-26 00:27
+**Last Updated:** 11-12-26 00:22
 
 ---
 
@@ -72,7 +72,7 @@ A new session reads this file after `README.md` and `DECISIONS.md`. Each item sa
 
 | Version | Date | Change |
 |---|---|---|
-| 1.22 | 11-12-26 00:27 | Ruling 77 recorded; step 11 added for the training data kickoff; the prototype's GitHub copy renumbered to 12. |
+| 1.22 | 11-12-26 00:22 | Ruling 77 recorded; step 11 added for the training data kickoff; the prototype's GitHub copy renumbered to 12. |
 | 1.21 | 11-11-26 23:15 | Steps 10 (GoDaddy auto-renew) and 11 (a GitHub copy of the prototype) added; the next-session prompt warns about other sessions' commits in `cbm-client-intake`. |
 | 1.20 | 11-11-26 23:07 | Ruling 76 carried into the deployment guide. |
 | 1.19 | 11-11-26 22:36 | Step 3 done: ruling 76. |

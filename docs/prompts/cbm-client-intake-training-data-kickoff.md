@@ -4,7 +4,7 @@
 **Version:** 1.0
 **Status:** Draft — written by Claude 11-12-26; waits on Doug's review
 **Owner:** Doug Bower
-**Last Updated:** 11-12-26 00:26
+**Last Updated:** 11-12-26 00:22
 
 ---
 
@@ -61,4 +61,4 @@ The closing reply reports: the counts from step 1, what was loaded, what was not
 
 | Version | Date | Change |
 |---|---|---|
-| 1.0 | 11-12-26 00:26 | First version, written after ruling 77. |
+| 1.0 | 11-12-26 00:22 | First version, written after ruling 77. |

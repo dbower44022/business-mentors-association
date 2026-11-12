@@ -1,10 +1,10 @@
 # Business Mentors Association — account setup runbook
 
 **Document:** Step-by-step setup of the Association's domain, email, password vault, hosting account and code hosting
-**Version:** 1.4
+**Version:** 1.5
 **Status:** Draft for first use
 **Owner:** Doug Bower
-**Last Updated:** 11-07-26 14:26
+**Last Updated:** 11-11-26 22:12
 
 ---
 
@@ -29,27 +29,28 @@
 
 ---
 
-## Part 1 — Register the domains (Cloudflare)
+## Part 1 — Register the domains (done 11-07-26, at GoDaddy)
 
-The Association has two domains (ruling 25): **businessmentorsassociation.org** for the website and **mentorsassociation.org** for email. The email domain has to exist before any Association address can. So Cloudflare is opened under your own email first and moved to admin@ in step 1.8.
+**Done.** Both domains of ruling 25 were registered on 11-07-26 at GoDaddy, not at Cloudflare as this part first said. They expire on 11-07-27.
 
-1.1. Go to **dash.cloudflare.com** and create an account with your own email address. Turn on two-step verification (**My Profile → Authentication**).
+| Domain | Used for | Price paid, first year | Renewal price |
+|---|---|---|---|
+| businessmentorsassociation.org | The website | $20.88 | $20.88 a year |
+| mentorsassociation.org | Email | $20.68 | $20.68 a year |
 
-1.2. In the left menu open **Domain Registration → Register Domains**.
+Prices stated by Doug on 11-11-26, from GoDaddy. Together: $41.56 a year.
 
-1.3. Search **businessmentorsassociation.org**, then **mentorsassociation.org**.
-- If both are available, continue.
-- **If either is taken, stop here.** Ruling 25 names both domains and a replacement needs a ruling.
+- **Registrar account:** GoDaddy, signed in with businessmentors@dougbower.com. Doug chose on 11-08-26 to keep it on that address rather than move it to admin@mentorsassociation.org.
+- **Domain name records:** both domains point at Cloudflare's name servers. Their records are kept in the Association's Cloudflare account, which signs in with admin@mentorsassociation.org.
+- **Not recorded when the domains were bought:** the registrant contact and whether WHOIS privacy is on. Both should be checked in GoDaddy.
 
-1.4. Buy both for one year with auto-renew **on**.
+**Still owed** (deferred by Doug on 11-08-26 while these are test systems):
 
-1.5. For the registrant contact, enter yourself as the person and **"Business Mentors Association"** as the organization. The Association has no legal existence yet, so a person must be the registrant; this is changed to the Association after incorporation.
+1. Check that auto-renew is on for both domains in GoDaddy. If it is off, the domains lapse on 11-07-27.
+2. Turn on two-step sign-in for the GoDaddy account.
+3. Add the second owner (ruling 18) to the GoDaddy account.
 
-1.6. Leave **WHOIS privacy** on (Cloudflare's default).
-
-1.7. Confirm that both domains appear under **Websites** with Cloudflare as its DNS. Registration through Cloudflare sets this automatically.
-
-1.8. **Do this after Part 2 is complete:** in **Manage Account → Configurations** (or **My Profile**), change the account's email to admin@mentorsassociation.org, then in **Manage Account → Members** invite the second owner as a **Super Administrator**. Save the Cloudflare sign-in and recovery codes in the vault (Part 3).
+Whether to move the registration from GoDaddy to Cloudflare is still open. It is the drafted Cloudflare item in `DECISIONS.md`.
 
 ---
 
@@ -102,7 +103,7 @@ The Association uses the same password manager already ruled for chapters, so vo
 
 3.5. Save these into it, one entry each: the Cloudflare sign-in and recovery codes; both Google administrator sign-ins and recovery codes; the Google Workspace billing details (plan and renewal date, not the card number).
 
-3.6. Now go back and finish **step 1.8** (move Cloudflare to admin@ and add the second owner).
+3.6. In the Association's Cloudflare account, which already signs in with admin@mentorsassociation.org, open **Manage Account → Members** and invite the second owner as a **Super Administrator**. (This was step 1.8 until Part 1 was marked done.)
 
 ---
 
@@ -153,6 +154,7 @@ The Association's records and, later, the open-source applications live on GitHu
 
 | Version | Date | Change |
 |---|---|---|
+| 1.5 | 11-11-26 22:12 | Part 1 marked done: both domains were registered at GoDaddy on 11-07-26, not at Cloudflare. It now records the registrar, the prices paid ($20.88 and $20.68 a year, renewal the same, stated by Doug 11-11-26), the expiry date and what is still owed; step 3.6 no longer points at the removed step 1.8. The Cloudflare registration steps it replaced are in version 1.4. |
 | 1.4 | 11-07-26 14:26 | Ruling numbers 23 to 68 renumbered 25 to 70, after merging with rulings 23 and 24 of 09-25-26 (see the rulings file, version 2.29). |
 | 1.3 | 11-07-26 14:18 | Part 1 registers both domains of the corrected ruling 25: businessmentorsassociation.org for the website and mentorsassociation.org for email. |
 | 1.2 | 11-06-26 22:47 | Domain changed to mentorsassociation.org throughout, following ruling 25. The closing check now covers both registered domains. |

@@ -55,8 +55,8 @@ ADVPACK_NP, AGENT = "Assumptions!$B$13", "Assumptions!$B$14"
 # category, item, unit price, quantity (a name = from an assumption), times per
 # year, nonprofit factor (a name = from an assumption), note
 RECURRING = [
-    ("Infrastructure", "Domain names - website and email (Cloudflare, at cost)", 11, 2, 1, 1,
-     "Two domains (ruling 25). Estimate; not checked at the registrar"),
+    ("Infrastructure", "Domain names - website and email (GoDaddy)", 20.78, 2, 1, 1,
+     "Two domains (ruling 25), registered at GoDaddy 11-07-26: businessmentorsassociation.org $20.88 and mentorsassociation.org $20.68 a year, renewal the same (Doug, 11-11-26). Shown as their average, $20.78"),
     ("Infrastructure", "Shared test system - CRM server (4 GB)", 24, 1, 12, 1,
      "DigitalOcean published price"),
     ("Infrastructure", "Shared test system - server backups", 4.80, 1, 12, 1,

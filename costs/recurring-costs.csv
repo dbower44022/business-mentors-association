@@ -2,7 +2,7 @@ Recurring annual costs - the Association's own,,,,,,,,
 "Column F is today's price. Column H applies the nonprofit programs once the Association qualifies.",,,,,,,,
 ,,,,,,,,
 Category,Item,Unit price,Quantity,Times per year,Annual - standard,Nonprofit factor,Annual - nonprofit,Note and source
-Infrastructure,"Domain names - website and email (Cloudflare, at cost)",11,2,1,22,1,22,Two domains (ruling 25). Estimate; not checked at the registrar
+Infrastructure,Domain names - website and email (GoDaddy),20.78,2,1,41.56,1,41.56,"Two domains (ruling 25), registered at GoDaddy 11-07-26: businessmentorsassociation.org $20.88 and mentorsassociation.org $20.68 a year, renewal the same (Doug, 11-11-26). Shown as their average, $20.78"
 Infrastructure,Shared test system - CRM server (4 GB),24,1,12,288,1,288,DigitalOcean published price
 Infrastructure,Shared test system - server backups,4.8,1,12,57.6,1,57.6,20% of the server price (published)
 Infrastructure,Shared test system - application container,12,1,12,144,1,144,Published range $5-$12; check Cleveland's bill
@@ -17,4 +17,4 @@ Organization,Directors and officers insurance,800,1,1,800,1,800,Published averag
 Organization,General liability insurance,500,1,1,500,1,500,Published average. Same note as above
 Organization,Cyber liability insurance,0,1,1,0,1,0,"PRICE NEEDED - volunteers can reach chapters' systems, which hold client and mentor records"
 Organization,Statutory agent (Ohio),125,1,1,125,1,125,Required for an Ohio limited liability company (rulings 23 and 24). $0 if a volunteer with an Ohio address serves
-,Subtotal - recurring costs,,,,4197.24,,2969.24,
+,Subtotal - recurring costs,,,,4216.80,,2988.80,

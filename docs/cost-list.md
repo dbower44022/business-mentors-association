@@ -1,10 +1,10 @@
 # Business Mentors Association — cost list for setting dues
 
 **Document:** Every cost the Association's dues must cover, plus what each chapter pays itself
-**Version:** 1.8
+**Version:** 1.9
 **Status:** Draft for review
 **Owner:** Doug Bower
-**Last Updated:** 11-07-26 14:26
+**Last Updated:** 11-11-26 22:12
 
 ---
 
@@ -12,9 +12,9 @@
 
 Dues must cover the Association's own costs (ruling 11). Sections 1 to 5 name each one, give a current price where one could be found, and say how sure that price is. **Section 6 covers what a chapter pays itself**, in its own accounts. The two are kept apart: dues are not decided, and they are reported separately (ruling 22).
 
-**The working figures are in a spreadsheet**, `association-costs.xlsx`, which calculates the Association's totals, shows how they would split into dues by size band, and estimates a chapter's own costs for three example sizes. This document explains the lines; the spreadsheet does the arithmetic. **The spreadsheet is not yet committed to this repository** — Claude's tool writes text files only, so it must be added by hand.
+**The working figures are in a spreadsheet**, `association-costs.xlsx`, which calculates the Association's totals, shows how they would split into dues by size band, and estimates a chapter's own costs for three example sizes. This document explains the lines; the spreadsheet does the arithmetic. The spreadsheet is committed at `docs/association-costs.xlsx` and rebuilt from `costs/build_workbook.py`.
 
-**Estimated Association total: about $5,130 a year at standard prices, or about $3,630 a year once the Association qualifies for the nonprofit programs.** Both include a 10 percent fee for an outside body holding the money, a 10 percent contingency, and a statutory agent. Both assume the Association buys its own insurance; if a sponsor's policies cover it, take about $1,300 off.
+**Estimated Association total: about $5,154 a year at standard prices, or about $3,653 a year once the Association qualifies for the nonprofit programs.** Both include a 10 percent fee for an outside body holding the money, a 10 percent contingency, and a statutory agent. Both assume the Association buys its own insurance; if a sponsor's policies cover it, take about $1,300 off.
 
 **Three nonprofit programs change the total** (ruling 21), and each needs the Association to qualify:
 
@@ -32,7 +32,7 @@ Dues must cover the Association's own costs (ruling 11). Sections 1 to 5 name ea
 
 | Cost | What it pays for | Standard price | Nonprofit price | Confidence |
 |---|---|---|---|---|
-| Domains | businessmentorsassociation.org for the website and mentorsassociation.org for email (ruling 25), registered through Cloudflare | about $11 / year each — $22 / year | Same | Estimate; not checked at the registrar |
+| Domains | businessmentorsassociation.org for the website and mentorsassociation.org for email (ruling 25), registered at GoDaddy on 11-07-26 | $20.88 and $20.68 a year — $41.56 / year | Same | Paid, stated by Doug (11-11-26); renewal the same |
 | Shared test system — CRM server | The server holding the shared training and testing CRM (ruling 15). Same size as the trial chapter's, 4 GB memory | $24 / month — $288 / year | Same | Published |
 | Shared test system — server backups | Weekly backups of that server, charged at 20 percent of its price | $4.80 / month — $58 / year | Same | Published |
 | Shared test system — application | The chapter applications running against the test CRM | $5 to $12 / month — $60 to $144 / year | Same | Estimate from published container prices; depends on the size Cleveland's test application uses today |
@@ -124,7 +124,7 @@ Each chapter pays these directly, in its own accounts, as the chapter network ru
 
 Take the Association's annual total and split it across the size bands (ruling 11), in proportion to the share each band carries. The spreadsheet does this: enter the number of chapters in each band and the share per band, and it gives the dues per chapter under both standard and nonprofit prices.
 
-As an example, with one chapter in each of three bands carrying shares of one, two and three, yearly dues come to roughly $855, $1,710 and $2,565 at standard prices, or about $605, $1,210 and $1,815 at the nonprofit prices.
+As an example, with one chapter in each of three bands carrying shares of one, two and three, yearly dues come to roughly $859, $1,718 and $2,577 at standard prices, or about $609, $1,218 and $1,826 at the nonprofit prices.
 
 The bands, their shares and the amounts are the committee's to set. Nothing here is decided.
 
@@ -148,6 +148,7 @@ The bands, their shares and the amounts are the committee's to set. Nothing here
 
 | Version | Date | Change |
 |---|---|---|
+| 1.9 | 11-11-26 22:12 | Domains: the price paid at GoDaddy, $20.88 and $20.68 a year, $41.56 together, replaces the $22 estimate (Doug, 11-11-26). Totals now about $5,154 and $3,653; the dues example updated. The note that the spreadsheet was not committed was out of date and is corrected. |
 | 1.8 | 11-07-26 14:26 | Two domains (ruling 25): businessmentorsassociation.org for the website and mentorsassociation.org for email, about $22 a year. The generator script, the workbook and the snapshot now count both. Totals restated at about $5,130 and $3,630, and the dues example to match. Merges the domain edits of 11-06-26 and 11-07-26, made on a separate line of work. |
 | 1.7 | 09-25-26 | Formation costs rewritten for a limited liability company (rulings 23 and 24): Ohio articles of organization, trade name registration, the operating agreement, and the federal exemption application only if exempt status is sought. A statutory agent added as a recurring cost. Totals restated at about $5,120 and $3,620. Nonprofit pricing flagged as needing confirmation for a company. |
 | 1.6 | 09-25-26 | Moved into this repository; ruling numbers now point to this repository's decision file. |

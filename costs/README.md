@@ -1,10 +1,10 @@
 # The cost workbook
 
 **Document:** What is in this folder, and which of the three artifacts is the source
-**Version:** 1.2
+**Version:** 1.3
 **Status:** Current
 **Owner:** Doug Bower
-**Last Updated:** 11-07-26 14:26
+**Last Updated:** 11-11-26 22:13
 
 ---
 
@@ -20,7 +20,7 @@ It needs `openpyxl`. Change a price in the lists at the top of the script, rebui
 
 **The workbook itself is not committed here.** A spreadsheet is a binary file, and Claude's tool writes text files only, so the workbook is delivered in conversation and can be committed by hand. It does not have to be: the script reproduces it exactly.
 
-**The comma-separated files are a readable snapshot** of what the formulas produced on 09-25-26, with the second domain added on 11-07-26. They exist so the numbers can be read, searched and compared in a pull request, which a spreadsheet cannot be.
+**The comma-separated files are a readable snapshot** of what the formulas produced on 09-25-26, with the second domain added on 11-07-26 and the domains' prices paid at GoDaddy on 11-11-26. They exist so the numbers can be read, searched and compared in a pull request, which a spreadsheet cannot be.
 
 | File | The sheet it came from |
 |---|---|
@@ -45,6 +45,7 @@ Edit the script, rebuild the workbook, re-export the snapshot, commit all of it 
 
 | Version | Date | Change |
 |---|---|---|
+| 1.3 | 11-11-26 22:13 | The snapshot now carries the domains' prices paid at GoDaddy (11-11-26), recalculated in LibreOffice. |
 | 1.2 | 11-07-26 14:26 | Second domain added (ruling 25): the script's domain quantity is now 2, the workbook rebuilt, and the snapshot's changed figures updated. |
 | 1.1 | 09-25-26 | The generator script added and named as the source; the note about the workbook being uncommittable reworded to match. |
 | 1.0 | 09-25-26 | First version. Snapshot of the workbook after the company formation costs were added. |

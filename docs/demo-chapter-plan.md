@@ -1,10 +1,10 @@
 # Demo chapter — plan
 
 **Document:** Plan for building the demo chapter as a full new chapter, and for finishing the test chapter website, under rulings 71 and 72
-**Version:** 0.5
+**Version:** 0.6
 **Status:** Draft — drafted by Claude; decision D1 answered by ruling 72
 **Owner:** Doug Bower
-**Last Updated:** 11-08-26 09:54
+**Last Updated:** 11-12-26 00:26
 
 ---
 
@@ -43,7 +43,7 @@ Taken one at a time. Each recommendation is Claude's, not a ruling.
 - **D1. The demo chapter's domains and Google Workspace.** *Answered by ruling 72:* the Association's own two domains and a new Google Workspace on mentorsassociation.org. Two consequences are recorded with the ruling as accepted costs, confirmed by Doug 11-07-26: the applications' permission grant reaches every Association mailbox, and invented contacts must never be sent mail from the Association's domain (see D3).
 - **D1a. The test website's final address.** chapter-demo.mentorsassociation.org (ruling 70) sits on the email domain. Whether the switched-over website moves under businessmentorsassociation.org, and whether it becomes the Association's own public website with the chapter directory of ruling 40. Needed before stage 13.
 - **D2. The extension licences** (open questions 24 and 25). Whether the demo CRM shares Cleveland's Advanced Pack licence, and what the Google Integration licence costs. Needed before stage 9.
-- **D3. The demo chapter's data.** Ruling 15 gives the shared test system invented training data restored every night. Whether that data is a copy of crm-test's training data or built fresh, and how its invented contacts are kept from receiving mail or reaching Constant Contact. Needed before stage 15.
+- **D3. The demo chapter's data.** Ruling 15 gives the shared test system invented training data restored every night. Whether that data is a copy of crm-test's training data or built fresh, and how its invented contacts are kept from receiving mail or reaching Constant Contact. Needed before stage 15. *Answered by ruling 77, 11-12-26: crm-test's training data scripts are rerun against the Association's system, with addresses on a domain of the Association's that has no mailboxes. Kickoff: `docs/prompts/cbm-client-intake-training-data-kickoff.md`.*
 - **D4. The Zoom plan and the Constant Contact plan.** Which plan of each, at what price. Needed before stage 5. *The service is settled: Doug confirmed Zoom 11-07-26, as ruling 72 names it.* *Answered by Doug 11-07-26: a Zoom Pro seat without the Webinars add-on, and Constant Contact Lite paid monthly, about $25 to $30 a month together (third-party prices, not checked on the vendors' pages). Webinars and attendance stay untested until the add-on is bought.*
 
 ## 5. Order and stopping points
@@ -82,6 +82,7 @@ Work pauses for Doug's go-ahead at each stop. Between two stops it proceeds with
 
 | Version | Date (MM-DD-YY HH:MM) | Author | Change |
 |---|---|---|---|
+| 0.6 | 11-12-26 00:26 | Claude (Claude Code) | Decision D3 answered by ruling 77. |
 | 0.5 | 11-08-26 09:54 | Claude (Claude Code) | D4 answered by Doug; Stop C reached. |
 | 0.4 | 11-07-26 15:00 | Claude (Claude Code) | D4 narrowed to the plans and prices: Doug confirmed Zoom as the video meeting service. |
 | 0.3 | 11-07-26 14:52 | Claude (Claude Code) | Stop B passed: Doug approved the kickoff prompt and confirmed the ruling 72 consequences. |

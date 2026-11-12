@@ -1,10 +1,10 @@
 # Decisions — the Association's rulings
 
 **Document:** Every ruling that defines the Business Mentors Association
-**Version:** 2.38
+**Version:** 2.39
 **Status:** Current
 **Owner:** Doug Bower
-**Last Updated:** 11-11-26 22:42
+**Last Updated:** 11-12-26 00:26
 
 ---
 
@@ -192,6 +192,10 @@ Doug confirmed items 3 to 21 of Claude's drafted list as written, and changed it
 
 76. **The Association recommends two domains to every chapter, one for its website and one for its email, and a chapter's cost estimate counts two.** This is how the Association set up its own (ruling 25). Accepted cost: a second domain at about $21 a year per chapter, the price the Association paid at GoDaddy; a chapter that already owns a domain buys one more. *Answers the question ruling 25 left open, whether two domains is the recommendation or one of two options.* Doug, 11-11-26; he confirmed the accepted cost Claude had noted the same day.
 
+### Ruled 11-12-26
+
+77. **The Association's customer relationship management system gets its training data by rerunning the scripts that built crm-test's training data, aimed at the Association's system, with every invented address on a domain of the Association's that has no mailboxes.** The scripts are in `cbm-client-intake/scripts/sandbox/`. The same invented people, companies and mentoring histories appear on both systems, so training material and screenshots match. The invented contacts are also kept out of the Association's Constant Contact account. Accepted cost: anything typed into crm-test by hand is not carried over; the scripts may need a code change in `cbm-client-intake` to name the system they write to; and the invented mentors' sign-ins must be created first. *Answers decision D3 of `docs/demo-chapter-plan.md`.* Chosen over copying crm-test's records one by one, which would also carry release-testing leftovers and Cleveland's sandbox addresses. Doug chose Claude's recommendation 11-12-26.
+
 ---
 
 ## Decisions the committee will make
@@ -221,6 +225,7 @@ These are not rulings. Each one either follows from a ruling or fills a gap, and
 
 | Version | Date | Change |
 |---|---|---|
+| 2.39 | 11-12-26 00:26 | Ruling 77 added: the Association's training data comes from rerunning crm-test's training data scripts. Answers decision D3 of the demo chapter plan. |
 | 2.38 | 11-11-26 22:42 | Ruling 76: Doug confirmed the accepted cost Claude had noted. |
 | 2.37 | 11-11-26 22:36 | Ruling 76 added: two domains recommended to every chapter, and counted in the chapter cost estimate. |
 | 2.36 | 11-09-26 14:17 | Ruling 75: Doug confirmed the accepted cost Claude had noted. |

@@ -1,10 +1,10 @@
 # Next steps — where the work stands
 
 **Document:** The work in progress and the next steps, kept so a new session can continue where the last one stopped
-**Version:** 1.21
+**Version:** 1.22
 **Status:** Current
 **Owner:** Doug Bower
-**Last Updated:** 11-11-26 23:15
+**Last Updated:** 11-12-26 00:27
 
 ---
 
@@ -36,12 +36,15 @@ A new session reads this file after `README.md` and `DECISIONS.md`. Each item sa
 
 10. **Check auto-renew on both domains at GoDaddy.** Both expire 11-07-27 and lapse if auto-renew is off. Doug's answer of 11-11-26 gave the prices but not this setting. Part 1 of `docs/setup-runbook.md` lists it as owed, with GoDaddy two-step sign-in and the second owner. *Waits on:* Doug, signed in to GoDaddy as businessmentors@dougbower.com.
 
-11. **Give `chapter-website-prototype` a GitHub copy.** It holds the chapter connector's only source (now 0.2.6), and its commits exist only on this machine under `~/Dropbox/Projects/chapter-website-prototype`. *Waits on:* Doug: which GitHub account or organization holds it.
+11. **Load crm-test's training data into the Association's system (ruling 77).** Kickoff prompt `docs/prompts/cbm-client-intake-training-data-kickoff.md`, version 1.0, drafted 11-12-26. Doug reviews it, then pastes it into a new session in `~/Dropbox/Projects/cbm-client-intake`. That session's first deliverable is a plan, starting with a read-only count of what crm-test holds that no script made. *Waits on:* Doug's review of the prompt.
+
+12. **Give `chapter-website-prototype` a GitHub copy.** It holds the chapter connector's only source (now 0.2.6), and its commits exist only on this machine under `~/Dropbox/Projects/chapter-website-prototype`. *Waits on:* Doug: which GitHub account or organization holds it.
 
 ---
 
 ## Done recently
 
+- **11-12-26** — Ruling 77: the Association's training data comes from rerunning crm-test's training data scripts, with addresses on a domain that has no mailboxes. Answers decision D3 (demo chapter plan 0.6). Kickoff prompt drafted. Step 6, the drafted Cloudflare item, was put to Doug with a recommendation (record GoDaddy as registrar and Cloudflare for the domain name records as a ruling) and is still open.
 - **11-11-26** — Step 3 done: ruling 76, two domains recommended to every chapter and counted in the chapter cost estimate, at about $21 a year each. Cost list 1.10, proposal summary 1.6, workbook generator, workbook and snapshot updated. The deployment guide in `cbm-client-intake` follows it (guide stage 3 version 0.8, planning document 1.5), committed there 11-11-26.
 - **11-11-26** — Step 2 done: the domains' prices paid at GoDaddy, $20.88 (businessmentorsassociation.org) and $20.68 (mentorsassociation.org) a year, renewal the same, stated by Doug. Setup runbook Part 1 marked done (version 1.5); cost list 1.9, proposal summary 1.5, workbook generator, workbook and snapshot updated. Association total now about $5,154 a year, or $3,653 at nonprofit prices. Auto-renew on both domains is still to be checked; it was not in Doug's answer.
 - **11-10-26** — The Association's Zoom credentials checked, read-only: Zoom issues a token and finds admin@mentorsassociation.org, licensed; webinars are refused without the Webinars add-on, as expected. Nothing was put into the Association's applications; the values go in through the chapter information form when the add-on is bought (Doug's choice). Recorded in `cbm-client-intake` commit 534efaa2, pushed: guide step 5.5, the setup plan and open item 73.
@@ -61,7 +64,7 @@ A new session reads this file after `README.md` and `DECISIONS.md`. Each item sa
 
 ## Prompt to start the next session
 
-> Operating mode: ARCHITECTURE. Repository: `~/Dropbox/Projects/business-mentors-association`. Pull from GitHub first. Read `README.md`, `DECISIONS.md` and `NEXT-STEPS.md`. If I bring the closing report of the `cbm-client-intake` guide session, record it under step 0; otherwise take up the step I name, or step 6 if I name none. Before changing anything in `cbm-client-intake`, read that repository's `CLAUDE.md` and follow its process. Before pushing `cbm-client-intake`, check `git log origin/main..HEAD`: other sessions commit to the same local `main`, and a push sends their commits too. At the end, update `NEXT-STEPS.md`, commit and push.
+> Operating mode: ARCHITECTURE. Repository: `~/Dropbox/Projects/business-mentors-association`. Pull from GitHub first. Read `README.md`, `DECISIONS.md` and `NEXT-STEPS.md`. If I bring the closing report of the `cbm-client-intake` guide session, record it under step 0; otherwise take up the step I name, or step 6 if I name none. If I bring the closing report of the training data session, record it under step 11. Before changing anything in `cbm-client-intake`, read that repository's `CLAUDE.md` and follow its process. Before pushing `cbm-client-intake`, check `git log origin/main..HEAD`: other sessions commit to the same local `main`, and a push sends their commits too. At the end, update `NEXT-STEPS.md`, commit and push.
 
 ---
 
@@ -69,6 +72,7 @@ A new session reads this file after `README.md` and `DECISIONS.md`. Each item sa
 
 | Version | Date | Change |
 |---|---|---|
+| 1.22 | 11-12-26 00:27 | Ruling 77 recorded; step 11 added for the training data kickoff; the prototype's GitHub copy renumbered to 12. |
 | 1.21 | 11-11-26 23:15 | Steps 10 (GoDaddy auto-renew) and 11 (a GitHub copy of the prototype) added; the next-session prompt warns about other sessions' commits in `cbm-client-intake`. |
 | 1.20 | 11-11-26 23:07 | Ruling 76 carried into the deployment guide. |
 | 1.19 | 11-11-26 22:36 | Step 3 done: ruling 76. |

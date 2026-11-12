@@ -1,10 +1,10 @@
 # Next steps — where the work stands
 
 **Document:** The work in progress and the next steps, kept so a new session can continue where the last one stopped
-**Version:** 1.20
+**Version:** 1.21
 **Status:** Current
 **Owner:** Doug Bower
-**Last Updated:** 11-11-26 23:07
+**Last Updated:** 11-11-26 23:15
 
 ---
 
@@ -32,8 +32,11 @@ A new session reads this file after `README.md` and `DECISIONS.md`. Each item sa
 
 8. **Replace the Association's Google service account key.** The key for the service account in the Association's Google Cloud project was left in this folder for a day and was copied into local backups before Doug moved it to his password vault on 11-09-26. Create a new key, store it in the vault, and delete the old key in the Google Cloud console, so the copies stop working. Do it before guide stage 10, where the chapter applications first use the key. Claude writes the steps as a step page when this starts. *Waits on:* Doug, who chose to do it later (11-09-26).
 
-
 9. **Clear the test website's server cache again.** Chapter connector 0.2.6 makes the Member Login link open in a new tab (Doug, 11-10-26). It is installed on chapter-demo.mentorsassociation.org, but the Cloudways server cache saved some pages again after Doug cleared it, with 0.2.5 still running: the home page, Find a Mentor and Contact. Every connector update needs the cache cleared afterwards. *Waits on:* Doug, in the Cloudways console.
+
+10. **Check auto-renew on both domains at GoDaddy.** Both expire 11-07-27 and lapse if auto-renew is off. Doug's answer of 11-11-26 gave the prices but not this setting. Part 1 of `docs/setup-runbook.md` lists it as owed, with GoDaddy two-step sign-in and the second owner. *Waits on:* Doug, signed in to GoDaddy as businessmentors@dougbower.com.
+
+11. **Give `chapter-website-prototype` a GitHub copy.** It holds the chapter connector's only source (now 0.2.6), and its commits exist only on this machine under `~/Dropbox/Projects/chapter-website-prototype`. *Waits on:* Doug: which GitHub account or organization holds it.
 
 ---
 
@@ -58,7 +61,7 @@ A new session reads this file after `README.md` and `DECISIONS.md`. Each item sa
 
 ## Prompt to start the next session
 
-> Operating mode: ARCHITECTURE. Repository: `~/Dropbox/Projects/business-mentors-association`. Pull from GitHub first. Read `README.md`, `DECISIONS.md` and `NEXT-STEPS.md`. If I bring the closing report of the `cbm-client-intake` guide session, record it under step 0; otherwise take up the step I name, or step 6 if I name none. Before changing anything in `cbm-client-intake`, read that repository's `CLAUDE.md` and follow its process. At the end, update `NEXT-STEPS.md`, commit and push.
+> Operating mode: ARCHITECTURE. Repository: `~/Dropbox/Projects/business-mentors-association`. Pull from GitHub first. Read `README.md`, `DECISIONS.md` and `NEXT-STEPS.md`. If I bring the closing report of the `cbm-client-intake` guide session, record it under step 0; otherwise take up the step I name, or step 6 if I name none. Before changing anything in `cbm-client-intake`, read that repository's `CLAUDE.md` and follow its process. Before pushing `cbm-client-intake`, check `git log origin/main..HEAD`: other sessions commit to the same local `main`, and a push sends their commits too. At the end, update `NEXT-STEPS.md`, commit and push.
 
 ---
 
@@ -66,6 +69,7 @@ A new session reads this file after `README.md` and `DECISIONS.md`. Each item sa
 
 | Version | Date | Change |
 |---|---|---|
+| 1.21 | 11-11-26 23:15 | Steps 10 (GoDaddy auto-renew) and 11 (a GitHub copy of the prototype) added; the next-session prompt warns about other sessions' commits in `cbm-client-intake`. |
 | 1.20 | 11-11-26 23:07 | Ruling 76 carried into the deployment guide. |
 | 1.19 | 11-11-26 22:36 | Step 3 done: ruling 76. |
 | 1.18 | 11-11-26 22:13 | Step 2 done and removed; step 3 notes the domain price; step 6 no longer waits on step 2. |

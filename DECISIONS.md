@@ -1,10 +1,10 @@
 # Decisions — the Association's rulings
 
 **Document:** Every ruling that defines the Business Mentors Association
-**Version:** 2.39
+**Version:** 2.40
 **Status:** Current
 **Owner:** Doug Bower
-**Last Updated:** 11-12-26 00:22
+**Last Updated:** 11-12-26 00:24
 
 ---
 
@@ -196,6 +196,8 @@ Doug confirmed items 3 to 21 of Claude's drafted list as written, and changed it
 
 77. **The Association's customer relationship management system gets its training data by rerunning the scripts that built crm-test's training data, aimed at the Association's system, with every invented address on a domain of the Association's that has no mailboxes.** The scripts are in `cbm-client-intake/scripts/sandbox/`. The same invented people, companies and mentoring histories appear on both systems, so training material and screenshots match. The invented contacts are also kept out of the Association's Constant Contact account. Accepted cost: anything typed into crm-test by hand is not carried over; the scripts may need a code change in `cbm-client-intake` to name the system they write to; and the invented mentors' sign-ins must be created first. *Answers decision D3 of `docs/demo-chapter-plan.md`.* Chosen over copying crm-test's records one by one, which would also carry release-testing leftovers and Cleveland's sandbox addresses. Doug chose Claude's recommendation 11-12-26.
 
+78. **The Association's two domains are registered at GoDaddy, under businessmentors@dougbower.com, and their domain name records are kept in the Association's Cloudflare account.** This is how they were set up on 11-07-26 and 11-08-26. Accepted cost: about $21 a year per domain at GoDaddy, where Cloudflare's registrar sells a .org at cost, roughly half that (Claude's estimate, not checked); and two accounts to secure, each needing two-step sign-in and the second owner of ruling 18. Moving the registration to Cloudflare stays a possible later question. *Replaces the drafted item "Cloudflare for the domain", which was never a ruling.* Chosen over moving the registration to Cloudflare now and over recording nothing. Doug chose Claude's recommendation 11-12-26.
+
 ---
 
 ## Decisions the committee will make
@@ -216,7 +218,7 @@ These are not rulings. Each one either follows from a ruling or fills a gap, and
 - **A second trained volunteer.** Recommended practice: train a second volunteer to build releases and back up support, so the Association does not depend on one person.
 - **Release notice and test data.** Chapters are told in advance when a release waiting for certification is installed on the shared test system, so a trainer knows which version the trainees will meet. Testers are told that the midnight restore returns the data to its starting point, so records they create while testing are gone the next morning; the restore resets the data, not the installed version.
 - **A record of versions.** The Association keeps a record of which release each chapter runs, so a support request starts from the right version.
-- **Cloudflare for the domain.** The Association's domain is registered through Cloudflare and its domain name records kept there, the same arrangement already ruled for every chapter.
+- ~~**Cloudflare for the domain.** The Association's domain is registered through Cloudflare and its domain name records kept there, the same arrangement already ruled for every chapter.~~ **Replaced 11-12-26 by ruling 78:** registered at GoDaddy, domain name records at Cloudflare.
 - **Membership requirements.** Proposed: own your infrastructure, name a technical contact and a representative, sign the chapter agreement, adopt the application as designed. Also proposed: admission confirmed by a member vote.
 
 ---
@@ -225,6 +227,7 @@ These are not rulings. Each one either follows from a ruling or fills a gap, and
 
 | Version | Date | Change |
 |---|---|---|
+| 2.40 | 11-12-26 00:24 | Ruling 78 added: the domains are registered at GoDaddy, with their domain name records at Cloudflare. The drafted Cloudflare item marked as replaced. |
 | 2.39 | 11-12-26 00:22 | Ruling 77 added: the Association's training data comes from rerunning crm-test's training data scripts. Answers decision D3 of the demo chapter plan. |
 | 2.38 | 11-11-26 22:42 | Ruling 76: Doug confirmed the accepted cost Claude had noted. |
 | 2.37 | 11-11-26 22:36 | Ruling 76 added: two domains recommended to every chapter, and counted in the chapter cost estimate. |

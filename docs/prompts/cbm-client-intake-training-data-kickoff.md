@@ -1,10 +1,10 @@
 # Kickoff prompt — loading crm-test's training data into the Association's system
 
 **Document:** Prompt to start a Claude Code session in `cbm-client-intake` that loads the Association's customer relationship management system with the training data crm-test holds, under Association ruling 77
-**Version:** 1.0
-**Status:** Draft — written by Claude 11-12-26; waits on Doug's review
+**Version:** 1.1
+**Status:** Approved by Doug 11-12-26
 **Owner:** Doug Bower
-**Last Updated:** 11-12-26 00:22
+**Last Updated:** 11-12-26 00:24
 
 ---
 
@@ -61,4 +61,5 @@ The closing reply reports: the counts from step 1, what was loaded, what was not
 
 | Version | Date | Change |
 |---|---|---|
+| 1.1 | 11-12-26 00:24 | Approved by Doug. |
 | 1.0 | 11-12-26 00:22 | First version, written after ruling 77. |

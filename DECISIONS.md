@@ -1,10 +1,10 @@
 # Decisions — the Association's rulings
 
 **Document:** Every ruling that defines the Business Mentors Association
-**Version:** 2.37
+**Version:** 2.38
 **Status:** Current
 **Owner:** Doug Bower
-**Last Updated:** 11-11-26 22:36
+**Last Updated:** 11-11-26 22:42
 
 ---
 
@@ -190,7 +190,7 @@ Doug confirmed items 3 to 21 of Claude's drafted list as written, and changed it
 
 ### Ruled 11-11-26
 
-76. **The Association recommends two domains to every chapter, one for its website and one for its email, and a chapter's cost estimate counts two.** This is how the Association set up its own (ruling 25). Accepted cost: a second domain at about $21 a year per chapter, the price the Association paid at GoDaddy; a chapter that already owns a domain buys one more. *Answers the question ruling 25 left open, whether two domains is the recommendation or one of two options.* Doug, 11-11-26.
+76. **The Association recommends two domains to every chapter, one for its website and one for its email, and a chapter's cost estimate counts two.** This is how the Association set up its own (ruling 25). Accepted cost: a second domain at about $21 a year per chapter, the price the Association paid at GoDaddy; a chapter that already owns a domain buys one more. *Answers the question ruling 25 left open, whether two domains is the recommendation or one of two options.* Doug, 11-11-26; he confirmed the accepted cost Claude had noted the same day.
 
 ---
 
@@ -221,6 +221,7 @@ These are not rulings. Each one either follows from a ruling or fills a gap, and
 
 | Version | Date | Change |
 |---|---|---|
+| 2.38 | 11-11-26 22:42 | Ruling 76: Doug confirmed the accepted cost Claude had noted. |
 | 2.37 | 11-11-26 22:36 | Ruling 76 added: two domains recommended to every chapter, and counted in the chapter cost estimate. |
 | 2.36 | 11-09-26 14:17 | Ruling 75: Doug confirmed the accepted cost Claude had noted. |
 | 2.35 | 11-09-26 14:10 | Ruling 75 added: a chapter chooses its own website host; the Association runs its own websites on Cloudways. Ruling 29 marked as replaced. |

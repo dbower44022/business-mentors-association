@@ -1,10 +1,10 @@
 # Next steps — where the work stands
 
 **Document:** The work in progress and the next steps, kept so a new session can continue where the last one stopped
-**Version:** 1.23
+**Version:** 1.24
 **Status:** Current
 **Owner:** Doug Bower
-**Last Updated:** 11-12-26 00:24
+**Last Updated:** 11-13-26 00:26
 
 ---
 
@@ -34,7 +34,7 @@ A new session reads this file after `README.md` and `DECISIONS.md`. Each item sa
 
 10. **Check auto-renew on both domains at GoDaddy.** Both expire 11-07-27 and lapse if auto-renew is off. Doug's answer of 11-11-26 gave the prices but not this setting. Part 1 of `docs/setup-runbook.md` lists it as owed, with GoDaddy two-step sign-in and the second owner. *Waits on:* Doug, signed in to GoDaddy as businessmentors@dougbower.com.
 
-11. **Load crm-test's training data into the Association's system (ruling 77).** Kickoff prompt `docs/prompts/cbm-client-intake-training-data-kickoff.md`, version 1.1, approved by Doug 11-12-26. Doug pastes it into a new session in `~/Dropbox/Projects/cbm-client-intake`. That session's first deliverable is a plan, starting with a read-only count of what crm-test holds that no script made. *Waits on:* that session's plan and closing report.
+11. **Finish the training system's loose ends (ruling 77).** The training data is loaded (see Done recently, 11-13-26). Owed, all in `cbm-client-intake/OPEN-ITEMS.md` item 81: restore the Association's system after Doug's testing of 11-12-26 (`~/.config/cbm-bma/sandbox.sh restore`); finish Constant Contact on the Association's System Settings (the client secret, the connect on Feature readiness, the dry run before the sync is switched on; `cbm-client-intake/MAILING-SETUP.md` sections 2 to 4, with a runbook page offered); the sign-in checks for the six training identities; Boston's applications' role; event presenters; crm-test's baseline recapture; the nightly restore ruling 15 asks for. *Waits on:* Doug, and a `cbm-client-intake` session.
 
 12. **Give `chapter-website-prototype` a GitHub copy.** It holds the chapter connector's only source (now 0.2.6), and its commits exist only on this machine under `~/Dropbox/Projects/chapter-website-prototype`. *Waits on:* Doug: which GitHub account or organization holds it.
 
@@ -42,6 +42,7 @@ A new session reads this file after `README.md` and `DECISIONS.md`. Each item sa
 
 ## Done recently
 
+- **11-13-26** — Ruling 77 carried out: the Association's system holds crm-test's training data, loaded 11-12-26 by `cbm-client-intake` v0.319.0's scripts, with every invented address on sandbox.mentorsassociation.org. The applications' Sandbox address domain setting keeps those addresses out of mail, Drive, the members group and Constant Contact. Twelve training sign-ins exist, with passwords in the vault. A CRM baseline was captured 11-12-26, and the CRM can be restored to it on demand with `~/.config/cbm-bma/sandbox.sh`; it is not restored nightly yet. Doug tested on 11-12-26; the restore has not been run since. Not loaded: event presenters (the applications' permissions) and crm-test's hand-made records. Owed: `cbm-client-intake/OPEN-ITEMS.md` item 81 (step 11 above).
 - **11-12-26** — Ruling 77: the Association's training data comes from rerunning crm-test's training data scripts, with addresses on a domain that has no mailboxes. Answers decision D3 (demo chapter plan 0.6). Kickoff prompt drafted. Kickoff prompt approved by Doug.
 - **11-12-26** — Step 6 done: ruling 78, the domains registered at GoDaddy with their domain name records at Cloudflare. The drafted Cloudflare item marked as replaced.
 - **11-11-26** — Step 3 done: ruling 76, two domains recommended to every chapter and counted in the chapter cost estimate, at about $21 a year each. Cost list 1.10, proposal summary 1.6, workbook generator, workbook and snapshot updated. The deployment guide in `cbm-client-intake` follows it (guide stage 3 version 0.8, planning document 1.5), committed there 11-11-26.
@@ -71,6 +72,7 @@ A new session reads this file after `README.md` and `DECISIONS.md`. Each item sa
 
 | Version | Date | Change |
 |---|---|---|
+| 1.24 | 11-13-26 00:26 | The training data session's closing report (ruling 77 carried out) in Done recently; step 11 now its loose ends. |
 | 1.23 | 11-12-26 00:24 | Step 6 done (ruling 78) and removed; step 11's prompt approved; the default next step is now step 5. |
 | 1.22 | 11-12-26 00:22 | Ruling 77 recorded; step 11 added for the training data kickoff; the prototype's GitHub copy renumbered to 12. |
 | 1.21 | 11-11-26 23:15 | Steps 10 (GoDaddy auto-renew) and 11 (a GitHub copy of the prototype) added; the next-session prompt warns about other sessions' commits in `cbm-client-intake`. |

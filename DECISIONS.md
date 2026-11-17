@@ -1,10 +1,10 @@
 # Decisions — the Association's rulings
 
 **Document:** Every ruling that defines the Business Mentors Association
-**Version:** 2.40
+**Version:** 2.41
 **Status:** Current
 **Owner:** Doug Bower
-**Last Updated:** 11-12-26 00:24
+**Last Updated:** 11-17-26 02:15
 
 ---
 
@@ -194,9 +194,11 @@ Doug confirmed items 3 to 21 of Claude's drafted list as written, and changed it
 
 ### Ruled 11-12-26
 
-77. **The Association's customer relationship management system gets its training data by rerunning the scripts that built crm-test's training data, aimed at the Association's system, with every invented address on a domain of the Association's that has no mailboxes.** The scripts are in `cbm-client-intake/scripts/sandbox/`. The same invented people, companies and mentoring histories appear on both systems, so training material and screenshots match. The invented contacts are also kept out of the Association's Constant Contact account. Accepted cost: anything typed into crm-test by hand is not carried over; the scripts may need a code change in `cbm-client-intake` to name the system they write to; and the invented mentors' sign-ins must be created first. *Answers decision D3 of `docs/demo-chapter-plan.md`.* Chosen over copying crm-test's records one by one, which would also carry release-testing leftovers and Cleveland's sandbox addresses. Doug chose Claude's recommendation 11-12-26.
+77. **The Association's customer relationship management system gets its training data by rerunning the scripts that built crm-test's training data, aimed at the Association's system, with every invented address on a domain of the Association's that has no mailboxes.** The scripts are in `cbm-client-intake/scripts/sandbox/`. The same invented people, companies and mentoring histories appear on both systems, so training material and screenshots match. The invented contacts are also kept out of the Association's Constant Contact account. Accepted cost: anything typed into crm-test by hand is not carried over; the scripts may need a code change in `cbm-client-intake` to name the system they write to; and the invented mentors' sign-ins must be created first. *Answers decision D3 of `docs/demo-chapter-plan.md`.* Chosen over copying crm-test's records one by one, which would also carry release-testing leftovers and Cleveland's sandbox addresses. Doug chose Claude's recommendation 11-12-26. *Amended 11-17-26 by ruling 79: the invented addresses are on `bma.test`, not a domain of the Association's.*
 
 78. **The Association's two domains are registered at GoDaddy, under businessmentors@dougbower.com, and their domain name records are kept in the Association's Cloudflare account.** This is how they were set up on 11-07-26 and 11-08-26. Accepted cost: about $21 a year per domain at GoDaddy, where Cloudflare's registrar sells a .org at cost, roughly half that (Claude's estimate, not checked); and two accounts to secure, each needing two-step sign-in and the second owner of ruling 18. Moving the registration to Cloudflare stays a possible later question. *Replaces the drafted item "Cloudflare for the domain", which was never a ruling.* Chosen over moving the registration to Cloudflare now and over recording nothing. Doug chose Claude's recommendation 11-12-26.
+
+79. **The training data's invented addresses and its training sign-ins are on `bma.test`, a name reserved for testing that can never be registered or given a mailbox.** A trainee signs in as `joe.mentor@bma.test`. Every sign-in is first.last: `tt` became `tommy.tranell` and `mentoradmin` became `mentor.admin`. Why: the sign-ins on `sandbox.mentorsassociation.org` were too long and hard to type, and a `.test` name keeps invented addresses out of real mail more surely than any domain the Association owns, since nobody can ever add mail records to it. A sign-in stays the same as the mentor's member email address, which the chapter applications rely on. Accepted cost: the addresses are no longer on a domain of the Association's, which ruling 77 named; and the records already loaded had to be moved, done by `cbm-client-intake/scripts/sandbox/move_sandbox_domain.py` on 11-17-26. *Amends ruling 77.* Chosen over sign-ins without any domain, which break the applications' check that a mentor's sign-in matches their member email, and over a short subdomain of the Association's own, which barely shortens the sign-in. Doug chose Claude's recommendation 11-17-26.
 
 ---
 
@@ -227,6 +229,7 @@ These are not rulings. Each one either follows from a ruling or fills a gap, and
 
 | Version | Date | Change |
 |---|---|---|
+| 2.41 | 11-17-26 02:15 | Ruling 79 added: the training addresses and sign-ins are on `bma.test`. Ruling 77 marked as amended by it. |
 | 2.40 | 11-12-26 00:24 | Ruling 78 added: the domains are registered at GoDaddy, with their domain name records at Cloudflare. The drafted Cloudflare item marked as replaced. |
 | 2.39 | 11-12-26 00:22 | Ruling 77 added: the Association's training data comes from rerunning crm-test's training data scripts. Answers decision D3 of the demo chapter plan. |
 | 2.38 | 11-11-26 22:42 | Ruling 76: Doug confirmed the accepted cost Claude had noted. |

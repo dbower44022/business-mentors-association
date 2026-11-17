@@ -1,10 +1,10 @@
 # Next steps — where the work stands
 
 **Document:** The work in progress and the next steps, kept so a new session can continue where the last one stopped
-**Version:** 1.24
+**Version:** 1.25
 **Status:** Current
 **Owner:** Doug Bower
-**Last Updated:** 11-13-26 00:26
+**Last Updated:** 11-17-26 02:15
 
 ---
 
@@ -17,6 +17,8 @@ A new session reads this file after `README.md` and `DECISIONS.md`. Each item sa
 ---
 
 ## Next steps, in recommended order
+
+**⚠ Soon — re-capture the Association's training baseline** (Doug, 11-17-26: "we need to make sure we do not forget to recapture soon"). The 11-12-26 baseline predates the website's twelve finished mentor profiles and the move to `bma.test` (ruling 79), so **a restore now undoes both** — do not run `sandbox.sh restore` without rerunning the two scripts named in `cbm-client-intake/SANDBOX-RESET.md` § *A second training system* straight after. The re-capture waits only until the test records with real people's addresses made since 11-12-26 (Sharon Rose, Clark Rose, Lori Karbtest1, Dana Testbaker and others) are finished with and removed, because a baseline keeps whatever the CRM holds. The steps: `cbm-client-intake/OPEN-ITEMS.md` item 87. *Waits on:* the end of that testing, then Doug.
 
 0. **The Association set up as a chapter (rulings 71 and 72), `docs/demo-chapter-plan.md`.** Track 2: the `cbm-client-intake` guide session (11-08-26) finished stages 3 to 5 for the Association, working in Doug's browser, and corrected the guide's stages 3 to 5 from the real screens (its plan: `cbm-client-intake/prds/chapter-network/deployment-guide/association-setup-plan.md`, version 1.5; owed items: that repository's `OPEN-ITEMS.md` item 73). Done: both domains on Cloudflare (still registered at GoDaddy); Google Workspace on mentorsassociation.org, Business Starter, with doug.bower@ and info@ mailboxes and the admin@ and allmembers@ groups, mail tested both ways; DigitalOcean, Zoom Pro, Constant Contact (trial), Stripe (test mode, donation link) and an Association Cloudways account, all signed in with admin@ apart from Stripe. Decision D4 answered: Zoom Pro without the Webinars add-on, Constant Contact Lite monthly. Doug's decisions in that session: every account signs in with admin@; GoDaddy stays on businessmentors@dougbower.com; compulsory two-step sign-in not yet; the Cloudways account is the Association's own. Owed: the second owner (ruling 18), two-step sign-in on six accounts, GoDaddy auto-renew, Constant Contact Lite before the trial ends, Stripe's email to admin@, DMARC to quarantine on or after 12-06-26, the admin@ group's spam setting. Nothing in `cbm-client-intake` is pushed; its `main` also holds another session's code fix, so its push is decided with that. Next: stage 6, the website, after a short plan in a `cbm-client-intake` session. Track 1: Doug reviews piece C at Stop 4 of `cbm-client-intake/prds/chapter-website-plan.md`. *Waits on:* Doug: the owed items above, and the start of the stage 6 session. **Update 11-08-26 14:19:** stage 6's guide rewritten and the website waits on Cloudways' account check; stage 7 guide updated and model policy drafts in `docs/policy-drafts/`; stage 8 done (`cbm-client-intake/prds/chapter-network/chapters/bma-values.yaml`); stage 9 blocked until CRMBuilder can hold a new deployment's own tokens — kickoff `cbm-client-intake/prompts/crmbuilder-deployment-credentials-kickoff.md` (Doug's choice). Rulings 73 and 74 added. The owed items are deferred by Doug while these are test systems.
 
@@ -34,7 +36,7 @@ A new session reads this file after `README.md` and `DECISIONS.md`. Each item sa
 
 10. **Check auto-renew on both domains at GoDaddy.** Both expire 11-07-27 and lapse if auto-renew is off. Doug's answer of 11-11-26 gave the prices but not this setting. Part 1 of `docs/setup-runbook.md` lists it as owed, with GoDaddy two-step sign-in and the second owner. *Waits on:* Doug, signed in to GoDaddy as businessmentors@dougbower.com.
 
-11. **Finish the training system's loose ends (ruling 77).** The training data is loaded (see Done recently, 11-13-26). Owed, all in `cbm-client-intake/OPEN-ITEMS.md` item 81: restore the Association's system after Doug's testing of 11-12-26 (`~/.config/cbm-bma/sandbox.sh restore`); finish Constant Contact on the Association's System Settings (the client secret, the connect on Feature readiness, the dry run before the sync is switched on; `cbm-client-intake/MAILING-SETUP.md` sections 2 to 4, with a runbook page offered); the sign-in checks for the six training identities; Boston's applications' role; event presenters; crm-test's baseline recapture; the nightly restore ruling 15 asks for. *Waits on:* Doug, and a `cbm-client-intake` session.
+11. **Finish the training system's loose ends (ruling 77).** The training data is loaded (see Done recently, 11-13-26). Owed, all in `cbm-client-intake/OPEN-ITEMS.md` item 81: restore the Association's system after Doug's testing of 11-12-26 (`~/.config/cbm-bma/sandbox.sh restore` — since 11-17-26, only together with the re-capture above); finish Constant Contact on the Association's System Settings (the client secret, the connect on Feature readiness, the dry run before the sync is switched on; `cbm-client-intake/MAILING-SETUP.md` sections 2 to 4, with a runbook page offered); the sign-in checks for the six training identities; Boston's applications' role; event presenters; crm-test's baseline recapture; the nightly restore ruling 15 asks for. *Waits on:* Doug, and a `cbm-client-intake` session.
 
 12. **Give `chapter-website-prototype` a GitHub copy.** It holds the chapter connector's only source (now 0.2.6), and its commits exist only on this machine under `~/Dropbox/Projects/chapter-website-prototype`. *Waits on:* Doug: which GitHub account or organization holds it.
 
@@ -42,6 +44,7 @@ A new session reads this file after `README.md` and `DECISIONS.md`. Each item sa
 
 ## Done recently
 
+- **11-17-26** — Ruling 79 carried out in `cbm-client-intake` v0.340.2: 138 records on the Association's system moved to `bma.test`, the applications' Sandbox address domain set to `bma.test`, and sign-ins checked by Doug as Joe Mentor and Kitty Cat. Twelve training mentors now have finished profiles with machine-generated photos, and all twelve show on the chapter demo website's Find a Mentor page. The password vault's user names change to the new sign-ins. The baseline re-capture is owed (top of the list).
 - **11-13-26** — Ruling 77 carried out: the Association's system holds crm-test's training data, loaded 11-12-26 by `cbm-client-intake` v0.319.0's scripts, with every invented address on sandbox.mentorsassociation.org. The applications' Sandbox address domain setting keeps those addresses out of mail, Drive, the members group and Constant Contact. Twelve training sign-ins exist, with passwords in the vault. A CRM baseline was captured 11-12-26, and the CRM can be restored to it on demand with `~/.config/cbm-bma/sandbox.sh`; it is not restored nightly yet. Doug tested on 11-12-26; the restore has not been run since. Not loaded: event presenters (the applications' permissions) and crm-test's hand-made records. Owed: `cbm-client-intake/OPEN-ITEMS.md` item 81 (step 11 above).
 - **11-12-26** — Ruling 77: the Association's training data comes from rerunning crm-test's training data scripts, with addresses on a domain that has no mailboxes. Answers decision D3 (demo chapter plan 0.6). Kickoff prompt drafted. Kickoff prompt approved by Doug.
 - **11-12-26** — Step 6 done: ruling 78, the domains registered at GoDaddy with their domain name records at Cloudflare. The drafted Cloudflare item marked as replaced.
@@ -72,6 +75,7 @@ A new session reads this file after `README.md` and `DECISIONS.md`. Each item sa
 
 | Version | Date | Change |
 |---|---|---|
+| 1.25 | 11-17-26 02:15 | Ruling 79 carried out; the baseline re-capture added at the top as owed soon; step 11's restore now goes only with it. |
 | 1.24 | 11-13-26 00:26 | The training data session's closing report (ruling 77 carried out) in Done recently; step 11 now its loose ends. |
 | 1.23 | 11-12-26 00:24 | Step 6 done (ruling 78) and removed; step 11's prompt approved; the default next step is now step 5. |
 | 1.22 | 11-12-26 00:22 | Ruling 77 recorded; step 11 added for the training data kickoff; the prototype's GitHub copy renumbered to 12. |

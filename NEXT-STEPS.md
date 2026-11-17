@@ -1,10 +1,10 @@
 # Next steps — where the work stands
 
 **Document:** The work in progress and the next steps, kept so a new session can continue where the last one stopped
-**Version:** 1.25
+**Version:** 1.26
 **Status:** Current
 **Owner:** Doug Bower
-**Last Updated:** 11-17-26 02:15
+**Last Updated:** 11-17-26 18:08
 
 ---
 
@@ -36,7 +36,7 @@ A new session reads this file after `README.md` and `DECISIONS.md`. Each item sa
 
 10. **Check auto-renew on both domains at GoDaddy.** Both expire 11-07-27 and lapse if auto-renew is off. Doug's answer of 11-11-26 gave the prices but not this setting. Part 1 of `docs/setup-runbook.md` lists it as owed, with GoDaddy two-step sign-in and the second owner. *Waits on:* Doug, signed in to GoDaddy as businessmentors@dougbower.com.
 
-11. **Finish the training system's loose ends (ruling 77).** The training data is loaded (see Done recently, 11-13-26). Owed, all in `cbm-client-intake/OPEN-ITEMS.md` item 81: restore the Association's system after Doug's testing of 11-12-26 (`~/.config/cbm-bma/sandbox.sh restore` — since 11-17-26, only together with the re-capture above); finish Constant Contact on the Association's System Settings (the client secret, the connect on Feature readiness, the dry run before the sync is switched on; `cbm-client-intake/MAILING-SETUP.md` sections 2 to 4, with a runbook page offered); the sign-in checks for the six training identities; Boston's applications' role; event presenters; crm-test's baseline recapture; the nightly restore ruling 15 asks for. *Waits on:* Doug, and a `cbm-client-intake` session.
+11. **Finish the training system's loose ends (ruling 77).** The training data is loaded (see Done recently, 11-13-26). Owed, all in `cbm-client-intake/OPEN-ITEMS.md` item 81: no restore of the Association's system until the re-capture above (the 11-12-26 baseline is out of date, and since 11-14-26 the system is also the test system, so a restore would wipe review work); finish Constant Contact on the Association's System Settings (the client secret, the connect on Feature readiness, the dry run before the sync is switched on; `cbm-client-intake/MAILING-SETUP.md` sections 2 to 4, with a runbook page offered); the sign-in checks for the six training identities; Boston's applications' role; event presenters; the nightly restore ruling 15 asks for. crm-test's own baseline re-capture is dropped: crm-test is no longer the test system. *Waits on:* Doug, and a `cbm-client-intake` session.
 
 12. **Give `chapter-website-prototype` a GitHub copy.** It holds the chapter connector's only source (now 0.2.6), and its commits exist only on this machine under `~/Dropbox/Projects/chapter-website-prototype`. *Waits on:* Doug: which GitHub account or organization holds it.
 
@@ -75,6 +75,7 @@ A new session reads this file after `README.md` and `DECISIONS.md`. Each item sa
 
 | Version | Date | Change |
 |---|---|---|
+| 1.26 | 11-17-26 18:08 | Step 11: no restore before the re-capture; crm-test's re-capture dropped. |
 | 1.25 | 11-17-26 02:15 | Ruling 79 carried out; the baseline re-capture added at the top as owed soon; step 11's restore now goes only with it. |
 | 1.24 | 11-13-26 00:26 | The training data session's closing report (ruling 77 carried out) in Done recently; step 11 now its loose ends. |
 | 1.23 | 11-12-26 00:24 | Step 6 done (ruling 78) and removed; step 11's prompt approved; the default next step is now step 5. |
